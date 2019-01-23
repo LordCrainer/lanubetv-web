@@ -3,7 +3,7 @@
 import Vue from "vue";
 import App from "./App";
 import added from "./-added";
-//import router from "./-router";
+import router from "./-router";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,6 +16,6 @@ new Vue({
     AOS.init();
   },
   components: { App },
-  //router,
+  router,
   template: "<App/>"
 });
