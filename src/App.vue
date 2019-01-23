@@ -1,17 +1,36 @@
 <template>
-  <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+  <div id="app"><Headerw :menus="menu_principal"></Headerw></div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import Headerw from "./componentes/header.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Headerw
+  },
+  data() {
+    return {
+      rutaActual: "",
+      menu_principal: [
+        {
+          ruta: "/",
+          nombre: "Empresa"
+        },
+        {
+          ruta: "/servicio",
+          nombre: "Servicio"
+        },
+        {
+          ruta: "/contacto",
+          nombre: "Contacto"
+        },
+        {
+          ruta: "/canalestv",
+          nombre: "Canales TV"
+        }
+      ]
+    };
   }
 };
 </script>
