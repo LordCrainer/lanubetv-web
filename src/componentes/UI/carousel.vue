@@ -1,5 +1,5 @@
 <template>
-  <v-carousel>
+  <v-carousel :height="height">
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  props: ["items"],
+  props: ["items", "height"],
   data() {
     return {};
   }

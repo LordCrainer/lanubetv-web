@@ -53,6 +53,7 @@
       :dark="offsetTop < 30 ? true : false"
       class="elevation-8 "
       :color="color_toolbar"
+      :height="height_toolbar"
     >
       <router-link to="/">
         <img :src="src_logo" alt="alt" width="auto" height="50px" />
@@ -110,11 +111,14 @@ export default {
       src_logo:
         "http://lanubetv.net/index.hyperesources/Logotipo_lanubetv_f.png",
       offsetTop: 0,
-      color_toolbar: "rgba(34, 87, 139, 0.95)",
       color_text: "white--text",
-      height_toolbar: "70px",
+      height_toolbar: "60px",
       drawer_flag: false,
-      color: "black",
+      color: {
+        primario: "rgba(34, 87, 139, 0.95)",
+        secundario: "rgba(34, 87, 139, 0.85)"
+      },
+      color_toolbar: "rgba(34, 87, 139, 0.95)",
       tab: null,
       text:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -124,12 +128,12 @@ export default {
     onScroll(e) {
       this.offsetTop = window.pageYOffset || document.documentElement.scrollTop;
       if (this.offsetTop > 30) {
-        this.color_toolbar = "rgba(34, 87, 139, 0.85)";
+        this.color_toolbar = this.color.secundario;
         this.height_toolbar = "70px";
         this.color_text = "white--text";
       } else {
-        this.color_toolbar = "rgba(34, 87, 139, 0.95)";
-        this.height_toolbar = "80px";
+        this.color_toolbar = this.color.primario;
+        this.height_toolbar = "60px";
         this.color_text = "white--text";
       }
     },

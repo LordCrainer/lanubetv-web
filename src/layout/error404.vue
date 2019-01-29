@@ -17,7 +17,9 @@
           </v-card-text>
           <v-card-actions>
             <router-link to="/">
-              <v-btn color="primary"> VOLVER AL INICIO </v-btn></router-link
+              <v-btn color="green" class="white--text font-weight-bold">
+                VOLVER AL INICIO
+              </v-btn></router-link
             >
           </v-card-actions>
         </v-card>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <Layout :menus="menu_principal"> </Layout>
     <router-view></router-view>
   </div>
