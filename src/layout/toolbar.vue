@@ -46,6 +46,7 @@
         <v-icon>exit_to_app</v-icon>
       </v-btn>
     </v-navigation-drawer>
+    <!-- TOOLBAR -->
     <v-toolbar
       app
       fixed
@@ -54,15 +55,15 @@
       :color="color_toolbar"
     >
       <router-link to="/">
-        <img :src="src_logo" alt="alt" width="50px" height="50px" />
+        <img :src="src_logo" alt="alt" width="auto" height="50px" />
       </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-title
         :class="color_text"
-        class="font-weight-black"
+        class="font-weight-black title"
         style="font-size: 30px;"
       >
-        LANUBETV
+        {{ titulo }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -92,8 +93,8 @@
 </template>
 
 <script>
-import Navbar from "./navbar.vue";
-import List from "./UI/list.vue";
+import Navbar from "./../componentes/UI/navbar.vue";
+import List from "./../componentes/UI/list.vue";
 //import pdfvue from "./inicio/pdf.vue";
 //import PDF from "jspdf";
 export default {
@@ -104,6 +105,7 @@ export default {
   },
   data() {
     return {
+      titulo: "LANUBETV",
       border_class: "border_hover",
       src_logo:
         "http://lanubetv.net/index.hyperesources/Logotipo_lanubetv_f.png",
@@ -127,7 +129,7 @@ export default {
         this.color_text = "white--text";
       } else {
         this.color_toolbar = "rgba(34, 87, 139, 0.95)";
-        this.height_toolbar = "70px";
+        this.height_toolbar = "80px";
         this.color_text = "white--text";
       }
     },

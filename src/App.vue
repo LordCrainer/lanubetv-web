@@ -1,13 +1,16 @@
 <template>
-  <div id="app"><Headerw :menus="menu_principal"></Headerw></div>
+  <div id="app">
+    <Layout :menus="menu_principal"> </Layout>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import Headerw from "./componentes/header.vue";
+import Layout from "./layout/toolbar.vue";
 export default {
   name: "App",
   components: {
-    Headerw
+    Layout
   },
   data() {
     return {
