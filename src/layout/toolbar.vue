@@ -113,12 +113,12 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(0, 50, 150, 0.30)",
+          color: "rgba(0,50, 150, 0.70)",
           height_toolbar: "60px",
           color_text: "white--text"
         },
         secundario: {
-          color: "rgba(0, 70, 150, 0.85)",
+          color: "rgba(0, 30, 100, 0.85)",
           height_toolbar: "70px",
           color_text: "white--text"
         }
@@ -128,6 +128,7 @@ export default {
   created() {
     this.color_toolbar = this.mod_scroll.inicio.color;
     this.height_toolbar = this.mod_scroll.inicio.height_toolbar;
+    this.color_text = this.mod_scroll.inicio.color_text;
   },
   methods: {
     onScroll(e) {
@@ -135,11 +136,11 @@ export default {
       if (this.offsetTop < 30) {
         this.color_toolbar = this.mod_scroll.inicio.color;
         this.height_toolbar = this.mod_scroll.inicio.height_toolbar;
-        this.color_text = "white--text";
+        this.color_text = this.mod_scroll.inicio.color_text;
       } else {
         this.color_toolbar = this.mod_scroll.secundario.color;
         this.height_toolbar = this.mod_scroll.secundario.height_toolbar;
-        this.color_text = "white--text";
+        this.color_text = this.mod_scroll.secundario.color_text;
       }
     },
     nombreRuta(ruta) {

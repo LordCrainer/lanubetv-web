@@ -21,7 +21,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        &copy;2018 — <strong>Vuetify</strong>
+        &copy;2018 — <strong>LANUBETV</strong>
       </v-card-text>
     </v-card>
   </v-footer>

@@ -1,11 +1,20 @@
 <template>
-  <v-app class="ma-0">
+  <v-app class="ma-0" dark>
+    <v-card-text class="display-1 pa-5 font-weight-bold white--text">
+      {{ items.titulo }}
+    </v-card-text>
     <v-container fill-height>
-      <v-layout row align-center justify-between-around>
+      <v-layout row align-center justify-space-between>
         <v-flex>
           <v-container grid-list-xl>
-            <v-layout align-center justify-space-around>
-              <v-flex xs12 sm4 v-for="ventaja in items" :key="ventaja.titulo">
+            <v-layout wrap row align-center justify-space-between>
+              <v-flex
+                xs12
+                sm6
+                md4
+                v-for="ventaja in items.data"
+                :key="ventaja.titulo"
+              >
                 <div data-aos="fade-up">
                   <v-hover>
                     <v-card
@@ -14,22 +23,28 @@
                         active,
                         toggle
                       }"
-                      class="mx-auto"
+                      class="mx-auto "
                       hover
                       height="250"
-                      max-width="250"
+                      width="250"
+                      style="border-radius: 15%;"
+                      color="white"
                     >
-                      <v-card-text>{{ ventaja.titulo }}</v-card-text>
-                      <img
-                        style="max-width: 250px; width: 100%"
-                        :src="ventaja.src"
-                        alt=""
-                      />
+                      <v-container fill-height class="pa-0"
+                        ><v-layout justify-center align-center
+                          ><v-flex>
+                            <img
+                              width="240"
+                              height="240"
+                              :src="ventaja.src"
+                              alt=""/></v-flex></v-layout
+                      ></v-container>
+
                       <v-expand-transition>
                         <v-card
                           v-if="hover"
-                          class="d-flex  orange lighten-1 v-card--reveal headline black--text"
-                          style="height: 100%; text-decoration: none;"
+                          class="d-flex  blue darken-4 transition-fast-in-fast-out v-card--reveal headline font-weight-bold white--text"
+                          style="height: 100%; text-decoration: none; border-radius: 15%; opacity:0.9; "
                         >
                           <v-card-text>{{ ventaja.descripcion }}</v-card-text>
                         </v-card>
@@ -53,12 +68,12 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .v-card--reveal {
   align-items: center;
   top: 0;
   justify-content: center;
-  opacity: 0.7;
+  border: 1px solid blue;
   position: absolute;
   width: 100%;
 }
