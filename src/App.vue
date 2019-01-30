@@ -1,16 +1,21 @@
 <template>
   <div>
-    <Layout :menus="menu_principal"> </Layout>
+    <Toolbar :menus="menu_principal"> </Toolbar>
+
     <router-view></router-view>
+
+    <FooterW></FooterW>
   </div>
 </template>
 
 <script>
-import Layout from "./layout/toolbar.vue";
+import Toolbar from "./layout/toolbar.vue";
+import FooterW from "./layout/footer.vue";
 export default {
   name: "App",
   components: {
-    Layout
+    Toolbar,
+    FooterW
   },
   data() {
     return {
@@ -19,6 +24,10 @@ export default {
         {
           ruta: "/",
           nombre: "Empresa"
+        },
+        {
+          ruta: "/nosotros",
+          nombre: "Nosotros"
         },
         {
           ruta: "/servicio",

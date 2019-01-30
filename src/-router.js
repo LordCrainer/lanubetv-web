@@ -6,7 +6,8 @@ import Router from "vue-router";
 import Header from "./componentes/header.vue";
 import Footer from "./componentes/footer.vue";*/
 import Error404 from "./layout/error404.vue";
-import Pagina_Inicio from "./paginas/inicio.vue";
+import Pagina_Inicio from "./paginas/inicio/inicio.vue";
+import Nosotros from "./paginas/nosotros/nosotros.vue";
 /*import Productos from "./componentes/Productos/productos.vue";
 import Contact from "./componentes/Contact/contact.vue";
 import Nosotros from "./componentes/Nosotros/nosotros.vue";*/
@@ -22,6 +23,11 @@ export default new Router({
       name: "EMRESAS",
       path: "/",
       component: Pagina_Inicio
+    },
+    {
+      name: "NOSOTROS",
+      path: "/nosotros",
+      components: { default: Nosotros }
     },
     {
       name: "SERVICIOS",

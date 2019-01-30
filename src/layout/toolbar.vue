@@ -51,7 +51,7 @@
       app
       fixed
       :dark="offsetTop < 30 ? true : false"
-      class="elevation-8 "
+      class="elevation-5 "
       :color="color_toolbar"
       :height="height_toolbar"
     >
@@ -59,11 +59,7 @@
         <img :src="src_logo" alt="alt" width="auto" height="50px" />
       </router-link>
       <v-spacer></v-spacer>
-      <v-toolbar-title
-        :class="color_text"
-        class="font-weight-black title"
-        style="font-size: 30px;"
-      >
+      <v-toolbar-title :class="color_text" class="font-weight-black display-1">
         {{ titulo }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -74,7 +70,7 @@
           v-for="menu in menus"
           :key="menu.nombre"
           :to="menu.ruta"
-          class="font-weight-black caption"
+          class="font-weight-black  "
           :color="color_text.split('--')[0]"
         >
           {{ menu.nombre }}
@@ -112,28 +108,37 @@ export default {
         "http://lanubetv.net/index.hyperesources/Logotipo_lanubetv_f.png",
       offsetTop: 0,
       color_text: "white--text",
-      height_toolbar: "60px",
+      height_toolbar: "",
+      color_toolbar: "",
       drawer_flag: false,
-      color: {
-        primario: "rgba(34, 87, 139, 0.95)",
-        secundario: "rgba(34, 87, 139, 0.85)"
-      },
-      color_toolbar: "rgba(34, 87, 139, 0.95)",
-      tab: null,
-      text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      mod_scroll: {
+        inicio: {
+          color: "rgba(0, 50, 150, 0.30)",
+          height_toolbar: "60px",
+          color_text: "white--text"
+        },
+        secundario: {
+          color: "rgba(0, 70, 150, 0.85)",
+          height_toolbar: "70px",
+          color_text: "white--text"
+        }
+      }
     };
+  },
+  created() {
+    this.color_toolbar = this.mod_scroll.inicio.color;
+    this.height_toolbar = this.mod_scroll.inicio.height_toolbar;
   },
   methods: {
     onScroll(e) {
       this.offsetTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (this.offsetTop > 30) {
-        this.color_toolbar = this.color.secundario;
-        this.height_toolbar = "70px";
+      if (this.offsetTop < 30) {
+        this.color_toolbar = this.mod_scroll.inicio.color;
+        this.height_toolbar = this.mod_scroll.inicio.height_toolbar;
         this.color_text = "white--text";
       } else {
-        this.color_toolbar = this.color.primario;
-        this.height_toolbar = "60px";
+        this.color_toolbar = this.mod_scroll.secundario.color;
+        this.height_toolbar = this.mod_scroll.secundario.height_toolbar;
         this.color_text = "white--text";
       }
     },
