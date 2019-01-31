@@ -42,13 +42,6 @@ export default new Router({
       }
     },
     {
-      name: "NOSOTROS",
-      path: "/nosotros",
-      components: {
-        default: Pagina_Inicio
-      }
-    },
-    {
       name: "ERROR404",
       path: "*",
       components: { default: Error404 }

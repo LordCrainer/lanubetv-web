@@ -30,15 +30,18 @@
                       style="border-radius: 15%;"
                       color="white"
                     >
-                      <v-container fill-height class="pa-0"
-                        ><v-layout justify-center align-center
-                          ><v-flex>
+                      <v-container fill-height class="pa-0">
+                        <v-layout justify-center align-center>
+                          <v-flex>
                             <img
                               width="240"
                               height="240"
                               :src="ventaja.src"
-                              alt=""/></v-flex></v-layout
-                      ></v-container>
+                              alt=""
+                            />
+                          </v-flex>
+                        </v-layout>
+                      </v-container>
 
                       <v-expand-transition>
                         <v-card

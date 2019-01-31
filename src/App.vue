@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ma-0 pa-0">
     <Toolbar :menus="menu_principal"> </Toolbar>
 
     <router-view></router-view>
@@ -49,7 +49,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Khmer", regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

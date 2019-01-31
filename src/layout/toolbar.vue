@@ -5,6 +5,12 @@
 .v-list {
   background-color: rgba(255, 255, 255, 0);
 }
+#toolbar-title,
+#v-list__tile {
+  font-family: "Khmer", regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 </style>
 
 <template>
@@ -29,9 +35,9 @@
           slot-scope="{
             data
           }"
-          class="font-weight-bolder"
+          class="font-weight-bolder headline"
         >
-          <h3>{{ data.nombre }}</h3>
+          {{ data.nombre }}
         </v-list-tile>
       </List>
       <v-btn
@@ -56,10 +62,19 @@
       :height="height_toolbar"
     >
       <router-link to="/">
-        <img :src="src_logo" alt="alt" width="auto" height="50px" />
+        <img
+          :src="src_logo"
+          alt="alt"
+          width="auto"
+          :height="`${height_toolbar}`"
+        />
       </router-link>
       <v-spacer></v-spacer>
-      <v-toolbar-title :class="color_text" class="font-weight-black display-1">
+      <v-toolbar-title
+        id="toolbar-title"
+        :class="color_text"
+        class=" display-1"
+      >
         {{ titulo }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -105,7 +120,7 @@ export default {
       titulo: "LANUBETV",
       border_class: "border_hover",
       src_logo:
-        "http://lanubetv.net/index.hyperesources/Logotipo_lanubetv_f.png",
+        "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/MRgO-logo_lanubetv.png",
       offsetTop: 0,
       color_text: "white--text",
       height_toolbar: "",
@@ -113,14 +128,14 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(0,50, 150, 0.70)",
-          height_toolbar: "60px",
-          color_text: "white--text"
+          color: "rgba(255,255, 255, 0.95)",
+          height_toolbar: "70px",
+          color_text: "black--text"
         },
         secundario: {
-          color: "rgba(0, 30, 100, 0.85)",
-          height_toolbar: "70px",
-          color_text: "white--text"
+          color: "rgba(255,255, 255, 0.9)", //rgba(0, 30, 100, 0.85)
+          height_toolbar: "80px",
+          color_text: "black--text"
         }
       }
     };
