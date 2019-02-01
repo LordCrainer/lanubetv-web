@@ -1,9 +1,9 @@
 <template>
-  <div class="ma-0 pa-0">
+  <div>
     <hero :items="hero_init"></hero>
     <nosotros :items="nosotros_init"></nosotros>
     <ventajas :items="ventajas_init"></ventajas>
-    <parallax :src="parallax_2.src" style="height: 50vh;"></parallax>
+    <parallax2 :items="parallax_2" :minHeight="50"></parallax2>
     <canales :items="clientes_canales"></canales>
   </div>
 </template>
@@ -13,9 +13,9 @@ import ventajas from "./ventajas.vue";
 import nosotros from "./nosotros.vue";
 import canales from "./canales.vue";
 import carousel from "./../../componentes/UI/carousel.vue";
-import parallax from "./../../componentes/UI/parallax.vue";
+import parallax2 from "./../../componentes/UI/parallax2.vue";
 export default {
-  components: { hero, ventajas, nosotros, canales, carousel, parallax },
+  components: { hero, ventajas, nosotros, canales, carousel, parallax2 },
   data() {
     return {
       src_logo:
@@ -23,17 +23,19 @@ export default {
 
       //https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/yiII-background.jpg
       hero_init: {
-        //          "https://www.workday.com/content/dam/web/en-us/images/screenshots/w31/tech-hero-background.jpg/jcr:content/renditions/cq5dam.md.1200.897.jpg",
+        //          'https://www.workday.com/content/dam/web/en-us/images/screenshots/w31/tech-hero-background.jpg/jcr:content/renditions/cq5dam.md.1200.897.jpg',
 
         //https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/umbrella-bg.jpg?sfvrsn=2c25c32e_2
-        src:
-          "https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/umbrella-bg.jpg?sfvrsn=2c25c32e_2",
+
+        //
+        //https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/umbrella-bg.jpg?sfvrsn=2c25c32e_2
+        src: "https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg",
         text:
           "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
       },
       parallax_2: {
         src:
-          "https://www.convenzis.co.uk/wp-content/uploads/2018/04/government-digital-technology.jpg"
+          "https://static1.squarespace.com/static/56db4b9b07eaa05aaab5f1d8/t/58536783c534a5cc2969dfd9/1481860996287/banner1.jpg?format=2500w"
       },
       carousel_init: [
         {

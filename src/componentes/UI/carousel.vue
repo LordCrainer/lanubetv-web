@@ -13,3 +13,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+.v-window__container,
+.v-window-item {
+  height: 100%;
+}
+</style>

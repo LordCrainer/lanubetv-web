@@ -1,7 +1,5 @@
 <template>
-  <v-parallax :src="src" :height="height" class="pa-0">
-    <slot name="contenido"></slot>
-  </v-parallax>
+  <v-parallax :src="src"> <slot name="contenido"></slot> </v-parallax>
 </template>
 <script>
 export default {

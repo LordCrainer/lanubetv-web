@@ -20,7 +20,6 @@
       app
       temporary
       hide-overlay
-      fixed
       disable-resize-watcher
       v-model="drawer_flag"
       right
@@ -128,12 +127,12 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(255,255, 255, 0.95)",
+          color: "rgba(255,255, 255, 0.85)",
           height_toolbar: "70px",
           color_text: "black--text"
         },
         secundario: {
-          color: "rgba(255,255, 255, 0.9)", //rgba(0, 30, 100, 0.85)
+          color: "rgba(255,255, 255, 0.95)", //rgba(0, 30, 100, 0.85)
           height_toolbar: "80px",
           color_text: "black--text"
         }

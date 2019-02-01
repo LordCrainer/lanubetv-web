@@ -1,11 +1,11 @@
 <template>
-  <div class="ma-0 pa-0">
-    <Toolbar :menus="menu_principal"> </Toolbar>
-
-    <router-view></router-view>
-
-    <FooterW></FooterW>
-  </div>
+  <v-app class="ma-0 pa-0">
+    <div>
+      <Toolbar :menus="menu_principal" app> </Toolbar>
+      <main><router-view> </router-view></main>
+      <FooterW app></FooterW>
+    </div>
+  </v-app>
 </template>
 
 <script>
