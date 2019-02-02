@@ -2,7 +2,12 @@
   <v-app class="ma-0 pa-0">
     <div>
       <Toolbar :menus="menu_principal" app> </Toolbar>
-      <main><router-view> </router-view></main>
+
+      <main><router-view name="Inicio"> </router-view></main>
+      <v-layout>
+        hola
+        <v-flex> <router-view></router-view> </v-flex>
+      </v-layout>
       <FooterW app></FooterW>
     </div>
   </v-app>
@@ -23,7 +28,7 @@ export default {
       menu_principal: [
         {
           ruta: "/",
-          nombre: "Empresa"
+          nombre: "Incio"
         },
         {
           ruta: "/nosotros",
@@ -48,12 +53,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: "Khmer", regular;
+.headline,
+.display-1,
+.display-2 {
+  font-family: "Khmer", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

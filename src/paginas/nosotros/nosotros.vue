@@ -1,10 +1,5 @@
-<style scoped>
-.app {
-}
-</style>
-
 <template>
-  <div class="app">
+  <div class="app py-5">
     <v-card-text class="display-1 pa-3 font-weight-bold black--text">
       {{ items.titulo }}
     </v-card-text>

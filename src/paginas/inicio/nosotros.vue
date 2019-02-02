@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="py-4">
     <v-layout column>
       <v-flex xs12>
         <v-card-text class="display-1 font-weight-bold black--text">

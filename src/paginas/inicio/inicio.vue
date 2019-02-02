@@ -16,6 +16,7 @@ import carousel from "./../../componentes/UI/carousel.vue";
 import parallax2 from "./../../componentes/UI/parallax2.vue";
 export default {
   components: { hero, ventajas, nosotros, canales, carousel, parallax2 },
+  name: "Inicio",
   data() {
     return {
       src_logo:
@@ -100,8 +101,8 @@ export default {
                 "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
             }
           ]
-        },
-        {
+        }
+        /* {
           titulo: "Segundos 9",
           src: "",
           clientes: [
@@ -151,7 +152,7 @@ export default {
                 "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
             }
           ]
-        }
+        }*/
       ],
       ventajas_init: {
         titulo: "VENTAJAS",
@@ -195,7 +196,7 @@ export default {
         ]
       },
       nosotros_init: {
-        titulo: "¿Quiénes somos?",
+        titulo: "¿QUIÉNES SOMOS?",
         src:
           "https://www.elcomercio.com/files/article_main/uploads/2018/10/16/5bc6a13529e3a.jpeg",
         nosotros: {
