@@ -24,13 +24,8 @@ export default {
 
       //https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/yiII-background.jpg
       hero_init: {
-        //          'https://www.workday.com/content/dam/web/en-us/images/screenshots/w31/tech-hero-background.jpg/jcr:content/renditions/cq5dam.md.1200.897.jpg',
-
-        //https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/umbrella-bg.jpg?sfvrsn=2c25c32e_2
-
-        //
-        //https://d585tldpucybw.cloudfront.net/sfimages/default-source/labs/kendo/kendo-umbrella/umbrella-bg.jpg?sfvrsn=2c25c32e_2
-        src: "https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg",
+        src:
+          "https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg",
         text:
           "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
       },
@@ -102,7 +97,7 @@ export default {
             }
           ]
         }
-        /* {
+        /*{
           titulo: "Segundos 9",
           src: "",
           clientes: [
@@ -198,7 +193,7 @@ export default {
       nosotros_init: {
         titulo: "¿QUIÉNES SOMOS?",
         src:
-          "https://www.elcomercio.com/files/article_main/uploads/2018/10/16/5bc6a13529e3a.jpeg",
+          "https://www.america-retail.com/static//2018/11/569629-youtube.jpg",
         nosotros: {
           titulo: "NOSOTROS",
           descripcion: [

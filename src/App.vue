@@ -4,10 +4,15 @@
       <Toolbar :menus="menu_principal" app> </Toolbar>
 
       <main><router-view name="Inicio"> </router-view></main>
-      <v-layout>
-        hola
-        <v-flex> <router-view></router-view> </v-flex>
-      </v-layout>
+      <main>
+        <v-card height="300" color="blue lighten-3">
+          <v-layout align-center justify-center fill-height>
+            <v-card-text class="text-xs-center"> PARALLAX </v-card-text>
+          </v-layout>
+        </v-card>
+        <router-view></router-view>
+      </main>
+
       <FooterW app></FooterW>
     </div>
   </v-app>
@@ -53,6 +58,30 @@ export default {
 </script>
 
 <style>
+.white--background {
+  background-color: white;
+}
+body {
+  //background-images: url("https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg");
+  background: linear-gradient(
+    135deg,
+    rgb(16, 60, 145) 20%,
+    rgba(248, 172, 0, 0.1) 20%,
+    rgba(248, 172, 0, 0.1) 75%,
+    rgb(16, 60, 145) 75%
+  );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*section {
+  background: linear-gradient(
+    135deg,
+    rgb(16, 60, 145) 20%,
+    rgba(0, 50, 150, 0.5) 40%,
+    rgba(0, 50, 150, 0.5) 60%,
+    rgb(16, 60, 145) 80%
+  );
+}*/
 .headline,
 .display-1,
 .display-2 {

@@ -1,70 +1,66 @@
 <template>
-  <v-layout align-center justify-center>
-    <v-card style="min-width: 350px; width:500px;" class="mx-auto ">
-      <v-form
-        ref="form"
-        v-model="valid"
-        lazy-validation
-        class="pa-3 pt-4 elevation-5"
-      >
-        <v-text-field
-          v-model="name"
-          :rules="nameRules"
-          :counter="10"
-          label="Name"
+  <v-card style="min-width: 350px; width:500px;" class="mx-auto ">
+    <v-form
+      ref="form"
+      v-model="valid"
+      lazy-validation
+      class="pa-3 pt-4 elevation-5"
+    >
+      <v-text-field
+        v-model="name"
+        :rules="nameRules"
+        :counter="10"
+        label="Name"
+        required
+      ></v-text-field>
+      <v-text-field
+        v-model="email"
+        :rules="emailRules"
+        label="E-mail"
+        required
+      ></v-text-field>
+      <!--
+        <v-select
+          v-model="select"
+          :items="items"
+          :rules="[v => !!v || 'Item is required']"
+          label="Item"
           required
-        ></v-text-field>
-        <v-text-field
-          v-model="email"
-          :rules="emailRules"
-          label="E-mail"
+        ></v-select>
+      -->
+
+      <!--
+        <v-radio-group v-model="radio" row>
+          <v-radio
+            label="Servicio al Cliente"
+            value="Servicio al Cliente"
+          ></v-radio>
+          <v-radio label="Soporte" value="Soporte Técnico"></v-radio>
+          <v-radio label="Cobranza" value="Cobranza"></v-radio>
+        </v-radio-group>
+      -->
+      <v-textarea
+        label="Comentario"
+        v-model="textArea"
+        :rules="textAreaRules"
+        auto-grow
+        box
+        rows="3"
+        :counter="100"
+      ></v-textarea>
+      <!--
+        <v-checkbox
+          v-model="checkbox"
+          :rules="[v => !!v || 'You must agree to continue!']"
+          label="Do you agree?"
           required
-        ></v-text-field>
-        <!--
-          <v-select
-            v-model="select"
-            :items="items"
-            :rules="[v => !!v || 'Item is required']"
-            label="Item"
-            required
-          ></v-select>
-        -->
+        ></v-checkbox>
+      -->
 
-        <!--
-          <v-radio-group v-model="radio" row>
-            <v-radio
-              label="Servicio al Cliente"
-              value="Servicio al Cliente"
-            ></v-radio>
-            <v-radio label="Soporte" value="Soporte Técnico"></v-radio>
-            <v-radio label="Cobranza" value="Cobranza"></v-radio>
-          </v-radio-group>
-        -->
-        <v-textarea
-          label="Comentario"
-          v-model="textArea"
-          :rules="textAreaRules"
-          auto-grow
-          box
-          rows="3"
-          :counter="500"
-        ></v-textarea>
-        <!--
-          <v-checkbox
-            v-model="checkbox"
-            :rules="[v => !!v || 'You must agree to continue!']"
-            label="Do you agree?"
-            required
-          ></v-checkbox>
-        -->
-
-        <v-btn :disabled="!valid" @click="submit" color="primary">
-          ENVIAR
-        </v-btn>
-        <v-btn @click="clear" color="red" outline>RESET</v-btn>
-      </v-form>
-    </v-card>
-  </v-layout>
+      <v-btn :disabled="!valid" @click="submit" color="primary"> ENVIAR </v-btn>
+      <v-btn @click="clear" color="red" outline>RESET</v-btn>
+    </v-form>
+  </v-card>
 </template>
 <script>
 import axios from "axios";
@@ -89,7 +85,7 @@ export default {
     radio: "Servicio al Cliente",
     textAreaRules: [
       v => !!v || "Escriba un comentario",
-      v => (v && v.length > 0) || "Digite un comentario"
+      v => (v && v.length < 100) || "Limite de texto"
     ],
     textArea: null,
     user: "user_ANaMPedZDtBmrIV2T25NV",

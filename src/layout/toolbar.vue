@@ -1,6 +1,6 @@
 <style scoped>
 #list {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.99);
 }
 .v-list {
   background-color: rgba(255, 255, 255, 0);
@@ -117,12 +117,12 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(255,255, 255, 0.5)",
-          height_toolbar: "70px",
+          color: "rgba(255,255, 255, 1)",
+          height_toolbar: "90px",
           color_text: "black--text"
         },
         secundario: {
-          color: "rgba(255,255, 255, 0.90)", //rgba(0, 30, 100, 0.85)
+          color: "rgba(255,255, 255, 1)", //rgba(0, 30, 100, 0.85)
           height_toolbar: "70px",
           color_text: "black--text"
         }

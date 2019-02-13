@@ -1,18 +1,22 @@
 <template>
   <section>
-    <v-img class="parallax" app :style="`background-image: url(${items.src});`">
+    <v-img
+      contain
+      class="parallax"
+      app
+      :style="`background-image: url(${items.src});`"
+    >
       <v-layout
-        pa-2
-        column
+        pt-4
         fill-height
         justify-center
-        aling-center
+        align-center
         class="white--text"
       >
-        <v-flex shrink>
+        <v-flex xs10 sm12>
           <v-card hover color="rgba(0,0,0, 0.0)">
             <v-card-text
-              class="white--text font-weight-bold headline pa-5 text-xs-justify"
+              class="black--text font-weight-bold headline pa-5 text-xs-justify"
             >
               {{ items.text }}
             </v-card-text>
