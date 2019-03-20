@@ -1,6 +1,5 @@
-
 <template>
-  <section class="py-0 ma-0" >
+  <section class="py-0 ma-0 Canales" >
     <carousel :items="items" height="100%" class="py-5">
       <v-container slot="contenido" slot-scope="canales">
         <v-card flat color="transparent" class="mx-auto">
@@ -55,3 +54,8 @@ export default {
   components: { carousel }
 };
 </script>
+<style>
+.Canales {
+  
+}
+</style>
