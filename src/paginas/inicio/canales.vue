@@ -3,7 +3,7 @@
     <carousel :items="items" height="100%" class="py-5">
       <v-container slot="contenido" slot-scope="canales">
         <v-card flat color="transparent" class="mx-auto">
-          <v-card-text class="display-2 mb-5 indigo--text font-weight-bold">
+          <v-card-text class="display-2 indigo--text font-weight-bold">
             CLIENTES
           </v-card-text>
           <v-layout fill-height align-center justify-center>
@@ -56,6 +56,6 @@ export default {
 </script>
 <style>
 .Canales {
-  
+  background-color: rgb(48,48,48);
 }
 </style>

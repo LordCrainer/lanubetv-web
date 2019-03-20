@@ -13,10 +13,10 @@
         align-center
         class="white--text"
       >
-        <v-flex xs10 sm12>
-          <v-card hover color="rgba(0,0,0, 0.0)">
+        <v-flex xs10 sm10>
+          <v-card hover color="rgba(255,255,255, 0.3)">
             <v-card-text
-              class="black--text font-weight-bold headline pa-5 text-xs-justify"
+              class="black--text font-weight-bold headline mt-3 pa-5 text-xs-justify text-xl-center"
             >
               {{ items.text }}
             </v-card-text>
