@@ -1,6 +1,6 @@
 <template>
   <v-img
-    class="parallax"
+    class="parallaxEffect"
     app
     :src="items.src"
     :style="`background-image: url(${items.src}); min-height:${minHeight}vh;`"
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.parallax {
+.parallaxEffect {
   /* Set a specific height */
   min-height: 100vh;
   /* Create the parallax scrolling effect */

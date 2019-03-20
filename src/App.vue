@@ -1,13 +1,15 @@
 <template>
   <v-app class="ma-0 pa-0">
     <div>
-      <Toolbar :menus="menu_principal" app> </Toolbar>
+      <Toolbar :menus="menu_principal" app></Toolbar>
 
-      <main><router-view name="Inicio"> </router-view></main>
+      <main>
+        <router-view name="Inicio"></router-view>
+      </main>
       <main>
         <v-card height="300" color="blue lighten-3">
           <v-layout align-center justify-center fill-height>
-            <v-card-text class="text-xs-center"> PARALLAX </v-card-text>
+            <v-card-text class="text-xs-center">PARALLAX</v-card-text>
           </v-layout>
         </v-card>
         <router-view></router-view>
@@ -92,5 +94,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+.parallaxEffect {
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
