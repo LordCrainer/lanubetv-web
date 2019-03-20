@@ -3,7 +3,7 @@
     <v-img
       contain
       class="parallaxEffect"
-      app
+      
       :style="`background-image: url(${items.src});`"
     >
       <v-layout
@@ -35,7 +35,7 @@ export default {
 };
 </script>
 <style>
-.parallax {
+.parallaxEffect {
   /* Set a specific height */
   min-height: 100vh;
   /* Create the parallax scrolling effect */

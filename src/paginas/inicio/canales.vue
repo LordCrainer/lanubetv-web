@@ -1,5 +1,6 @@
+
 <template>
-  <section class="py-0 ma-0" style="background-color: white;">
+  <section class="py-0 ma-0" >
     <carousel :items="items" height="100%" class="py-5">
       <v-container slot="contenido" slot-scope="canales">
         <v-card flat color="transparent" class="mx-auto">
@@ -21,9 +22,10 @@
                       <v-card
                         height="auto"
                         width="100%"
-                        style="min-width: 75px; min-height: 75px; text-align: center; max-width: 150px; max-height: 175px; border-radius: 50%;"
+                        hover
+                        style="min-width: 50px; min-height: auto; text-align: center; max-width: 125px; max-height: auto; border-radius: 50%;"
                         class="ma-auto pa-auto"
-                        color="black"
+                        color="white"
                       >
                         <v-img
                           contain
