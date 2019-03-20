@@ -2,7 +2,6 @@
   <v-img
     class="parallaxEffect"
     app
-    :src="items.src"
     :style="`background-image: url(${items.src}); min-height:${minHeight}vh;`"
   >
     <slot name="contenido"></slot>
