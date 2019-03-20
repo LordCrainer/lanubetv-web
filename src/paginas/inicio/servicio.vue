@@ -1,6 +1,12 @@
 <template>
   <section>
     <parallax2 :items="items"></parallax2>
+    <v-img
+      class="parallaxEffect"
+      app
+      :src="items.src"
+      :style="`background-image: url(${items.src});`"
+    ></v-img>
     <parallax2 :items="items" minHeight="30">
       <v-layout slot="contenido" fill-height align-center justify-center wrap>
         <v-flex xs5 sm6>
