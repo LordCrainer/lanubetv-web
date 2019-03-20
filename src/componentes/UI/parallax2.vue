@@ -2,6 +2,7 @@
   <v-img
     class="parallax"
     app
+    :src="items.src"
     :style="`background-image: url(${items.src}); min-height:${minHeight}vh;`"
   >
     <slot name="contenido"></slot>
@@ -15,7 +16,6 @@ export default {
 
 <style scoped>
 .parallax {
-  background-size: cover;
   /* Set a specific height */
   min-height: 100vh;
   /* Create the parallax scrolling effect */

@@ -61,6 +61,9 @@ export default {
 .white--background {
   background-color: white;
 }
+.grey--background {
+  background-color: rgb(75, 75, 75);
+}
 body {
   //background-images: url("https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg");
   background: linear-gradient(

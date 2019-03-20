@@ -3,8 +3,9 @@
     <hero :items="hero_init"></hero>
     <nosotros :items="nosotros_init"></nosotros>
     <ventajas :items="ventajas_init"></ventajas>
-    <parallax2 :items="parallax_2" :minHeight="50"></parallax2>
+    <servicio :items="parallax_2"></servicio>
     <canales :items="clientes_canales"></canales>
+    <ubicacion :items="ubicacion_init"></ubicacion>
   </div>
 </template>
 <script>
@@ -12,10 +13,10 @@ import hero from "./hero.vue";
 import ventajas from "./ventajas.vue";
 import nosotros from "./nosotros.vue";
 import canales from "./canales.vue";
-import carousel from "./../../componentes/UI/carousel.vue";
-import parallax2 from "./../../componentes/UI/parallax2.vue";
+import servicio from "./servicio.vue";
+import ubicacion from "./ubicacion.vue";
 export default {
-  components: { hero, ventajas, nosotros, canales, carousel, parallax2 },
+  components: { hero, ventajas, nosotros, canales, servicio, ubicacion },
   name: "Inicio",
   data() {
     return {
@@ -30,6 +31,9 @@ export default {
           "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
       },
       parallax_2: {
+        imagen: {
+          src: "http://www.serviciodegruascamus.cl/images/24-7.png"
+        },
         src:
           "https://static1.squarespace.com/static/56db4b9b07eaa05aaab5f1d8/t/58536783c534a5cc2969dfd9/1481860996287/banner1.jpg?format=2500w"
       },
@@ -202,6 +206,11 @@ export default {
             "Contamos con personal especializado para brindar el soporte técnico que nuestros clientes requieran, con un trato personalizado."
           ]
         }
+      },
+      ubicacion_init: {
+        titulo: "ubicacion",
+        src:
+          "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/qIV1-ubicacion.png"
       }
     };
   }
