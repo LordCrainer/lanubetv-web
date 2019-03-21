@@ -15,7 +15,7 @@
 </style>
 
 <template>
-  <nav v-scroll="onScroll">
+  <nav v-scroll="onScroll" class="elevation-2">
     <v-navigation-drawer
       id="list"
       app
