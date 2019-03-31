@@ -15,7 +15,7 @@
                   xs12
                   sm6
                   md4
-                  v-for="ventaja in items.data"
+                  v-for="(ventaja,indice) in items.data"
                   :key="ventaja.titulo"
                   class="my-4"
                 >
