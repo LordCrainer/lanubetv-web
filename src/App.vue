@@ -1,6 +1,7 @@
 <template>
   <v-app class="ma-0 pa-0">
     <div>
+
       <Toolbar :menus="menu_principal" app></Toolbar>
 
       <main>
@@ -68,13 +69,13 @@ export default {
 }
 body {
   //background-images: url("https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg");
-  background: linear-gradient(
+  /*background: linear-gradient(
     135deg,
     rgb(16, 60, 145) 20%,
     rgba(248, 172, 0, 0.1) 20%,
     rgba(248, 172, 0, 0.1) 75%,
     rgb(16, 60, 145) 75%
-  );
+  );*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

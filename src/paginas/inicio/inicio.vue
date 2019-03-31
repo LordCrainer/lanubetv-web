@@ -25,10 +25,23 @@ export default {
 
       //https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/yiII-background.jpg
       hero_init: {
-        src:
-          "https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg",
+        src: require('../../assets/Inicio/1.Hero.jpg'),
         text:
           "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+      },
+      nosotros_init: {
+        titulo: "DISTRIBUIMOS COMERCIALES",
+        bacgroundSRC: require('../../assets/Inicio/2.FondoDC.jpg'),
+        src:
+          require('../../assets/Inicio/2.Distribucion.png'),
+        nosotros: {
+          titulo: "NOSOTROS",
+          descripcion: [
+            "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollada pensando en las necesidades de nuestros potenciales clientes.",
+            "Nuestro servicio está dirigido a las agencias de publicidad, agencias de medios y productoras a nivel nacional e internacional, que necesitan realizar envíos de comerciales de televisión a las diferentes estaciones de tv, mediante un sistema sencillo, ágil y confiable.",
+            "Contamos con personal especializado para brindar el soporte técnico que nuestros clientes requieran, con un trato personalizado."
+          ]
+        }
       },
       parallax_2: {
         imagen: {
@@ -93,6 +106,21 @@ export default {
               titulo: "Ecuavisa",
               src:
                 "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+            },
+            {
+              titulo: "Ecuavisa",
+              src:
+                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+            },
+            {
+              titulo: "Ecuavisa",
+              src:
+                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+            },
+            {
+              titulo: "Ecuavisa",
+              src:
+                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
             },
             {
               titulo: "Ecuavisa",
@@ -194,19 +222,7 @@ export default {
           }
         ]
       },
-      nosotros_init: {
-        titulo: "¿QUIÉNES SOMOS?",
-        src:
-          "https://www.america-retail.com/static//2018/11/569629-youtube.jpg",
-        nosotros: {
-          titulo: "NOSOTROS",
-          descripcion: [
-            "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollada pensando en las necesidades de nuestros potenciales clientes.",
-            "Nuestro servicio está dirigido a las agencias de publicidad, agencias de medios y productoras a nivel nacional e internacional, que necesitan realizar envíos de comerciales de televisión a las diferentes estaciones de tv, mediante un sistema sencillo, ágil y confiable.",
-            "Contamos con personal especializado para brindar el soporte técnico que nuestros clientes requieran, con un trato personalizado."
-          ]
-        }
-      },
+
       ubicacion_init: {
         titulo: "ubicacion",
         src:

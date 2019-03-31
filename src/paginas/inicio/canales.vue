@@ -1,22 +1,24 @@
 <template>
   <section class="py-0 ma-0 Canales" >
     <carousel :items="items" height="100%" class="py-5">
-      <v-container slot="contenido" slot-scope="canales">
+      <v-container slot="contenido" slot-scope="canales" >
         <v-card flat color="transparent" class="mx-auto">
           <v-card-text class="display-2 indigo--text font-weight-bold">
             CLIENTES
           </v-card-text>
           <v-layout fill-height align-center justify-center>
             <v-flex>
-              <v-container grid-list-xl>
-                <v-card flat class="mx-auto transparent">
-                  <v-layout row wrap align-center justify-space-around>
+              <v-container grid-list-xl >
+                <v-card flat class="mx-auto transparent pa-5">
+                  <v-layout row wrap align-center justify-center>
                     <v-flex
                       v-for="canales in canales.item.clientes"
-                      :key="canales.Ecuavisa"
+                      :key="canales.titulo"
                       xs4
                       sm4
                       md3
+
+                      lg3
                     >
                       <v-card
                         height="auto"

@@ -15,7 +15,8 @@
 </style>
 
 <template>
-  <nav v-scroll="onScroll" class="elevation-2">
+  <nav v-scroll="onScroll" >
+
     <v-navigation-drawer
       id="list"
       app
@@ -51,7 +52,6 @@
       app
       fixed
       :dark="offsetTop < 30 ? true : false"
-      flat
       :color="color_toolbar"
       :height="height_toolbar"
     >
