@@ -12,15 +12,3 @@ export default {
   props: ["items", "minHeight"]
 };
 </script>
-
-<style scoped>
-.parallaxEffect {
-  /* Set a specific height */
-  min-height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>

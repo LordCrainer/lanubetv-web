@@ -1,11 +1,14 @@
 <template>
   <div>
+
     <hero :items="hero_init"></hero>
+    <prueba></prueba>
     <nosotros :items="nosotros_init"></nosotros>
     <ventajas :items="ventajas_init"></ventajas>
     <servicio :items="parallax_2"></servicio>
     <canales :items="clientes_canales"></canales>
     <ubicacion :items="ubicacion_init"></ubicacion>
+
   </div>
 </template>
 <script>
@@ -15,8 +18,9 @@ import nosotros from "./nosotros.vue";
 import canales from "./canales.vue";
 import servicio from "./servicio.vue";
 import ubicacion from "./ubicacion.vue";
+import prueba from "./prueba.vue"
 export default {
-  components: { hero, ventajas, nosotros, canales, servicio, ubicacion },
+  components: { hero, ventajas, nosotros, canales, servicio, ubicacion, prueba },
   name: "Inicio",
   data() {
     return {

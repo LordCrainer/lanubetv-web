@@ -1,24 +1,24 @@
 <template>
-  <v-app class="ma-0 pa-0">
-    <div>
+<v-app class="ma-0 pa-0">
+  <div>
 
-      <Toolbar :menus="menu_principal" app></Toolbar>
+    <Toolbar :menus="menu_principal" app></Toolbar>
 
-      <main>
-        <router-view name="Inicio"></router-view>
-      </main>
-      <main>
-        <v-card height="300" color="blue lighten-3">
-          <v-layout align-center justify-center fill-height>
-            <v-card-text class="text-xs-center">PARALLAX</v-card-text>
-          </v-layout>
-        </v-card>
-        <router-view></router-view>
-      </main>
+    <main>
+      <router-view name="Inicio"></router-view>
+    </main>
+    <main>
+      <v-card height="300" color="blue lighten-3">
+        <v-layout align-center justify-center fill-height>
+          <v-card-text class="text-xs-center">PARALLAX</v-card-text>
+        </v-layout>
+      </v-card>
+      <router-view></router-view>
+    </main>
 
-      <FooterW app></FooterW>
-    </div>
-  </v-app>
+    <FooterW app></FooterW>
+  </div>
+</v-app>
 </template>
 
 <script>
@@ -33,8 +33,7 @@ export default {
   data() {
     return {
       rutaActual: "",
-      menu_principal: [
-        {
+      menu_principal: [{
           ruta: "/",
           nombre: "Incio"
         },
@@ -64,9 +63,11 @@ export default {
 .white--background {
   background-color: white;
 }
+
 .grey--background {
   background-color: rgb(75, 75, 75);
 }
+
 body {
   //background-images: url("https://stmed.net/sites/default/files/white-blue-wallpapers-25353-4347074.jpg");
   /*background: linear-gradient(
@@ -79,6 +80,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 /*section {
   background: linear-gradient(
     135deg,
@@ -96,6 +98,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
 .parallaxEffect {
   /* Set a specific height */
   min-height: 100vh;

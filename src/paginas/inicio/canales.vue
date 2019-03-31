@@ -56,7 +56,7 @@ export default {
   components: { carousel }
 };
 </script>
-<style>
+<style scoped>
 .Canales {
   background-color: rgb(48,48,48);
 }

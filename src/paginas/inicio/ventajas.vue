@@ -18,6 +18,7 @@
                   v-for="ventaja in items.data"
                   :key="ventaja.titulo"
                   class="my-4"
+                  d-flex
                 >
                   <div data-aos="fade-up">
                     <v-layout column align-center justify-center>
