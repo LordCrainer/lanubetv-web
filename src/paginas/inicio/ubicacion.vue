@@ -1,14 +1,21 @@
 <template>
   <section>
-    <v-layout>
-      <v-flex>
-        <v-img
-          alt="ubicacion de LANUBETV"
-          class="mapa_ubicacion"
-          :style="`background-image: url(${items.src}); `"
-        ></v-img>
-      </v-flex>
-    </v-layout>
+    <v-img
+      alt="ubicacion de LANUBETV"
+      class="mapa_ubicacion"
+      :style="`background-image: url(${items.src}); `"
+    >
+      <v-layout row fill-height>
+        <v-flex sm6>
+          <v-layout fill-height justify-center align-center>
+            <v-btn color="indigo" dark>Contactanos</v-btn>
+          </v-layout>
+        </v-flex>
+        <v-flex sm6>
+          <v-btn color="indigo" dark></v-btn>
+        </v-flex>
+      </v-layout>
+    </v-img>
   </section>
 </template>
 <script>
