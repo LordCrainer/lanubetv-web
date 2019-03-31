@@ -3,7 +3,6 @@
     <v-img
       contain
       class="parallaxEffect"
-      
       :style="`background-image: url(${items.src});`"
     >
       <v-layout
@@ -14,7 +13,7 @@
         class="white--text"
       >
         <v-flex xs10 sm10>
-          <v-card hover color="rgba(255,255,255, 0.3)">
+          <v-card hover color="rgba(255,255,255, 1)">
             <v-card-text
               class="black--text font-weight-bold headline mt-3 pa-5 text-xs-justify text-xl-center"
             >
