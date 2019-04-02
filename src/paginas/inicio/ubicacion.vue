@@ -21,7 +21,7 @@
                   </v-btn>
                 </div>
                 <div>
-                  <h2>099999999</h2>
+                  <h2>09998445</h2>
                 </div>
               </div>
             </v-flex>
@@ -29,11 +29,35 @@
               <v-layout wrap row align-center>
                 <v-flex xs12 sm3>
                   <v-btn fab dark color="blue">
-                    <v-icon>phone_android</v-icon>
+                    <v-icon>contact_phone</v-icon>
                   </v-btn>
                 </v-flex>
                 <v-flex xs12 sm9>
                   <h2>099999999</h2>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+            <v-flex xs12>
+              <v-layout wrap row align-center>
+                <v-flex xs12 sm3>
+                  <v-btn fab dark color="blue">
+                    <v-icon>location_on</v-icon>
+                  </v-btn>
+                </v-flex>
+                <v-flex xs12 sm9>
+                  <h2>asdasdas</h2>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+            <v-flex xs12>
+              <v-layout wrap row align-center>
+                <v-flex xs12 sm3>
+                  <v-btn fab dark color="blue">
+                    <v-icon>email</v-icon>
+                  </v-btn>
+                </v-flex>
+                <v-flex xs12 sm9>
+                  <h2>asdasdas</h2>
                 </v-flex>
               </v-layout>
             </v-flex>
