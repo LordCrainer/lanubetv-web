@@ -8,11 +8,6 @@
       <router-view name="Inicio"></router-view>
     </main>
     <main>
-      <v-card height="300" color="blue lighten-3">
-        <v-layout align-center justify-center fill-height>
-          <v-card-text class="text-xs-center">PARALLAX</v-card-text>
-        </v-layout>
-      </v-card>
       <router-view></router-view>
     </main>
 

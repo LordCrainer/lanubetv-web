@@ -33,10 +33,10 @@
                             {{ ventaja.titulo }}
                           </v-card-text>
                         </v-flex>
-                        <v-flex>
-                          <v-avatar size="75" tile>
-                            <v-img :src="ventaja.src" alt=""> </v-img>
-                          </v-avatar>
+                        <v-flex >
+                            <v-avatar size="80"  color="white" >
+                              <img  v-if="ventaja.src" :src="ventaja.src"  alt="" style="height:80%; width:80%; "/>
+                            </v-avatar>
                         </v-flex>
                         <v-flex class="pa-0">
                           <v-card-text class="pa-auto subheading">

@@ -35,7 +35,7 @@
           </v-flex>
           <v-flex xs12  md2>
             <v-layout justify-center>
-              <v-btn round dark class="mb-4 pa-4 " color="primary">CANALES TV</v-btn>
+              <v-btn round dark class="mb-4 pa-4 " color="primary" to="/canalestv">CANALES TV</v-btn>
             </v-layout>
           </v-flex>
         </v-layout>
@@ -51,7 +51,7 @@
           </v-flex>
           <v-flex xs12 sm12 md2 class="pa-4">
             <v-layout row justify-center>
-              <v-btn round large class="ma-0 " color="primary">PLATAFORMA</v-btn>
+              <v-btn round large class="ma-0 " color="primary" target="_blank" href="https://app.lanubetv.net">PLATAFORMA</v-btn>
             </v-layout>
           </v-flex>
         </v-layout>

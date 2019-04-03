@@ -1,15 +1,15 @@
 <template>
-  <section class="py-0 ma-0 Canales" >
-    <carousel :items="items" height="100%" class="py-5">
+  <section class="Canales" >
+
+    <carousel :items="items"  height="auto">
       <v-container slot="contenido" slot-scope="canales" >
-        <v-card flat color="transparent" class="mx-auto">
-          <v-card-text class="display-2 indigo--text font-weight-bold">
-            CLIENTES
-          </v-card-text>
+
+
           <v-layout fill-height align-center justify-center>
+            <v-card flat color="transparent" class="mx-auto">
             <v-flex>
               <v-container grid-list-xl >
-                <v-card flat class="mx-auto transparent pa-5">
+                <v-card flat class="mx-auto transparent">
                   <v-layout row wrap align-center justify-center>
                     <v-flex
                       v-for="(canales,index) in canales.item.clientes"
@@ -42,8 +42,9 @@
                 </v-card>
               </v-container>
             </v-flex>
+            </v-card>
           </v-layout>
-        </v-card>
+
       </v-container>
     </carousel>
   </section>
@@ -57,6 +58,7 @@ export default {
 </script>
 <style scoped>
 .Canales {
+  height:100vh;
   background-color: rgb(48,48,48);
 }
 </style>
