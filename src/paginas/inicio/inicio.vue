@@ -207,7 +207,7 @@ export default {
 
       ubicacion_init: {
         titulo: "ubicacion",
-        src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/qIV1-ubicacion.png"
+        src: require('../../assets/Inicio/5.-Contacto.jpg')
       }
     };
   }
