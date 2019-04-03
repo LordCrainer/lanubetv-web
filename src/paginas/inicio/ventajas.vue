@@ -7,9 +7,9 @@
             {{ items.titulo }}
           </v-card-text>
         </v-flex>
-        <v-flex>
+        <v-flex >
           <v-card flat class="ma-auto" color="transparent">
-            <v-container grid-list-xl class="py-5">
+            <v-container grid-list-xl class="py-5" fluid>
               <v-layout wrap row fill-height align-center justify-center>
                 <v-flex
                   xs12
@@ -17,18 +17,17 @@
                   md4
                   v-for="(ventaja,indice) in items.data"
                   :key="ventaja.titulo"
-                  class="my-4"
-                  d-flex
+                  class="my-4 d-flex"
+
                 >
                   <div data-aos="fade-up">
                     <v-layout column align-center justify-center>
                       <v-card
                         class=" pa-2 text-xs-center elevation-3"
-                        height="300"
-                        width="100%"
-                        style=" max-height: 300px; max-width: 300px;"
+                        height="70vh"
+                        style=" max-height: 300px; max-width:275px "
                       >
-                        <v-flex class="pa-0">
+                        <v-flex class="pa-0" >
                           <v-card-text class="headline">
                             {{ ventaja.titulo }}
                           </v-card-text>

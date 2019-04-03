@@ -118,7 +118,7 @@ export default {
       mod_scroll: {
         inicio: {
           color: "rgba(255,255, 255, 1)",
-          height_toolbar: "90px",
+          height_toolbar: "60px",
           color_text: "black--text"
         },
         secundario: {

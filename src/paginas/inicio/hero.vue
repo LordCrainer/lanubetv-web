@@ -1,6 +1,6 @@
 <template>
 <section>
-  <v-img :src="items.src" class="Hero">
+  <v-img  class="Hero" :style="`background-image: url(${items.src}); `">
     <v-container fill-height grid-list-xl>
       <v-layout pt-4 justify-end align-center class="white--text">
         <v-flex xs12 sm8 md6>
@@ -28,9 +28,11 @@ export default {
 </script>
 <style scoped>
 .Hero {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  min-height: 500px;
+  background-size: cover;
+  background-position: bottom left;
+
 }
 
 /*:style="`background-image: url(${items.src}); background-size: cover; `"*/
