@@ -25,7 +25,8 @@
                       <v-card
                         class=" pa-2 text-xs-center elevation-3"
                         height="70vh"
-                        style=" max-height: 300px; max-width:275px "
+                        style=" max-height: 300px; max-width:275px; color: white "
+                        :color="`${indice%2== 0 ? 'rgb(60,60,60)': 'rgb(38, 48, 62)'} `"
                       >
                         <v-flex class="pa-0" >
                           <v-card-text class="headline">
@@ -65,6 +66,7 @@ export default {
 };
 </script>
 <style scoped>
+
 .v-card--reveal {
   border-radius: 5%;
   align-items: center;

@@ -12,12 +12,11 @@
                 <v-card flat class="mx-auto transparent pa-5">
                   <v-layout row wrap align-center justify-center>
                     <v-flex
-                      v-for="canales in canales.item.clientes"
-                      :key="canales.titulo"
+                      v-for="(canales,index) in canales.item.clientes"
+                      :key="canales.titulo+index"
                       xs4
                       sm4
                       md3
-
                       lg3
                     >
                       <v-card
