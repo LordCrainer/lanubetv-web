@@ -65,111 +65,114 @@ export default {
           text: "probando slot 2"
         }
       ],
-      clientes_canales: [{
-          titulo: "Primeros 9 canales",
-          src: "",
-          clientes: [{
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            }
-          ]
-        }
-        /*{
-          titulo: "Segundos 9",
-          src: "",
-          clientes: [
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
-            },
-            {
-              titulo: "Ecuavisa",
-              src:
-                "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
-            }
-          ]
-        }*/
-      ],
+      clientes_canales: {
+        titulo: "CLIENTES",
+        canales: [{
+            titulo: "Primeros 9 canales",
+            src: "",
+            clientes: [{
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              }
+            ]
+          }
+          /*{
+            titulo: "Segundos 9",
+            src: "",
+            clientes: [
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+              },
+              {
+                titulo: "Ecuavisa",
+                src:
+                  "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+              }
+            ]
+          }*/
+        ]
+      },
       ventajas_init: {
         titulo: "VENTAJAS",
         data: [{
