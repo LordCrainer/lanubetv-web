@@ -77,7 +77,7 @@ export default {
 </script>
 <style scoped>
 .mapa_ubicacion {
-  height: 50vh;
+  height: 100%;
   width: 100vw;
   background-size: cover;
   background-position: center;
