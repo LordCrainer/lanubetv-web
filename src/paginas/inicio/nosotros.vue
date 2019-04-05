@@ -21,7 +21,7 @@
                   <v-layout align-center justify-center>
                     <v-card color="transparent" flat>
                       <v-card-text class="hidden-sm-and-down">
-                        <img contain width="100%" :src="items.src1" alt>
+                        <img contain width="100%" height="525vh" :src="items.src1" alt>
                       </v-card-text>
                       <v-card-text class="hidden-md-and-up">
                         <img contain width="100%" style="max-height:600px" :src="items.src" alt>
