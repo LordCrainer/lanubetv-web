@@ -3,12 +3,9 @@
   <div>
 
     <Toolbar :menus="menu_principal" app></Toolbar>
-
     <main>
-      <router-view name="Inicio"></router-view>
-    </main>
-    <main>
-      <router-view></router-view>
+      <Hero :items="hero_layout"></Hero>
+      <router-view ></router-view>
     </main>
 
     <FooterW app></FooterW>
@@ -19,11 +16,12 @@
 <script>
 import Toolbar from "./layout/toolbar.vue";
 import FooterW from "./layout/footer.vue";
+import Hero from "./layout/hero.vue";
 export default {
   name: "App",
   components: {
     Toolbar,
-    FooterW
+    FooterW, Hero
   },
   data() {
     return {
@@ -48,7 +46,12 @@ export default {
           ruta: "/canalestv",
           nombre: "Canales TV"
         }
-      ]
+      ],
+      hero_layout: {
+        ruta: '/',
+        src: require('./assets/Inicio/1.Hero.jpg'),
+        text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+      }
     };
   }
 };

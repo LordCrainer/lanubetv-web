@@ -23,7 +23,7 @@ export default new Router({
     {
       name: "INICIO",
       path: "/",
-      components: { Inicio: Pagina_Inicio }
+      components: { default: Pagina_Inicio }
     },
     {
       name: "NOSOTROS",
