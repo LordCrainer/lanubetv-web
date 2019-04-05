@@ -3,7 +3,7 @@
     <v-card>
       <v-layout column align-center justify-center>
         <v-flex>
-          <v-card-text class="display-1 font-weight-bold pa-4 mt-4">
+          <v-card-text class="display-2 font-weight-bold pa-4 mt-4">
             {{ items.titulo }}
           </v-card-text>
         </v-flex>

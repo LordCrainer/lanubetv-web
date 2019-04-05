@@ -12,7 +12,7 @@
 <section class="Canales">
     <v-layout row wrap justify-space-around fill-height>
         <v-flex xs12 >
-            <v-card-text flat class="display-1 font-weight-bold  pt-5">
+            <v-card-text flat class="display-2 font-weight-bold  pt-5">
                 {{ items.titulo }}
             </v-card-text>
         </v-flex>

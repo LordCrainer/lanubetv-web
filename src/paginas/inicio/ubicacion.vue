@@ -8,7 +8,7 @@
       <v-layout row fill-height>
         <v-flex sm6>
           <v-layout fill-height justify-center align-center>
-            <v-btn round large color="indigo" dark>Contáctanos</v-btn>
+            <v-btn round large color="indigo" class="headline" dark>Contáctanos</v-btn>
           </v-layout>
         </v-flex>
         <v-flex sm6 style="background-color: rgba(48,48,48,0.75); color: white;">

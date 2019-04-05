@@ -11,7 +11,7 @@
   <v-img :src="items.bacgroundSRC" class="Nosotros">
     <v-layout column align-center justify-space-around fill-height>
       <v-flex class="">
-        <v-card-text class="display-1 font-weight-bold white--text pt-5">{{ items.titulo }}</v-card-text>
+        <v-card-text class="display-2 font-weight-bold white--text pt-5">{{ items.titulo }}</v-card-text>
       </v-flex>
       <v-flex>
         <v-layout row wrap align-center justify-center>
