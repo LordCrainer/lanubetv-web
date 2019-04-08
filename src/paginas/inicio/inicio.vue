@@ -61,6 +61,7 @@ export default {
       ],
       clientes_canales: {
         titulo: "CLIENTES",
+        fondo: require('./../../assets/Nosotros/MiViSer.jpg'),
         canales: [{
             titulo: "Primeros 9 canales",
             src: "",
