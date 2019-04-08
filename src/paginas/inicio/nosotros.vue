@@ -3,12 +3,14 @@
   height: 100%;
   width: 100%;
   min-height: 500px;
+  background-size: cover;
+  background-attachment:fixed;
 }
 </style>
 
 <template>
 <section>
-  <v-img :src="items.bacgroundSRC" class="Nosotros">
+  <v-img  :style="`background-image: url(${items.bacgroundSRC}); `"  class="Nosotros">
     <v-layout column align-center justify-space-around fill-height>
       <v-flex class="">
         <v-card-text class="display-2 font-weight-bold white--text pt-5">{{ items.titulo }}</v-card-text>
@@ -38,7 +40,7 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex>
+      <v-flex class="pt-4">
         <v-layout row wrap justify-center align-center>
           <v-flex xs12 sm12 md10 class="">
             <v-layout row align-center>

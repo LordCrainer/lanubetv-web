@@ -23,9 +23,10 @@
 
                     <v-layout row wrap fill-height align-center justify-center class="pb-5 mx-auto">
                         <v-flex v-for="(canales,index) in canales.item.clientes" :key="canales.titulo+index" xs4 sm4 md3 lg3>
-                            <v-card  height="100%" width="100%" hover style="min-width: 80px;  text-align: center; max-width: 125px; max-height: 125px; border-radius: 50%; " aspect-ratio="1" class="ma-auto pa-auto" color="transparent">
-                                <v-img contain :src="canales.src" alt="canales" height="inherit" aspect-ratio="1" class="pa-0 mx-auto">
+                            <v-card  height="100%" width="100%" hover style="min-width: 80px;  text-align: center; max-width: 100px; max-height: 100px; border-radius: 50%; " aspect-ratio="1" class="ma-auto pa-auto" color="transparent">
+                                <v-img contain :src="canales.src" alt="canales" aspect-ratio="1" class="pa-1">
                                 </v-img>
+
                             </v-card>
                         </v-flex>
                     </v-layout>

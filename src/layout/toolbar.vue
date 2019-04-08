@@ -109,7 +109,7 @@ export default {
       titulo: "LA NUBE TV",
       border_class: "border_hover",
       src_logo:
-        "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/MRgO-logo_lanubetv.png",
+      require('./../assets/logo.png'),
       offsetTop: 0,
       color_text: "white--text",
       height_toolbar: "",

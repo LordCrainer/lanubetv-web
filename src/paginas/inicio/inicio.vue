@@ -4,7 +4,7 @@
   <ventajas :items="ventajas_init"></ventajas>
   <servicio :items="parallax_2"></servicio>
   <canales :items="clientes_canales"></canales>
-  <ubicacion :items="ubicacion_init"></ubicacion>
+  <contacto :items="contacto_init"></contacto>
 
 </div>
 </template>
@@ -13,14 +13,14 @@ import ventajas from "./ventajas.vue";
 import nosotros from "./nosotros.vue";
 import canales from "./canales.vue";
 import servicio from "./servicio.vue";
-import ubicacion from "./ubicacion.vue";
+import contacto from "./contacto.vue";
 export default {
   components: {
     ventajas,
     nosotros,
     canales,
     servicio,
-    ubicacion
+    contacto
   },
   name: "Inicio",
   data() {
@@ -200,9 +200,28 @@ export default {
         ]
       },
 
-      ubicacion_init: {
+      contacto_init: {
         titulo: "ubicacion",
-        src: require('../../assets/Inicio/5.-Contacto.jpg')
+        src: require('../../assets/Inicio/5.-Contacto.jpg'),
+        icono: {src: require('./../../assets/Inicio/contactanos.png')},
+        datos: [{
+            descripcion: "593-4-2832083 ext. 102",
+            src: require('./../../assets/Inicio/phone-08.png')
+          },
+          {
+            descripcion: "593-96759-0148",
+            src: require('./../../assets/Inicio/whatsapp_icon-08.png')
+          },
+          {
+            descripcion: "Noguchi 633 y Huancavilca Edif. Ecobay",
+            src: require('./../../assets/Inicio/localizacion-08.png')
+          },
+          {
+            descripcion: "trafico@lanubetv.net",
+            src: require('./../../assets/Inicio/email_icon-08.png')
+          }
+        ]
+
       }
     };
   }
