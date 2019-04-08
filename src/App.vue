@@ -5,10 +5,10 @@
     <Toolbar :menus="menu_principal" app></Toolbar>
     <main>
       <Hero :items="hero_layout"></Hero>
-      <router-view ></router-view>
+      <router-view></router-view>
     </main>
 
-    <FooterW app></FooterW>
+    <FooterW app :items="footerPath"></FooterW>
   </div>
 </v-app>
 </template>
@@ -21,7 +21,8 @@ export default {
   name: "App",
   components: {
     Toolbar,
-    FooterW, Hero
+    FooterW,
+    Hero
   },
   data() {
     return {
@@ -35,8 +36,8 @@ export default {
           nombre: "Nosotros"
         },
         {
-          ruta: "/servicio",
-          nombre: "Servicio"
+          ruta: "/servicios",
+          nombre: "Servicios"
         },
         {
           ruta: "/contacto",
@@ -47,6 +48,53 @@ export default {
           nombre: "Canales TV"
         }
       ],
+      footerPath: [{
+        titulo: "Inicio",
+        rutas: [{
+            nombre: "Nosotros",
+            ruta: "/nosotros"
+          },
+          {
+            nombre: "Servicios",
+            ruta: "/servicios"
+          },
+          {
+            nombre: "Contacto",
+            ruta: "/contacto"
+          },
+          {
+            nombre: "Canales TV",
+            ruta: "/canalestv"
+          }
+        ]
+      }, {
+        titulo: "Nostros",
+        rutas: [{
+            nombre: "Mision",
+            ruta: "/nosotros"
+          },
+          {
+            nombre: "Vision",
+            ruta: "/nosotros"
+          },
+          {
+            nombre: "Nicho",
+            ruta: "/nosotros"
+          }
+        ]
+      }, {
+        titulo: "Canales",
+        rutas: [{
+            nombre: "Nacionales",
+            ruta: "/canalestv"
+          },
+          {
+            nombre: "Internacionales",
+            ruta: "/canalestv"
+          }
+        ]
+      }
+    ],
       hero_layout: {
         ruta: '/',
         src: require('./assets/Inicio/1.Hero.jpg'),

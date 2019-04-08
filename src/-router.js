@@ -32,8 +32,8 @@ export default new Router({
     },
     {
       name: "SERVICIOS",
-      path: "/productos",
-      components: { default: Pagina_Inicio }
+      path: "/servicios",
+      components: { default: Error404 }
     },
     {
       name: "CONTACTO",
