@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-container>
+  <section style="height: 100vh;">
+    <v-container fill-height>
       <v-layout align-center justify-center>
         <v-flex xs12 sm8>
           <v-card>
@@ -27,7 +27,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </v-app>
+  </section >
 </template>
 <script>
 export default {

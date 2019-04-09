@@ -3,9 +3,10 @@ import Router from "vue-router";
 
 
 import Error404 from "./layout/error404.vue";
-import Pagina_Inicio from "./paginas/inicio/inicio.vue";
+import Pagina_Inicio from "./paginas/principal/inicio.vue";
 import Nosotros from "./paginas/nosotros/nosotros.vue";
 import Contacto from "./paginas/contacto/contacto.vue";
+import CanalesTV from "./paginas/canales/canalestv.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -56,6 +57,16 @@ export default new Router({
       meta: {
         titulo: "Contactanos",
         descripcion: "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos"
+      }
+    },{
+      name: "CANALESTV",
+      path: "/canalestv",
+      components: {
+        default: CanalesTV
+      },
+      meta: {
+        titulo: "Canales Tv",
+        descripcion: "Trabajamos con canales de televisión tanto Nacionales como Internacionales"
       }
     },
     {
