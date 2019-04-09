@@ -17,23 +17,30 @@ Vue.use(Router);
 export default new Router({
   mode: "history",
   scrollBehavior(to, from, savedPosition) {
-    return { x: 0, y: 0 };
+    return {
+      x: 0,
+      y: 0
+    };
   },
-  routes: [
-    {
+  routes: [{
       name: "INICIO",
       path: "/",
-      components: { default: Pagina_Inicio }
+      descripcion: "Probando",
+      component: Pagina_Inicio
     },
     {
       name: "NOSOTROS",
       path: "/nosotros",
-      components: { default: Nosotros }
+      components: {
+        default: Nosotros
+      }
     },
     {
       name: "SERVICIOS",
       path: "/servicios",
-      components: { default: Error404 }
+      components: {
+        default: Error404
+      }
     },
     {
       name: "CONTACTO",
@@ -45,7 +52,9 @@ export default new Router({
     {
       name: "ERROR404",
       path: "*",
-      components: { default: Error404 }
+      components: {
+        default: Error404
+      }
     }
   ]
 });

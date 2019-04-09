@@ -25,11 +25,6 @@ export default {
   name: "Inicio",
   data() {
     return {
-      src_logo: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/MRgO-logo_lanubetv.png",
-      /*  hero_init: {
-          src: require('../../assets/Inicio/1.Hero.jpg'),
-          text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
-        },*/
       nosotros_init: {
         titulo: "DISTRIBUIMOS COMERCIALES",
         bacgroundSRC: require('../../assets/Inicio/2.FondoDC.jpg'),

@@ -13,7 +13,7 @@
       class="font-weight-black "
       :class="clases"
     >
-      {{ menu.nombre }}
+      {{ menu.nombre }} 1
     </v-tab>
   </v-tabs>
 </template>

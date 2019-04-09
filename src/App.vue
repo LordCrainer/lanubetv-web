@@ -5,7 +5,7 @@
     <Toolbar :menus="menu_principal" app></Toolbar>
     <main>
       <Hero :items="hero_layout"></Hero>
-      <router-view></router-view>
+      <router-view ></router-view>
     </main>
 
     <FooterW app :items="footerPath"></FooterW>
@@ -68,7 +68,7 @@ export default {
           }
         ]
       }, {
-        titulo: "Nostros",
+        titulo: "Nosotros",
         rutas: [{
             nombre: "Mision",
             ruta: "/nosotros"
@@ -83,7 +83,7 @@ export default {
           }
         ]
       }, {
-        titulo: "Canales",
+        titulo: "CanalesTV",
         rutas: [{
             nombre: "Nacionales",
             ruta: "/canalestv"

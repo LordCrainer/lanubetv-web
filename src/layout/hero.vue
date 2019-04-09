@@ -6,7 +6,7 @@
         <v-flex xs12 sm8 md6>
           <v-card hover color="rgba(255,255,255, 0.95)">
             <v-card-text class="black--text font-weight-bold headline mt-3 pa-5 text-xs-justify text-xl-center">
-              {{ items.text }}
+              {{ items.text }}  {{$route.path}}
             </v-card-text>
           </v-card>
         </v-flex>
