@@ -6,6 +6,7 @@
 <script>
 import MiViSer from './MiViSer.vue'
 export default {
+  props: ['descripcion'],
   components: {
     MiViSer
   },

@@ -1,17 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-/*import App from "./App.vue";
 
-import Header from "./componentes/header.vue";
-import Footer from "./componentes/footer.vue";*/
 import Error404 from "./layout/error404.vue";
 import Pagina_Inicio from "./paginas/inicio/inicio.vue";
 import Nosotros from "./paginas/nosotros/nosotros.vue";
 import Contacto from "./paginas/contacto/contacto.vue";
-/*import Productos from "./componentes/Productos/productos.vue";
-import Contact from "./componentes/Contact/contact.vue";
-import Nosotros from "./componentes/Nosotros/nosotros.vue";*/
 Vue.use(Router);
 
 export default new Router({
@@ -25,14 +19,21 @@ export default new Router({
   routes: [{
       name: "INICIO",
       path: "/",
-      descripcion: "Probando",
-      component: Pagina_Inicio
+      component: Pagina_Inicio,
+      meta: {
+        titulo: "LANUBETV",
+        descripcion: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+      }
     },
     {
       name: "NOSOTROS",
       path: "/nosotros",
       components: {
         default: Nosotros
+      },
+      meta: {
+        titulo: "NOSOTROS",
+        descripcion: "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrolada pensando en las necesidades de nuestros potenciales clientes"
       }
     },
     {
@@ -40,6 +41,10 @@ export default new Router({
       path: "/servicios",
       components: {
         default: Error404
+      },
+      meta: {
+        titulo: "Servicios",
+        descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar los siguientes servicios"
       }
     },
     {
@@ -47,14 +52,21 @@ export default new Router({
       path: "/contacto",
       components: {
         default: Contacto
+      },
+      meta: {
+        titulo: "Contactanos",
+        descripcion: "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos"
       }
     },
     {
       name: "ERROR404",
       path: "*",
-      components: {
-        default: Error404
+      component: Error404,
+      meta: {
+        titulo: "Error",
+        descripcion: "Página no encontrada"
       }
+
     }
   ]
 });
