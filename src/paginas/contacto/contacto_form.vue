@@ -15,12 +15,12 @@
 
               </v-flex>
               <v-flex xs12 sm6>
-                <v-card class="mx-auto " width="400" color="rgba(255, 255, 255, 0.5)">
-                  <v-form ref="form"  v-model="valid" lazy-validation class="elevation-5">
+                <v-card hover class="mx-auto" width="400" color="rgba(0, 0, 0, 0.45)" >
+                  <v-form ref="form"  v-model="valid" lazy-validation >
                       <v-card-text>
-                        <generadorForm :model="model" :schema="schema.fields" :options="options">
+                        <generadorForm :model="model" :schema="schema.fields" :options="options"  >
                         </generadorForm>
-                        <v-card-actions slot="action">
+                        <v-card-actions slot="action" >
                           <v-btn :disabled="!valid" @click="submit" color="primary">
                             ENVIAR
                           </v-btn>
@@ -64,7 +64,8 @@ export default {
             rules: "nameRules",
             featured: true,
             required: true,
-            size: "sm12"
+            size: "sm12",
+            dark: true
           },
 
           {
@@ -74,7 +75,8 @@ export default {
             //placeholder: "Teléfono",
             rules: "required",
             featured: true,
-            required: true
+            required: true,
+            dark: true
           },
           {
             type: "textarea",
@@ -85,7 +87,8 @@ export default {
             //placeholder: "Tu nombre",
             rules: "nameRules",
             featured: true,
-            required: true
+            required: true,
+            dark: true
           }
         ]
       }
@@ -111,13 +114,8 @@ export default {
   background-size: cover;
   background-position: bottom right;
 }
-.v-input .v-text-field__slot .v-label{
-  color: white;
-}
-.v-label{
-  color: rgb(240, 240, 240);
-}
-input{
-  color: white;
+
+.theme--light.v-label{
+  color: rgb(255, 255, 0);
 }
 </style>

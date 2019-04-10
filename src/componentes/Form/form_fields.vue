@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <div v-if="field.type == 'email'">
@@ -7,6 +8,8 @@
         :required="field.required"
         :readonly="field.readonly"
         :disabled="field.disabled"
+        :color="field.color"
+        :dark="field.dark"
         :placeholder="field.placeholder"
         :rules="Rules.email"
         @blur="onBlur"
@@ -23,6 +26,8 @@
         :required="field.required"
         :readonly="field.readonly"
         :disabled="field.disabled"
+        :color="field.color"
+        :dark="field.dark"
         :placeholder="field.placeholder"
         :append-icon="field.passwordVisible ? 'visibility_off' : 'visibility'"
         @append="appendPasswordIconCheckbox();"
@@ -41,6 +46,8 @@
         :label="field.label"
         :required="field.required"
         :readonly="field.readonly"
+        :color="field.color"
+        :dark="field.dark"
         :disabled="field.disabled"
         single-line
         bottom
@@ -58,6 +65,8 @@
         hide-details
         hide-no-data
         :hide-selected="false"
+        :color="field.color"
+        :dark="field.dark"
         multiple
         @input="onInput"
       ></v-autocomplete>
@@ -86,6 +95,8 @@
         v-bind:textarea="field.featured"
         auto-grow
         box
+        :color="field.color"
+        :dark="field.dark"
         :rows="field.row"
         @blur="onBlur"
         @change="onChange"
@@ -108,6 +119,8 @@
         :required="field.required"
         :readonly="field.readonly"
         :disabled="field.disabled"
+        :color="field.color"
+        :dark="field.dark"
         :placeholder="field.placeholder"
         :rules="Rules[field.rules]"
         :counter="field.counter"
@@ -141,7 +154,7 @@ export default {
   props: ["field", "value"],
   data() {
     return {
-
+      colorText: 'black',
       localValue: "",
       copyValue: this.value,
       Rules: {

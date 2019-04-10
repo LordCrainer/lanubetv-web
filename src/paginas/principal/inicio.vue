@@ -2,7 +2,7 @@
 <div>
   <nosotros :items="nosotros_init"></nosotros>
   <ventajas :items="ventajas_init"></ventajas>
-  <servicio :items="parallax_2"></servicio>
+  <servicio :items="servicio_init"></servicio>
   <canales :items="clientes_canales"></canales>
   <contacto :items="contacto_init"></contacto>
 
@@ -39,28 +39,54 @@ export default {
           ]
         }
       },
-      parallax_2: {
-        imagen: {
-          src: "http://www.serviciodegruascamus.cl/images/24-7.png"
-        },
-        src: "https://static1.squarespace.com/static/56db4b9b07eaa05aaab5f1d8/t/58536783c534a5cc2969dfd9/1481860996287/banner1.jpg?format=2500w"
+      ventajas_init: {
+        titulo: "VENTAJAS",
+        data: [{
+            titulo: "Revisión",
+            descripcion: "Revisión técnica del archivo por nuestro personal calificado, para garantizar la calidad de audio y video.",
+            src: require('./../../assets/Inicio/revision_tecnica_icon.png')
+          },
+          {
+            titulo: "Verificación",
+            descripcion: "Verificación de duración del comercial, para certificar que coincide con la duración contratada.",
+            src: require('./../../assets/Inicio/verificacion.png')
+          },
+          {
+            titulo: "Conversión",
+            descripcion: "Conversión en alta calidad del máster al formato específico de cada canal seleccionado para envío.",
+            src: require('./../../assets/Inicio/conversion.png')
+          },
+          {
+            titulo: "Notificación",
+            descripcion: "Notificación al cliente, en caso de existir alguna novedad con el archivo",
+            src: require('./../../assets/Inicio/notificacion.png')
+          },
+          {
+            titulo: "Solicitud",
+            descripcion: "Solicitud vía email de la aprobación para realizar los envíos",
+            src: require('./../../assets/Inicio/solicitud.png')
+          },
+          {
+            titulo: "Envíos",
+            descripcion: "Realización de los envíos correspondientes, y emisión de la notificación de los envíos realizados.",
+            src: require('./../../assets/Inicio/envios.png')
+          }
+        ]
       },
-      carousel_init: [{
-          src: "https://www.sage.com/na/~/media/site/sagena/responsive/images/smallbiz/section-clouds.jpg",
-          text: "probando slot 1"
+      servicio_init: {
+        imagen: {
+          src: require('./../../assets/Inicio/24-7.png')
         },
-        {
-          src: "https://www.sage.com/na/~/media/site/sagena/responsive/images/smallbiz/section-clouds.jpg",
-          text: "probando slot 2"
-        }
-      ],
+        src: require('./../../assets/Inicio/3.-Plataforma.jpg')
+      },
       clientes_canales: {
         titulo: "CLIENTES",
         fondo: require('./../../assets/Nosotros/MiViSer.jpg'),
         canales: [{
             titulo: "Primeros 9 canales",
             src: "",
-            clientes: [{
+            clientes: [
+              {
                 titulo: "Ecuavisa",
                 src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
               },
@@ -109,8 +135,7 @@ export default {
                 src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
               }
             ]
-          }
-          /*{
+          },/*{
             titulo: "Segundos 9",
             src: "",
             clientes: [
@@ -163,42 +188,12 @@ export default {
           }*/
         ]
       },
-      ventajas_init: {
-        titulo: "VENTAJAS",
-        data: [{
-            titulo: "Revisión",
-            descripcion: "Revisión técnica del archivo por nuestro personal calificado, para garantizar la calidad de audio y video.",
-            src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/p-ck-revision_tecnica_icon.png"
-          },
-          {
-            titulo: "Verificación",
-            descripcion: "Verificación de duración del comercial, para certificar que coincide con la duración contratada.",
-            src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/7_55-check_time_icon.png"
-          },
-          {
-            titulo: "Conversión",
-            descripcion: "Conversión en alta calidad del máster al formato específico de cada canal seleccionado para envío.",
-            src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/Ra0A-hq_icon.png"
-          },
-          {
-            titulo: "Notificación",
-            descripcion: "Notificación al cliente, en caso de existir alguna novedad con el archivo"
-          },
-          {
-            titulo: "Solicitud",
-            descripcion: "Solicitud vía email de la aprobación para realizar los envíos"
-          },
-          {
-            titulo: "Envíos",
-            descripcion: "Realización de los envíos correspondientes, y emisión de la notificación de los envíos realizados."
-          }
-        ]
-      },
-
       contacto_init: {
         titulo: "ubicacion",
         src: require('../../assets/Inicio/5.-Contacto.jpg'),
-        icono: {src: require('./../../assets/Inicio/contactanos.png')},
+        icono: {
+          src: require('./../../assets/Inicio/contactanos.png')
+        },
         datos: [{
             descripcion: "593-4-2832083 ext. 102",
             src: require('./../../assets/Inicio/phone-08.png')

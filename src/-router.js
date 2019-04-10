@@ -23,7 +23,7 @@ export default new Router({
       component: Pagina_Inicio,
       meta: {
         titulo: "LANUBETV",
-        descripcion: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+        descripcion: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales."
       }
     },
     {
@@ -34,7 +34,7 @@ export default new Router({
       },
       meta: {
         titulo: "NOSOTROS",
-        descripcion: "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrolada pensando en las necesidades de nuestros potenciales clientes"
+        descripcion: "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollando, pensando y creando soluciones inteligentes a nuestros clientes."
       }
     },
     {
@@ -45,7 +45,7 @@ export default new Router({
       },
       meta: {
         titulo: "Servicios",
-        descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar los siguientes servicios"
+        descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar los siguientes servicios."
       }
     },
     {
@@ -56,7 +56,7 @@ export default new Router({
       },
       meta: {
         titulo: "Contactanos",
-        descripcion: "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos"
+        descripcion: "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos."
       }
     },{
       name: "CANALESTV",
@@ -66,7 +66,7 @@ export default new Router({
       },
       meta: {
         titulo: "Canales Tv",
-        descripcion: "Trabajamos con canales de televisión tanto Nacionales como Internacionales"
+        descripcion: "Trabajamos con canales de televisión tanto Nacionales como Internacionales."
       }
     },
     {
