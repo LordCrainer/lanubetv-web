@@ -17,4 +17,5 @@ export default {
 .v-carousel__item{
   height:100%;
 }
+
 </style>

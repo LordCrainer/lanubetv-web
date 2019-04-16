@@ -19,11 +19,12 @@
           <v-container grid-list-xl slot="contenido" slot-scope="canales" style="max-width: 800px;" fill-height class="pb-4">
             <v-layout row wrap align-center justify-center class="pb-5 mx-auto">
               <v-flex v-for="(canal,index) in canales.subItem.clientes" :key="canal.titulo+index" xs4 sm4 md3 lg3>
+                <v-hover>
                 <v-card height="100%" width="100%" hover style="min-width: 80px;  text-align: center; max-width: 100px; max-height: 100px; border-radius: 50%; "  class="ma-auto pa-auto black--text" color="transparent">
                   <v-img contain :src="canal.src" alt="canales" aspect-ratio="1" class="pa-1">
                   </v-img>
-
                 </v-card>
+                </v-hover>
               </v-flex>
             </v-layout>
           </v-container>

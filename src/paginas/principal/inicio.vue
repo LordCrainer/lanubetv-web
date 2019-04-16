@@ -43,7 +43,7 @@ export default {
         titulo: "VENTAJAS",
         data: [{
             titulo: "Revisión",
-            descripcion: "Revisión técnica del archivo por nuestro personal calificado, para garantizar la calidad de audio y video.",
+            descripcion: "Revisión técnica del archivo para garantizar la calidad de audio y video.",
             src: require('./../../assets/Inicio/revision_tecnica_icon.png')
           },
           {
@@ -87,36 +87,36 @@ export default {
             src: "",
             clientes: [
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "Alacena",
+                src: require('./../../assets/Clientes/Empresas/Alacena-icon.jpg')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "BancoBolivariano",
+                src: require('./../../assets/Clientes/Empresas/BancoBolivariano-icon.png')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+                titulo: "BancoDelPacificio",
+                src: require('./../../assets/Clientes/Empresas/BancoDelPacifico-icon.png')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "BancoDelPichincha",
+                src: require('./../../assets/Clientes/Empresas/BancoDelPichincha-icon.png')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "BancoGuayaquil",
+                src: require('./../../assets/Clientes/Empresas/BancoBolivariano-icon.png')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/9ar3-gama_icon.png"
+                titulo: "Bankard",
+                src: require('./../../assets/Clientes/Empresas/Bankard-icon.jpg')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "Cne",
+                src: require('./../../assets/Clientes/Empresas/Cne-icon.png')
               },
               {
-                titulo: "Ecuavisa",
-                src: "https://uploads.codesandbox.io/uploads/user/17fffd86-3ee1-4ca9-abc0-4e76a2cb57f0/K47h-ecuavisa_icon.png"
+                titulo: "Cnt",
+                src: require('./../../assets/Clientes/Empresas/Cnt-icon.png')
               },
               {
                 titulo: "Ecuavisa",

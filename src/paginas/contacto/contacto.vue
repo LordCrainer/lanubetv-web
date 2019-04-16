@@ -3,7 +3,7 @@
 <style></style>
 
 <template>
-<div class="">
+<div>
   <mapaUbicacion :items="mapaUbicacionData">
 
   </mapaUbicacion>
