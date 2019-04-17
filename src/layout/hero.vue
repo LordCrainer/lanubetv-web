@@ -1,6 +1,7 @@
 <template>
 <section>
   <v-img  class="Hero" :style="`background-image: url(${items.src}); `">
+    <v-img class="imgen" :style="`background-image: url(${$route.meta.src}); `">
     <v-container fill-height grid-list-xl>
       <v-layout pt-4 justify-end align-center class="white--text">
         <v-flex xs12 sm8 md6>
@@ -12,13 +13,18 @@
         </v-flex>
       </v-layout>
     </v-container>
+    </v-img>
   </v-img>
 </section>
 </template>
 <script>
 
 export default {
-  props: ["items"]
+  props: ["items"],
+  data(){
+    return{
+    }
+  }
 };
 </script>
 <style scoped>
@@ -27,8 +33,12 @@ export default {
   width: 100%;
   background-size: cover;
   background-position: bottom left;
-
 }
-
+.imgen{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom left;
+}
 /*:style="`background-image: url(${items.src}); background-size: cover; `"*/
 </style>

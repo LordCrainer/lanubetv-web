@@ -20,7 +20,6 @@ export default {
     return {
       data_servicios: {
         titulo: "Servicios",
-
         servicios: [
           {
           titulo: "Distribución de Comerciales",
@@ -30,6 +29,10 @@ export default {
           img: [{
             alt: "",
             src: require('./../../assets/Servicios/producionAudivisual.jpg')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/3dy2d.jpg')
           }],
           descripcion: "Creamos contenido con la mejor experiencia y espacio para realizar",
 

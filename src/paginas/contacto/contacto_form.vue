@@ -26,7 +26,22 @@
           <v-container grid-list-xs fill-height>
             <v-layout row wrap justify-center align-center>
               <v-flex xs12 sm6>
-
+                <v-container grid-list-xs,sm,md,lg,xl fill-height>
+                  <v-layout wrap row justify-center align-center>
+                    <v-flex xs12 v-for="(dato,indice) in items.datos" :key="indice" class="py-2">
+                      <div data-aos="zoom-in">
+                        <v-layout wrap row align-center justify-center>
+                          <v-btn fab dark color="white">
+                            <img :src="dato.src" alt="" class="pa-1">
+                          </v-btn>
+                          <v-flex xs12 sm9>
+                            <h2 class="text-xs-center text-sm-left white--text">{{dato.descripcion}}</h2>
+                          </v-flex>
+                        </v-layout>
+                      </div>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
               </v-flex>
               <v-flex xs12 sm6>
                 <v-card hover class="mx-auto" width="400" color="rgba(0, 0, 0, 0.30)">

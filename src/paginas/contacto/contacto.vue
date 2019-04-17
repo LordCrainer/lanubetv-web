@@ -77,7 +77,26 @@ export default {
       },
       contactoFormData: {
         titulo: "CONTACTANOS",
-        fondo: require('./../../assets/Contacto/2-formulario_Principal_Imagen.jpg')
+        fondo: require('./../../assets/Contacto/2-formulario_Principal_Imagen.jpg'),
+        datos: [{
+            descripcion: "593-4-2832083 ext. 102",
+            src: require('./../../assets/Inicio/phone-08.png')
+          },
+          {
+            descripcion: "593-96759-0148",
+            src: require('./../../assets/Inicio/whatsapp_icon-08.png')
+          },
+          {
+            descripcion: "Noguchi 633 y Huancavilca Edif. Ecobay",
+            src: require('./../../assets/Inicio/localizacion-08.png')
+          },
+          {
+            descripcion: "trafico@lanubetv.net",
+            src: require('./../../assets/Inicio/email_icon-08.png')
+          }
+        ]
+
+
       }
     };
   }
