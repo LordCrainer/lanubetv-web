@@ -25,6 +25,8 @@ export default {
           {
           titulo: "Distribución de Comerciales",
           color: 'rgb(124, 124, 124)',
+          font_color: "white",
+          reverse: true,
           img: [{
             alt: "",
             src: require('./../../assets/Servicios/producionAudivisual.jpg')
@@ -33,8 +35,10 @@ export default {
 
         },
         {
-          titulo: "Distribución de Comerciales",
-          color: 'rgb(124, 124, 124)',
+          titulo: "3D y 2D",
+          color: 'white',
+          font_color: "black",
+          reverse: false,
           img: [{
             alt: "",
             src: require('./../../assets/Servicios/3dy2d.jpg')
@@ -43,8 +47,10 @@ export default {
 
         },
         {
-          titulo: "Distribución de Comerciales",
+          titulo: "Desarrollo web",
           color: 'rgb(124, 124, 124)',
+          font_color: "white",
+          reverse: true,
           img: [{
             alt: "",
             src: require('./../../assets/Servicios/desydisweb.jpg')
