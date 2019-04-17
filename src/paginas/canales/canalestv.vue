@@ -27,7 +27,50 @@ export default {
             Data_NacionalesYLocales: {
                 titulo: "Nacionales y Locales",
                 fondo: require('./../../assets/Canales/Nacionales_fondo.jpg'),
-                Canales: [{
+                canales: [{
+                    titulo: "Ecuavisa",
+                    src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
+                }, {
+                    titulo: "GamaTv",
+                    src: require('./../../assets/Canales/Nacionales/gama_icon.png')
+                }, {
+                    titulo: "Teleamazonas",
+                    src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
+                },
+                {
+                    titulo: "Ecuavisa",
+                    src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
+                }, {
+                    titulo: "GamaTv",
+                    src: require('./../../assets/Canales/Nacionales/gama_icon.png')
+                }, {
+                    titulo: "Teleamazonas",
+                    src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
+                },
+                {
+                    titulo: "Ecuavisa",
+                    src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
+                }, {
+                    titulo: "GamaTv",
+                    src: require('./../../assets/Canales/Nacionales/gama_icon.png')
+                }, {
+                    titulo: "Teleamazonas",
+                    src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
+                },
+                {
+                    titulo: "Ecuavisa",
+                    src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
+                }, {
+                    titulo: "GamaTv",
+                    src: require('./../../assets/Canales/Nacionales/gama_icon.png')
+                }, {
+                    titulo: "Teleamazonas",
+                    src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
+                }, {
+                    titulo: "Teleamazonas",
+                    src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
+                },
+                {
                     titulo: "Ecuavisa",
                     src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
                 }, {
@@ -39,9 +82,9 @@ export default {
                 }]
             },
             Data_Internacionales: {
-                titulo: "Nacionales y Locales",
+                titulo: "Internacional",
                 fondo: require('./../../assets/Canales/Internacional_fondo.jpg'),
-                Canales: [{
+                canales: [{
                     titulo: "Ecuavisa",
                     src: require('./../../assets/Canales/Nacionales/ecuavisa_icon.png')
                 }, {
@@ -50,7 +93,7 @@ export default {
                 }, {
                     titulo: "Teleamazonas",
                     src: require('./../../assets/Canales/Nacionales/teleamazonas_icon.png')
-                }]
+                },]
             }
 
 

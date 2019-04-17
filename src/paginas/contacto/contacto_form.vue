@@ -1,3 +1,17 @@
+<style scoped>
+.contacto_form {
+  height: 100%;
+  /*min-height: 100vmin;*/
+  width: 100%;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.theme--light.v-label {
+  color: rgb(255, 255, 0);
+}
+</style>
+
 <template>
 <section>
   <v-img :style="`background-image: url(${items.fondo});`" class="contacto_form">
@@ -15,18 +29,18 @@
 
               </v-flex>
               <v-flex xs12 sm6>
-                <v-card hover class="mx-auto" width="400" color="rgba(0, 0, 0, 0.45)" >
-                  <v-form ref="form"  v-model="valid" lazy-validation >
-                      <v-card-text>
-                        <generadorForm :model="model" :schema="schema.fields" :options="options"  >
-                        </generadorForm>
-                        <v-card-actions slot="action" >
-                          <v-btn :disabled="!valid" @click="submit" color="primary">
-                            ENVIAR
-                          </v-btn>
-                          <v-btn @click="clear" color="red" outline>RESET</v-btn>
-                        </v-card-actions>
-                      </v-card-text>
+                <v-card hover class="mx-auto" width="400" color="rgba(0, 0, 0, 0.30)">
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-card-text>
+                      <generadorForm :model="model" :schema="schema.fields" :options="options">
+                      </generadorForm>
+                      <v-card-actions slot="action">
+                        <v-btn :disabled="!valid" @click="submit" color="primary">
+                          ENVIAR
+                        </v-btn>
+                        <v-btn @click="clear" color="red" outline>RESET</v-btn>
+                      </v-card-actions>
+                    </v-card-text>
 
                   </v-form>
                 </v-card>
@@ -41,6 +55,7 @@
   </v-img>
 </section>
 </template>
+
 <script>
 import generadorForm from "./../../componentes/Form/generador_form.vue";
 export default {
@@ -77,13 +92,12 @@ export default {
             featured: true,
             required: true,
             dark: true
-          },
-          {
+          }, {
             type: "textarea",
             label: "Comentario",
             model: "comentario",
             counter: "350",
-            row: "2",
+            row: "6",
             //placeholder: "Tu nombre",
             rules: "nameRules",
             featured: true,
@@ -107,15 +121,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.contacto_form {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: bottom right;
-}
-
-.theme--light.v-label{
-  color: rgb(255, 255, 0);
-}
-</style>

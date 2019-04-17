@@ -12,7 +12,7 @@
           <v-layout row wrap justify-start>
             <v-flex xs12 sm10 md9>
               <v-card color="rgba(48,48, 48, 0.5)" class="pa-4">
-                <v-img cover style="min-height: 350px;" :src="items.mapa.src"></v-img>
+                <v-img cover style="min-height: 400px; min-width: 400px; " :src="items.mapa.src"></v-img>
               </v-card>
             </v-flex>
           </v-layout>
@@ -33,6 +33,7 @@ export default {
 .mapa_ubicacion {
   height: 100%;
   width: 100%;
+  min-height: 100vmin;
   background-size: cover;
   background-position: bottom right;
 }
