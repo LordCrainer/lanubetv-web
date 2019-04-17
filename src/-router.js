@@ -7,6 +7,7 @@ import Pagina_Inicio from "./paginas/principal/inicio.vue";
 import Nosotros from "./paginas/nosotros/nosotros.vue";
 import Contacto from "./paginas/contacto/contacto.vue";
 import CanalesTV from "./paginas/canales/canalestv.vue";
+import Servicio from "./paginas/servicios/servicios.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -41,7 +42,7 @@ export default new Router({
       name: "SERVICIOS",
       path: "/servicios",
       components: {
-        default: Error404
+        default: Servicio
       },
       meta: {
         titulo: "Servicios",
