@@ -99,7 +99,7 @@ export default {
         ruta: '/',
         src: require('./assets/Hero/Fondo_Hero.jpg'),
         text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
-        ]
+
       }
     };
   }
