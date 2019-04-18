@@ -15,8 +15,7 @@
 <template>
 <section>
   <v-img :style="`background-image: url(${items.fondo});`" class="contacto_form">
-    <v-container grid-list-xs fill-height>
-      <v-layout row wrap justify-center align-center>
+      <v-layout row wrap justify-center align-center fill-height>
         <v-flex xs12>
           <v-card-text class="text-xs-center display-2 font-weight-black pa-4 white--text">
             {{items.titulo}}
@@ -66,7 +65,6 @@
         </v-flex>
       </v-layout>
 
-    </v-container>
   </v-img>
 </section>
 </template>

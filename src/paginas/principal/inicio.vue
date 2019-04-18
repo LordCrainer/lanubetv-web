@@ -88,35 +88,35 @@ export default {
             clientes: [
               {
                 titulo: "Alacena",
-                src: require('./../../assets/Clientes/Empresas/Alacena-icon.jpg')
+                src: require('./../../assets/Clientes/Alacena_icon.jpg')
               },
               {
                 titulo: "BancoBolivariano",
-                src: require('./../../assets/Clientes/Empresas/BancoBolivariano-icon.png')
+                src: require('./../../assets/Clientes/BancoBolivariano_icon.png')
               },
               {
                 titulo: "BancoDelPacificio",
-                src: require('./../../assets/Clientes/Empresas/BancoDelPacifico-icon.png')
+                src: require('./../../assets/Clientes/BancoDelPacifico_icon.png')
               },
               {
                 titulo: "BancoDelPichincha",
-                src: require('./../../assets/Clientes/Empresas/BancoDelPichincha-icon.png')
+                src: require('./../../assets/Clientes/BancoDelPichincha_icon.png')
               },
               {
                 titulo: "BancoGuayaquil",
-                src: require('./../../assets/Clientes/Empresas/BancoBolivariano-icon.png')
+                src: require('./../../assets/Clientes/BancoBolivariano_icon.png')
               },
               {
                 titulo: "Bankard",
-                src: require('./../../assets/Clientes/Empresas/Bankard-icon.jpg')
+                src: require('./../../assets/Clientes/Bankard_icon.jpg')
               },
               {
                 titulo: "Cne",
-                src: require('./../../assets/Clientes/Empresas/Cne-icon.png')
+                src: require('./../../assets/Clientes/Cne_icon.png')
               },
               {
                 titulo: "Cnt",
-                src: require('./../../assets/Clientes/Empresas/Cnt-icon.png')
+                src: require('./../../assets/Clientes/Cnt_icon.png')
               },
               {
                 titulo: "Ecuavisa",

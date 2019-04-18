@@ -13,7 +13,7 @@ export default {
     return {
       items: {
         titulo: "NOSOTROS",
-        fondo: require('./../../assets/Nosotros/MiViSer.jpg'),
+        fondo: require('./../../assets/Nosotros/MiViSer.png'),
         data: [{
             titulo: "MISION",
             text: "Convertirnos en la mejor alternativa para el envío de comerciales de TV y servicios digitales anexos para nuestros clientes, siguiendo estándares nacionales e internacionales de calidad, eficiencia y utilizando la tecnología mas moderna, con una constante actualización.",

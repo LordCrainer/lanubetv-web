@@ -12,6 +12,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+nav nav > div{
+  padding: 0;
+}
 </style>
 
 <template>
@@ -24,13 +27,11 @@
       hide-overlay
       disable-resize-watcher
       v-model="drawer_flag"
-      right
-    >
+      right    >
       <List
         :items="menus"
         @epath="nombreRuta($event);"
-        :clases="[border_class]"
-      >
+        :clases="[border_class]"      >
         <v-list-tile slot="listName" slot-scope="{ data }" class="title">
           <h2>{{ data.nombre }}</h2>
         </v-list-tile>
@@ -51,17 +52,20 @@
     <v-toolbar
       app
       fixed
-      :dark="offsetTop < 30 ? true : false"
       :color="color_toolbar"
       :height="height_toolbar"
     >
-      <router-link to="/">
-        <img
-          :src="src_logo"
-          alt="alt"
-          width="auto"
-          :height="`${height_toolbar}`"
-        />
+      <router-link to="/" style="height: 100%; width: 150px; background-color: white;">
+        <v-layout row wrap justify-center>
+          <img
+            :src="src_logo"
+            alt="alt"
+            aspect-ratio="1"
+            :height="`${height_toolbar}`"
+            style="background-color: white; "
+          />
+        </v-layout>
+
       </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-title id="toolbar-title" :class="color_text" class="title">
@@ -117,14 +121,14 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(255,255, 255, 1)",
+          color: "rgb(31, 55, 173)",
           height_toolbar: "60px",
-          color_text: "black--text"
+          color_text: "white--text"
         },
         secundario: {
-          color: "rgba(255,255, 255, 1)", //rgba(0, 30, 100, 0.85)
+          color: "rgba(61,121, 228, 1)", //rgba(0, 30, 100, 0.85)
           height_toolbar: "70px",
-          color_text: "black--text"
+          color_text: "white--text"
         }
       }
     };

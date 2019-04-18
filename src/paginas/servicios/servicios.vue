@@ -20,9 +20,24 @@ export default {
     return {
       data_servicios: {
         titulo: "Servicios",
-        servicios: [
+        servicios: [{
+        titulo: "DISTRIBUCION DE COMERCIALES",
+        color: 'white',
+        font_color: "black",
+        reverse: false,
+        img: [{
+          alt: "",
+          src: require('./../../assets/Servicios/producionAudivisual.jpg')
+        },
+        {
+          alt: "",
+          src: require('./../../assets/Servicios/3dy2d.jpg')
+        }],
+        descripcion: "",
+
+      },
           {
-          titulo: "Distribución de Comerciales",
+          titulo: "PRODUCCIÓN AUDIOVISUAL",
           color: 'rgb(124, 124, 124)',
           font_color: "white",
           reverse: true,
@@ -38,7 +53,7 @@ export default {
 
         },
         {
-          titulo: "3D y 2D",
+          titulo: "DISEÑO 3D y 2D",
           color: 'white',
           font_color: "black",
           reverse: false,
@@ -50,7 +65,7 @@ export default {
 
         },
         {
-          titulo: "Desarrollo web",
+          titulo: "DESARROLLO WEB",
           color: 'rgb(124, 124, 124)',
           font_color: "white",
           reverse: true,
