@@ -121,12 +121,12 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgb(31, 55, 173)",
+          color: "rgba(61,121, 228, 1)", //rgb(31, 55, 173)
           height_toolbar: "60px",
           color_text: "white--text"
         },
         secundario: {
-          color: "rgba(61,121, 228, 1)", //rgba(0, 30, 100, 0.85)
+          color: "rgb(31, 55, 173)", //rgba(61,121, 228, 1)
           height_toolbar: "70px",
           color_text: "white--text"
         }

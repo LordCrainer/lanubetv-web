@@ -1,6 +1,7 @@
 <style scoped>
 .TodosServicios {
   height: 100%;
+  min-height: 350px;
   width: 100%;
   background-size: cover;
 }
@@ -8,12 +9,12 @@
 
 <template>
 <section>
-  <v-card class="TodosServicios" v-for="item in items.servicios" :color="item.color" :key="item.titulo" style="height: 350px; ">
+  <v-card class="TodosServicios" v-for="item in items.servicios" :color="item.color" :key="item.titulo">
     <v-container grid-list-xs fluid>
       <v-layout row wrap justify-center align-center :reverse="item.reverse" fill-height >
         <v-flex xs12 sm6>
           <v-layout row wrap justify-center>
-            <carousel :items="item.img" style="box-shadow: 0px 0px; height: 300px; width: 350px;" :hideDelimiters="true">
+            <carousel :items="item.img" style="box-shadow: 0px 0px; min-height: 300px;  min-width: 350px; max-width: 450px"  :hideDelimiters="true">
             </carousel>
           </v-layout>
         </v-flex>

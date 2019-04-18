@@ -49,7 +49,7 @@ export default new Router({
       },
       meta: {
         titulo: "Servicios",
-        descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar los siguientes servicios.",
+        descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar otros servicios.",
         src: require('./assets/Hero/hero_servicios.png')
 
       }

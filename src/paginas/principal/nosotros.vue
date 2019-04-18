@@ -2,7 +2,7 @@
 .Nosotros {
   height: 100%;
   width: 100%;
-  min-height: 500px;
+  min-height: 100vmin;
   background-size: cover;
   background-attachment:fixed;
 }

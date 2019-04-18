@@ -33,7 +33,7 @@ export default {
           alt: "",
           src: require('./../../assets/Servicios/3dy2d.jpg')
         }],
-        descripcion: "",
+        descripcion: "Brindamos ",
 
       },
           {
@@ -43,11 +43,19 @@ export default {
           reverse: true,
           img: [{
             alt: "",
-            src: require('./../../assets/Servicios/producionAudivisual.jpg')
+            src: require('./../../assets/Servicios/DC_subir.png')
           },
           {
             alt: "",
-            src: require('./../../assets/Servicios/3dy2d.jpg')
+            src: require('./../../assets/Servicios/DC_enviar.png')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/DC_preview.png')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/DC_descargar.png')
           }],
           descripcion: "Creamos contenido con la mejor experiencia y espacio para realizar",
 
