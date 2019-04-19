@@ -32,13 +32,13 @@ export default {
   height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: bottom left;
+  background-position: bottom ;
 }
 .imgen{
   height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: bottom left;
+  background-position: bottom ;
 }
 /*:style="`background-image: url(${items.src}); background-size: cover; `"*/
 </style>

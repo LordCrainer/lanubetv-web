@@ -34,11 +34,19 @@
       <v-container grid-list-xs>
         <v-layout row wrap justify-center>
           <v-flex xs6 sm6 md3 v-for="data in items.datos" :key="data.icon">
-            <v-btn icon color="transparent">
-              <v-icon>{{data.icon}}</v-icon>
-            </v-btn>
-            <v-card-text class="text-xs-center pa-0">
-              {{data.title}}
+            <v-card-text class="text-xs-right pa-0">
+              <v-layout row align-center justify-center>
+                <v-flex xs3>
+                  <v-btn icon color="transparent">
+                    <v-icon>{{data.icon}}</v-icon>
+                  </v-btn>
+                </v-flex>
+                <v-flex xs10>
+                  <v-card-text class="pa-0 text-xs-left">
+                    {{data.title}}
+                  </v-card-text>
+                </v-flex>
+              </v-layout>
             </v-card-text>
           </v-flex>
         </v-layout>

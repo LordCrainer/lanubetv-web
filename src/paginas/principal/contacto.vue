@@ -18,8 +18,13 @@
             <v-flex xs12 v-for="(dato,indice) in items.datos" :key="indice" class="py-2">
               <div data-aos="fade-down">
                 <v-layout wrap row align-center justify-center>
-                  <v-btn fab dark color="white">
-                    <img :src="dato.src" alt="" class="pa-1">
+                  <v-btn fab dark large color="white">
+                    <v-avatar
+                      size="60"
+                      tile
+                    >
+                      <img :src="dato.src" alt="alt">
+                    </v-avatar>
                   </v-btn>
 
                   <v-flex xs12 sm9>
