@@ -1,6 +1,6 @@
 <template>
   <v-carousel height="100%" :hide-delimiters="hideDelimiters">
-    <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src"  style="height:100%;">
+    <v-carousel-item v-for="(item, i) in items" :key="i+item.src" :src="item.src"  style="height:100%;">
       <slot name="contenido" :subItem="item"> </slot>
     </v-carousel-item>
   </v-carousel>

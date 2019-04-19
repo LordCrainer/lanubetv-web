@@ -1,111 +1,3 @@
-<template>
-<v-app class="ma-0 pa-0">
-  <div>
-
-    <Toolbar :menus="menu_principal" app></Toolbar>
-    <main>
-      <Hero :items="hero_layout"></Hero>
-      <router-view ></router-view>
-    </main>
-
-    <FooterW app :items="footerPath"></FooterW>
-  </div>
-</v-app>
-</template>
-
-<script>
-import Toolbar from "./layout/toolbar.vue";
-import FooterW from "./layout/footer.vue";
-import Hero from "./layout/hero.vue";
-export default {
-  name: "App",
-  components: {
-    Toolbar,
-    FooterW,
-    Hero
-  },
-  data() {
-    return {
-      rutaActual: "",
-      menu_principal: [{
-          ruta: "/",
-          nombre: "Incio"
-        },
-        {
-          ruta: "/nosotros",
-          nombre: "Nosotros"
-        },
-        {
-          ruta: "/servicios",
-          nombre: "Servicios"
-        },
-        {
-          ruta: "/contacto",
-          nombre: "Contacto"
-        },
-        {
-          ruta: "/canalestv",
-          nombre: "Canales TV"
-        }
-      ],
-      footerPath: [{
-        titulo: "Inicio",
-        rutas: [{
-            nombre: "Nosotros",
-            ruta: "/nosotros"
-          },
-          {
-            nombre: "Servicios",
-            ruta: "/servicios"
-          },
-          {
-            nombre: "Contacto",
-            ruta: "/contacto"
-          },
-          {
-            nombre: "Canales TV",
-            ruta: "/canalestv"
-          }
-        ]
-      }, {
-        titulo: "Nosotros",
-        rutas: [{
-            nombre: "Mision",
-            ruta: "/nosotros"
-          },
-          {
-            nombre: "Vision",
-            ruta: "/nosotros"
-          },
-          {
-            nombre: "Nicho",
-            ruta: "/nosotros"
-          }
-        ]
-      }, {
-        titulo: "CanalesTV",
-        rutas: [{
-            nombre: "Nacionales",
-            ruta: "/canalestv"
-          },
-          {
-            nombre: "Internacionales",
-            ruta: "/canalestv"
-          }
-        ]
-      }
-    ],
-      hero_layout: {
-        ruta: '/',
-        src: require('./assets/Hero/Fondo_Hero.jpg'),
-        text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
-
-      }
-    };
-  }
-};
-</script>
-
 <style>
 .white--background {
   background-color: white;
@@ -128,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 /*section {
   background: linear-gradient(
     135deg,
@@ -137,6 +30,7 @@ body {
     rgb(16, 60, 145) 80%
   );
 }*/
+
 .headline,
 .display-1,
 .display-2 {
@@ -156,3 +50,113 @@ body {
   background-size: cover;
 }
 </style>
+
+<template>
+<v-app class="ma-0 pa-0">
+  <div>
+
+    <Toolbar :menus="menu_principal" app></Toolbar>
+    <main>
+      <Hero :items="hero_layout"></Hero>
+      <router-view></router-view>
+    </main>
+
+    <FooterW app :items="footerPath"></FooterW>
+  </div>
+</v-app>
+</template>
+
+<script>
+import Toolbar from "./layout/toolbar.vue";
+import FooterW from "./layout/footer.vue";
+import Hero from "./layout/hero.vue";
+export default {
+  name: "App",
+  components: {
+    Toolbar,
+    FooterW,
+    Hero
+  },
+  data() {
+    return {
+      rutaActual: "",
+      menu_principal: [{
+        ruta: "/",
+        nombre: "Incio"
+      }, {
+        ruta: "/nosotros",
+        nombre: "Nosotros"
+      }, {
+        ruta: "/servicios",
+        nombre: "Servicios"
+      }, {
+        ruta: "/contacto",
+        nombre: "Contacto"
+      }, {
+        ruta: "/canalestv",
+        nombre: "Canales TV"
+      }],
+      footerPath: {rutas: [{
+        titulo: "Inicio",
+        rutas: [{
+          nombre: "Nosotros",
+          ruta: "/nosotros"
+        }, {
+          nombre: "Servicios",
+          ruta: "/servicios"
+        }, {
+          nombre: "Contacto",
+          ruta: "/contacto"
+        }, {
+          nombre: "Canales TV",
+          ruta: "/canalestv"
+        }]
+      }, {
+        titulo: "Nosotros",
+        rutas: [{
+          nombre: "Mision",
+          ruta: "/nosotros"
+        }, {
+          nombre: "Vision",
+          ruta: "/nosotros"
+        }, {
+          nombre: "Servicio",
+          ruta: "/nosotros"
+        }]
+      }, {
+        titulo: "CanalesTV",
+        rutas: [{
+          nombre: "Nacionales",
+          ruta: "/canalestv"
+        }, {
+          nombre: "Internacionales",
+          ruta: "/canalestv"
+        }]
+      }], datos: [
+        {
+          icon: "phone",
+          title: "593-4-2832083 ext. 102 "
+        },
+        {
+          icon: "smartphone",
+          title: "+593 99 157 8671"
+        },
+        {
+          icon: "location_on",
+          title: "Noguchi 633 y Huancavilca Edif. Ecobay "
+        },
+        {
+          icon: "mail_outline",
+          title: "trafico@lanubetv.net"
+        }
+      ]},
+      hero_layout: {
+        ruta: '/',
+        src: require('./assets/Hero/Fondo_Hero.jpg'),
+        text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+
+      }
+    };
+  }
+};
+</script>

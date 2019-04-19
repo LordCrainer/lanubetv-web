@@ -1,7 +1,7 @@
 <style scoped>
 .contacto_form {
   height: 100%;
-  /*min-height: 100vmin;*/
+  min-height: 90vmin;
   width: 100%;
   background-size: cover;
   background-position: bottom right;
@@ -17,7 +17,7 @@
   <v-img :style="`background-image: url(${items.fondo});`" class="contacto_form">
       <v-layout row wrap justify-center align-center fill-height>
         <v-flex xs12>
-          <v-card-text class="text-xs-center display-2 font-weight-black pa-4 white--text">
+          <v-card-text class="text-xs-center display-2 font-weight-black py-0 pt-4 white--text">
             {{items.titulo}}
           </v-card-text>
         </v-flex>

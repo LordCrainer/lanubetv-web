@@ -1,9 +1,11 @@
 <style scoped>
 .MiViSer {
   height: 100%;
+  min-height: 100vmin;
   width: 100%;
   background-size: cover;
   background-position: bottom left;
+  background-color: white;
 }
 </style>
 
@@ -13,7 +15,7 @@
     <v-container grid-list-xs fill-height>
       <v-layout row wrap justify-center align-start>
         <v-flex xs12>
-          <v-card-text class="text-xs-center display-2 font-weight-black pa-4">
+          <v-card-text class="text-xs-center display-2 font-weight-black pa-0 pt-4" >
             {{items.titulo}}
           </v-card-text>
         </v-flex>
