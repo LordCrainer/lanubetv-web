@@ -24,19 +24,18 @@
   width: 125px;
   background-color: white;
 }
-.toolbar_imagen::before{
-  background-color: red;
-  border-left: 20px solid red;
-}
+
 </style>
 
 <template>
 <nav v-scroll="onScroll">
 
   <v-navigation-drawer id="list" app temporary hide-overlay disable-resize-watcher v-model="drawer_flag" right>
-    <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]">
-      <v-list-tile slot="listName" slot-scope="{ data }" class="title">
-        <h2>{{ data.nombre }}</h2>
+    <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]" >
+      <v-list-tile slot="listName" slot-scope="{ data }" class="title" >
+          <v-card-text class="font-weight-black subheading " >
+          {{ data.nombre }}
+          </v-card-text>
       </v-list-tile>
     </List>
     <v-btn fixed bottom right fab dark color="blue" @click.stop="drawer_flag = !drawer_flag;">
@@ -47,7 +46,7 @@
   <v-toolbar fixed :color="color_toolbar" :height="height_toolbar" style="">
     <router-link to="/" style="" class="toolbar_imagen">
       <v-layout row wrap justify-center>
-        <img :src="src_logo" alt="alt" aspect-ratio="1" :height="`${height_toolbar}`" style="background-color: white; " />
+        <img :src="src_logo" alt="alt" aspect-ratio="1" :height="`${height_toolbar}`" />
       </v-layout>
     </router-link>
     <v-spacer></v-spacer>

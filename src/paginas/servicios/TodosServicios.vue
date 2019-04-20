@@ -1,17 +1,17 @@
 <style scoped>
 .TodosServicios {
   height: 100%;
-  min-height: 375px;
+  min-height: 400px;
   width: 100%;
   background-size: cover;
 }
 </style>
 
 <template>
-<section>
-  <v-card class="TodosServicios" v-for="item in items.servicios" :color="item.color" :key="item.titulo">
-    <v-container grid-list-xs fluid>
-      <v-layout row wrap justify-center align-center :reverse="item.reverse" fill-height >
+<section class="TodosServicios">
+  <v-card  v-for="item in items.servicios" :color="item.color" :key="item.titulo">
+    <v-container grid-list-xs fluid fill-height>
+      <v-layout row wrap justify-center align-center :reverse="item.reverse" >
         <v-flex xs12 sm12 md6>
           <v-layout row wrap justify-center >
             <windows :items="item.img"></windows>
