@@ -29,8 +29,9 @@ export default {
 </script>
 <style scoped>
 .Hero {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  min-height: 100vmin;
   background-size: cover;
   background-position: bottom ;
 }

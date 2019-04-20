@@ -2,9 +2,11 @@
 #list {
   background-color: rgba(255, 255, 255, 0.99);
 }
+
 .v-list {
   background-color: rgba(255, 255, 255, 0);
 }
+
 #toolbar-title,
 #v-list__tile {
   font-family: "Khmer", cursive;
@@ -12,89 +14,57 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-nav nav > div{
-  padding: 0;
+
+
+.toolbar_imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 125px;
+  background-color: white;
+}
+.toolbar_imagen::before{
+  background-color: red;
+  border-left: 20px solid red;
 }
 </style>
 
 <template>
-  <nav v-scroll="onScroll" >
+<nav v-scroll="onScroll">
 
-    <v-navigation-drawer
-      id="list"
-      app
-      temporary
-      hide-overlay
-      disable-resize-watcher
-      v-model="drawer_flag"
-      right    >
-      <List
-        :items="menus"
-        @epath="nombreRuta($event);"
-        :clases="[border_class]"      >
-        <v-list-tile slot="listName" slot-scope="{ data }" class="title">
-          <h2>{{ data.nombre }}</h2>
-        </v-list-tile>
-      </List>
-      <v-btn
-        fixed
-        bottom
-        right
-        fab
-        dark
-        color="blue"
-        @click.stop="drawer_flag = !drawer_flag;"
-      >
-        <v-icon>exit_to_app</v-icon>
+  <v-navigation-drawer id="list" app temporary hide-overlay disable-resize-watcher v-model="drawer_flag" right>
+    <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]">
+      <v-list-tile slot="listName" slot-scope="{ data }" class="title">
+        <h2>{{ data.nombre }}</h2>
+      </v-list-tile>
+    </List>
+    <v-btn fixed bottom right fab dark color="blue" @click.stop="drawer_flag = !drawer_flag;">
+      <v-icon>exit_to_app</v-icon>
+    </v-btn>
+  </v-navigation-drawer>
+  <!-- TOOLBAR -->
+  <v-toolbar fixed :color="color_toolbar" :height="height_toolbar" style="">
+    <router-link to="/" style="" class="toolbar_imagen">
+      <v-layout row wrap justify-center>
+        <img :src="src_logo" alt="alt" aspect-ratio="1" :height="`${height_toolbar}`" style="background-color: white; " />
+      </v-layout>
+    </router-link>
+    <v-spacer></v-spacer>
+    <v-toolbar-title id="toolbar-title" :class="color_text" class="title">
+      <h1>{{ titulo }}</h1>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn id="botonBar" flat v-for="menu in menus" :key="menu.nombre" :to="menu.ruta" :color="color_text.split('--')[0]">
+        {{ menu.nombre }}
       </v-btn>
-    </v-navigation-drawer>
-    <!-- TOOLBAR -->
-    <v-toolbar
-      app
-      fixed
-      :color="color_toolbar"
-      :height="height_toolbar"
-    >
-      <router-link to="/" style="height: 100%; width: 150px; background-color: white;">
-        <v-layout row wrap justify-center>
-          <img
-            :src="src_logo"
-            alt="alt"
-            aspect-ratio="1"
-            :height="`${height_toolbar}`"
-            style="background-color: white; "
-          />
-        </v-layout>
-
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-toolbar-title id="toolbar-title" :class="color_text" class="title">
-        <h1>{{ titulo }}</h1>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn
-          id="botonBar"
-          flat
-          v-for="menu in menus"
-          :key="menu.nombre"
-          :to="menu.ruta"
-          :color="color_text.split('--')[0]"
-        >
-          {{ menu.nombre }}
-        </v-btn>
-      </v-toolbar-items>
-      <v-btn
-        flat
-        icon
-        :color="color_text.split('--')[0]"
-        class="hidden-md-and-up"
-        @click.stop="drawer_flag = !drawer_flag;"
-      >
-        <v-icon large>more_vert</v-icon>
-      </v-btn>
-    </v-toolbar>
-  </nav>
+    </v-toolbar-items>
+    <v-btn flat icon :color="color_text.split('--')[0]" class="hidden-md-and-up" @click.stop="drawer_flag = !drawer_flag;">
+      <v-icon large>more_vert</v-icon>
+    </v-btn>
+  </v-toolbar>
+</nav>
 </template>
 
 <script>
@@ -112,9 +82,9 @@ export default {
     return {
       titulo: "LA NUBE TV",
       border_class: "border_hover",
-      src_logo:
-      require('./../assets/logo.png'),
+      src_logo: require('./../assets/logo.png'),
       offsetTop: 0,
+
       color_text: "white--text",
       height_toolbar: "",
       color_toolbar: "",
@@ -122,7 +92,7 @@ export default {
       mod_scroll: {
         inicio: {
           color: "rgba(61,121, 228, 1)", //rgb(31, 55, 173)
-          height_toolbar: "60px",
+          height_toolbar: "64px",
           color_text: "white--text"
         },
         secundario: {
