@@ -23,7 +23,7 @@
           <v-container grid-list-xl>
             <v-layout row wrap justify-center>
               <v-flex xs12 sm6 md4 d-flex shrink v-for="item in items.data" :key="item.titulo">
-                <v-card color="rgba(255,255,255,0.8)" flat style="max-width: 350px;" class="text-xs-center mx-auto ">
+                <v-card color="white" flat style="max-width: 350px;" class="text-xs-center mx-auto ">
                   <v-card-text class="text-xs-center">
                     <v-avatar size="60%" tile>
                       <img :src="item.src" alt="alt">

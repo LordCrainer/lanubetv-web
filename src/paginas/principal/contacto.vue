@@ -4,12 +4,11 @@
     <v-layout wrap row fill-height>
       <v-flex sm6 class="py-3">
         <v-layout fill-height justify-center align-center>
-<div data-aos="zoom-in">
-  <v-avatar size="150" class="elevation-5" color="rgba(255, 255, 255, 0.5)" @click="" ripple style="border:7px solid red;">
-    <img :src="items.icono.src" alt="alt" class="pa-2">
-  </v-avatar>
-</div>
-
+          <div data-aos="zoom-in">
+            <v-avatar size="150" class="elevation-5" color="rgba(255, 255, 255, 0.5)" @click="" ripple style="border:7px solid red;">
+              <img :src="items.icono.src" alt="alt" class="pa-2">
+            </v-avatar>
+          </div>
         </v-layout>
       </v-flex>
       <v-flex sm6 style="background-color: rgba(48,48,48,0.75); color: white;" class="py-3">
@@ -19,14 +18,10 @@
               <div data-aos="fade-down">
                 <v-layout wrap row align-center justify-center>
                   <v-btn fab dark large color="white">
-                    <v-avatar
-                      size="60"
-                      tile
-                    >
+                    <v-avatar size="60" tile>
                       <img :src="dato.src" alt="alt">
                     </v-avatar>
                   </v-btn>
-
                   <v-flex xs12 sm9>
                     <h2 class="text-xs-center text-sm-left">{{dato.descripcion}}</h2>
                   </v-flex>
@@ -48,7 +43,7 @@ export default {
 <style scoped>
 .mapa_ubicacion {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

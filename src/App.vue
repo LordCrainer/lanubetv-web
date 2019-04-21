@@ -97,8 +97,11 @@ export default {
         nombre: "Canales TV"
       }],
       footerPath: {rutas: [{
-        titulo: "Inicio",
+        titulo: "Principal",
         rutas: [{
+          nombre: "Inicio",
+          ruta: "/"
+        },{
           nombre: "Nosotros",
           ruta: "/nosotros"
         }, {

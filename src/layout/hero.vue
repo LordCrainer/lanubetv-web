@@ -5,8 +5,8 @@
     <v-container fill-height grid-list-xl>
       <v-layout pt-4 justify-end align-center class="white--text">
         <v-flex xs12 sm8 md6>
-          <v-card hover color="rgba(255,255,255, 0.95)">
-            <v-card-text class="black--text font-weight-bold headline mt-3 pa-5 text-xs-justify text-sm-justify">
+          <v-card hover color="rgba(255,255,255, 1)">
+            <v-card-text class="black--text font-weight-bold mt-3 pa-5 text-xs-justify text-sm-justify" style="font-size: 3.5vh">
               {{$route.meta.descripcion}}
             </v-card-text>
           </v-card>
@@ -33,13 +33,13 @@ export default {
   width: 100%;
   min-height: 100vmin;
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom center;
 }
 .imgen{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom center;
 }
 /*:style="`background-image: url(${items.src}); background-size: cover; `"*/
 </style>

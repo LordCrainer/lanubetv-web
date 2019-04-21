@@ -44,7 +44,7 @@
         <v-layout row wrap justify-center align-center>
           <v-flex xs12 sm12 md10 class="">
             <v-layout row align-center>
-              <v-card-text class="headline white--text ma-0 pa-0 font-weight-black ">
+              <v-card-text class="headline white--text ma-0 pa-2 font-weight-black ">
                 Prestamos servicios digitales a través de nuestra plataforma web
               </v-card-text>
             </v-layout>

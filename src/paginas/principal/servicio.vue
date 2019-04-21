@@ -1,6 +1,6 @@
 <template>
   <section>
-    <parallax2 :items="items" minHeight="30">
+    <parallax2 :items="items" minHeight="50%">
       <v-layout slot="contenido" fill-height align-center justify-center wrap>
         <v-flex xs7 sm6 style="background-color: rgba(0,0,0,0.6); height: 100%;">
           <v-layout fill-height align-center justify-center>

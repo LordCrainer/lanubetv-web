@@ -1,8 +1,9 @@
 <style  scoped>
 .img_windows_items {
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 300px;
 }
 
 .prev_icon {
@@ -32,8 +33,8 @@
   <v-window v-model="onboarding" style="position: relative;">
     <v-window-item v-for="(item, indice) in items" :key="`windows-${item}-${indice}`" style="position: relative;">
       <v-card v-bind="cardOption">
-        <v-layout align-center justify-center fill-height @mouseover="stopCarousel" @mouseout="startCarousel">
-          <v-img height="100%" :style="`background-image: url(${item.src}); `" class="img_windows_items">
+        <v-layout align-center justify-center fill-height >
+          <v-img height="100%" width="100%" :style="`background-image: url(${item.src}); `" class="img_windows_items">
             <v-layout row wrap justify-center align-center fill-height>
               <v-card-text class="text-xs-center black--text">
                 {{item.descripcion}}
@@ -100,7 +101,7 @@ export default {
         return {
           color: 'transparent',
           height: "300",
-          width: "450",
+          width: "400",
           flat: true,
           dark: false
         }
@@ -136,12 +137,13 @@ export default {
     return {
       length: this.items.length || 0,
       onboarding: 0,
-      intervalo: 3000,
+      intervalo: 5000,
       timer: null
     }
   },
   mounted() {
-    this.startCarousel();
+    //@mouseover="stopCarousel" @mouseout="startCarousel" this.startCarousel();
+
   },
   methods: {
     startCarousel() {

@@ -9,18 +9,13 @@
 
 <template>
 <section class="TodosServicios">
-  <v-card  v-for="item in items.servicios" :color="item.color" :key="item.titulo">
+  <v-card  v-for="item in items.servicios" :color="item.color" :key="item.titulo" class="py-4">
     <v-container grid-list-xs fluid fill-height>
       <v-layout row wrap justify-center align-center :reverse="item.reverse" >
         <v-flex xs12 sm12 md6>
-          <v-layout row wrap justify-center >
-            <windows :items="item.img"></windows>
-          </v-layout>
-        </v-flex>
-        <v-flex xs12 sm12 md6>
           <v-container grid-list-xs>
             <v-layout row wrap justify-center align-start fill-height>
-              <v-flex xs12 style="max-width: 450px;" class="pb-5">
+              <v-flex xs12 style="max-width: 450px;" class="">
                 <v-card-text class="text-xs-center font-weight-black  display-1" :class="`${item.font_color}--text`">
                   {{item.titulo}}
                 </v-card-text>
@@ -31,6 +26,12 @@
             </v-layout>
           </v-container>
         </v-flex>
+        <v-flex xs12 sm12 md6 >
+          <v-layout row wrap justify-center >
+            <windows :items="item.img"></windows>
+          </v-layout>
+        </v-flex>
+
       </v-layout>
     </v-container>
 

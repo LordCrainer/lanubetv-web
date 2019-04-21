@@ -50,10 +50,10 @@
       </v-layout>
     </router-link>
     <v-spacer></v-spacer>
-    <v-toolbar-title id="toolbar-title" :class="color_text" class="title">
+    <v-toolbar-title id="toolbar-title" :class="color_text" class="title hidden-xs-only">
       <h1>{{ titulo }}</h1>
     </v-toolbar-title>
-    <v-spacer></v-spacer>
+<v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn id="botonBar" flat v-for="menu in menus" :key="menu.nombre" :to="menu.ruta" :color="color_text.split('--')[0]">
         {{ menu.nombre }}
@@ -90,12 +90,12 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgba(61,121, 228, 1)", //rgb(31, 55, 173)
+          color: "rgb(31, 55, 173)", //rgb(31, 55, 173)
           height_toolbar: "64px",
           color_text: "white--text"
         },
         secundario: {
-          color: "rgb(31, 55, 173)", //rgba(61,121, 228, 1)
+          color: "rgba(61,121, 228, 1)", //rgba(61,121, 228, 1)
           height_toolbar: "70px",
           color_text: "white--text"
         }
