@@ -12,7 +12,7 @@
           <v-layout row wrap justify-start>
             <v-flex xs12 sm10 md9>
               <v-card color="rgba(48,48, 48, 0.5)" class="pa-4">
-                <a :href="items.link" target="_blank"><v-img cover style="min-height: 400px; min-width: 400px; " :src="items.mapa.src" ></v-img> </router-link></a>
+                <a :href="items.link" target="_blank"><v-img cover style="min-height: 250px; min-width: 300px; width: 100%;" :src="items.mapa.src" ></v-img> </router-link></a>
 
 
               </v-card>
