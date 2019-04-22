@@ -101,7 +101,7 @@ export default {
         return {
           color: 'transparent',
           height: "300",
-          width: "400",
+          width: "350",
           flat: true,
           dark: false
         }

@@ -159,7 +159,7 @@ export default {
       ]},
       hero_layout: {
         ruta: '/',
-        src: require('./assets/Hero/Fondo_Hero.jpg'),
+        src: require('./assets/Hero/Fondo_Hero.png'),
         text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
 
       }

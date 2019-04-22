@@ -16,7 +16,7 @@
     </v-flex>
     <v-flex xs12>
       <v-layout row justify-center align-center fill-height>
-        <v-carousel style="box-shadow: 0px 0px;" interval="12000">
+        <v-carousel style="box-shadow: 0px 0px;" inverval="30000">
           <v-carousel-item v-for="canales in items.canales" :key="canales.titulo" :src="canales.src" reverse-transition="fade"
       transition="fade">
             <v-container grid-list-xl style="max-width: 800px;" fill-height class="pa-5">

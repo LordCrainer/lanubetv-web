@@ -1,9 +1,7 @@
 <style scoped>
 .TodosServicios {
   height: 100%;
-  min-height: 400px;
   width: 100%;
-  background-size: cover;
 }
 </style>
 
