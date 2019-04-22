@@ -16,10 +16,10 @@
           <v-container grid-list-xs>
             <v-layout row wrap justify-center align-start fill-height>
               <v-flex xs12 style="max-width: 450px;" class="">
-                <v-card-text class="text-xs-center font-weight-black  display-1" :class="`${item.font_color}--text`">
+                <v-card-text class="text-xs-center font-weight-black headline" :class="`${item.font_color}--text`">
                   {{item.titulo}}
                 </v-card-text>
-                <v-card-text class="text-xs-center font-weight-black subheading" :class="`${item.font_color}--text`">
+                <v-card-text class="text-xs-justify subheading" :class="`${item.font_color}--text`">
                   {{item.descripcion}}
                 </v-card-text>
               </v-flex>

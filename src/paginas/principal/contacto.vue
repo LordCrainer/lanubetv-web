@@ -15,7 +15,7 @@
         <v-container grid-list-xs,sm,md,lg,xl fill-height>
           <v-layout wrap row justify-center align-center>
             <v-flex xs12 v-for="(dato,indice) in items.datos" :key="indice" class="py-2">
-              <div data-aos="fade-down">
+              <div data-aos="fade-down" data-aos-offset="0">
                 <v-layout wrap row align-center justify-center>
                   <v-btn fab dark large color="white" :href="dato.dato" target="_blank">
                     <v-avatar size="60" tile>

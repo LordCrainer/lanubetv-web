@@ -41,7 +41,7 @@ export default {
           alt: "",
           src: require('./../../assets/Servicios/DC_descargar.png')
         }],
-        descripcion: "Brindamos ",
+        descripcion: "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. ",
 
       },
           {
@@ -55,9 +55,9 @@ export default {
           },
           {
             alt: "",
-            src: require('./../../assets/Servicios/3dy2d.jpg')
+            src: require('./../../assets/Servicios/producionAudivisual2.jpg')
           }],
-          descripcion: "Creamos contenido con la mejor experiencia y espacio para realizar",
+          descripcion: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemmos una gran experencia adquiridad durante más de 5 años, para brindar una excelente calidad."
 
         },
         {
@@ -67,9 +67,17 @@ export default {
           reverse: false,
           img: [{
             alt: "",
-            src: require('./../../assets/Servicios/3dy2d.jpg')
+            src: require('./../../assets/logo.png')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/Modelado3D.jpg')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/Modelado3D2.jpg')
           }],
-          descripcion: "",
+          descripcion: "Realizamos todo tipo de trabajos gráficos, vectoriales, modelados y renderizados en 2D y 3D. Disponemos de los programas, equipos y experencia necesaria para entregarles un excelente trabajo.",
 
         },
         {
@@ -80,8 +88,20 @@ export default {
           img: [{
             alt: "",
             src: require('./../../assets/Servicios/desydisweb.jpg')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/desydisweb2.jpg')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/desydisweb3.jpg')
+          },
+          {
+            alt: "",
+            src: require('./../../assets/Servicios/desydisweb4.jpg')
           }],
-          descripcion: "",
+          descripcion: "Desarrollamos y diseñamos tanto páginas como aplicaciones web, con el fin de darles la solución más conveniente que se ajuste a sus necesidades. ",
 
         }]
       }

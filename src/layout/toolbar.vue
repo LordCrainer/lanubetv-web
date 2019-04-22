@@ -43,7 +43,7 @@
     </v-btn>
   </v-navigation-drawer>
   <!-- TOOLBAR -->
-  <v-toolbar fixed :color="color_toolbar" :height="height_toolbar" style="">
+  <v-toolbar fixed :color="color_toolbar" :height="height_toolbar" flat>
     <router-link to="/" style="" class="toolbar_imagen">
       <v-layout row wrap justify-center>
         <img :src="src_logo" alt="alt" aspect-ratio="1" :height="`${height_toolbar}`" />

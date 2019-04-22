@@ -4,9 +4,10 @@
 <div>
   <nosotros :items="nosotros_init"></nosotros>
   <ventajas :items="ventajas_init"></ventajas>
-  <servicio :items="servicio_init"></servicio>
-  <clientes :items="clientes_canales"></clientes>
+
   <contacto :items="contacto_init"></contacto>
+  <clientes :items="clientes_canales"></clientes>
+  <servicio :items="servicio_init"></servicio>
 
 </div>
 </template>
