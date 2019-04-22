@@ -16,7 +16,7 @@
     </v-flex>
     <v-flex xs12>
       <v-layout row justify-center align-center fill-height>
-        <v-carousel style="box-shadow: 0px 0px;">
+        <v-carousel style="box-shadow: 0px 0px;" interval="12000">
           <v-carousel-item v-for="canales in items.canales" :key="canales.titulo" :src="canales.src" reverse-transition="fade"
       transition="fade">
             <v-container grid-list-xl style="max-width: 800px;" fill-height class="pa-5">
@@ -24,7 +24,16 @@
                 <v-flex v-for="(canal,index) in canales.clientes" :key="canal.titulo" xs4 sm4 md3 lg3>
                   <v-hover>
                     <v-card height="100%" width="100%" hover style="min-width: 70px; min-height: 70px;  text-align: center; max-width: 100px; max-height: 100px; border-radius: 50%; " class="ma-auto pa-auto black--text" color="transparent">
-                      <v-img contain :src="canal.src" alt="canales" aspect-ratio="1" class="pa-1">
+                      <v-img contain :src="canal.src" alt="canales" aspect-ratio="1" class="pa-1"><template v-slot:placeholder>
+                    <v-layout
+                      fill-height
+                      align-center
+                      justify-center
+                      ma-0
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                  </template>
                       </v-img>
                     </v-card>
                   </v-hover>

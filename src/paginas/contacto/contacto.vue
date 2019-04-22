@@ -73,7 +73,8 @@ export default {
         mapa: {
           titulo: 'LANUBETV',
           src: require('./../../assets/Contacto/mapa_lanubetv.png')
-        }
+        },
+        link: "https://goo.gl/maps/YrRDinzK8VWWC2V17"
       },
       contactoFormData: {
         titulo: "CONTACTANOS",
@@ -83,16 +84,19 @@ export default {
             src: require('./../../assets/Inicio/phone-08.png')
           },
           {
-            descripcion: "593-96759-0148",
-            src: require('./../../assets/Inicio/whatsapp_icon-08.png')
+            descripcion: "+593-99157-8671",
+            src: require('./../../assets/Inicio/whatsapp_icon-08.png'),
+            dato: "https://api.whatsapp.com/send?phone=+593991578671"
           },
           {
             descripcion: "Noguchi 633 y Huancavilca Edif. Ecobay",
-            src: require('./../../assets/Inicio/localizacion-08.png')
+            src: require('./../../assets/Inicio/localizacion-08.png'),
+              dato: "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
           },
           {
             descripcion: "trafico@lanubetv.net",
-            src: require('./../../assets/Inicio/email_icon-08.png')
+            src: require('./../../assets/Inicio/email_icon-08.png'),
+              dato: "mailto:trafico@lanubetv.net?subject=Información"
           }
         ]
 

@@ -37,7 +37,7 @@
             <v-card-text class="text-xs-right pa-0">
               <v-layout row align-center justify-center>
                 <v-flex xs3>
-                  <v-btn icon color="transparent">
+                  <v-btn icon color="transparent" target="_blank" :href="data.dato">
                     <v-icon>{{data.icon}}</v-icon>
                   </v-btn>
                 </v-flex>

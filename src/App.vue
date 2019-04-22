@@ -142,15 +142,19 @@ export default {
         },
         {
           icon: "smartphone",
-          title: "+593 99 157 8671"
+          title: "+593 99 157 8671",
+          icon2: "save",
+          dato: "https://api.whatsapp.com/send?phone=+593991578671"
         },
         {
           icon: "location_on",
-          title: "Noguchi 633 y Huancavilca Edif. Ecobay "
+          title: "Noguchi 633 y Huancavilca Edif. Ecobay ",
+          dato: "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
         },
         {
           icon: "mail_outline",
-          title: "trafico@lanubetv.net"
+          title: "trafico@lanubetv.net",
+          dato: "mailto:trafico@lanubetv.net?subject=Información"
         }
       ]},
       hero_layout: {

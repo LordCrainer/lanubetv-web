@@ -33,7 +33,7 @@
   <v-navigation-drawer id="list" app temporary hide-overlay disable-resize-watcher v-model="drawer_flag" right>
     <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]" >
       <v-list-tile slot="listName" slot-scope="{ data }" class="title" >
-          <v-card-text class="font-weight-black subheading " >
+          <v-card-text class="font-weight-black headline " >
           {{ data.nombre }}
           </v-card-text>
       </v-list-tile>
