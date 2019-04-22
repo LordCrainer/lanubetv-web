@@ -6,10 +6,10 @@
 
 <template>
 <v-footer dark height="auto">
-  <v-card flat tile class="grey darken-4 white--text text-xs-center" width="100%">
+  <v-card flat tile class="grey darken-4 white--text text-xs-center" width="100%" >
     <v-card color="grey darken-3">
-      <v-btn v-for="icon in icons" :key="icon" class="mx-3 pa-2 white--text" icon>
-        <v-icon size="24px">{{ icon }}</v-icon>
+      <v-btn v-for="icon in icons" :key="icon" class="mx-3 pa-2 white--text" icon >
+        <v-icon size="24px" >{{ icon }}</v-icon>
       </v-btn>
     </v-card>
 
@@ -40,8 +40,8 @@
                 <v-card-text class="text-xs-right pa-0">
                   <v-layout row align-center justify-center>
                     <v-flex xs3>
-                      <v-btn icon color="transparent" target="_blank" :href="data.dato">
-                        <v-icon>{{data.icon}}</v-icon>
+                      <v-btn icon color="rgba(96, 96, 96, 0.19)" dark target="_blank" :href="data.dato" >
+                        <v-icon >{{data.icon}}</v-icon>
                       </v-btn>
                     </v-flex>
                     <v-flex xs10>
