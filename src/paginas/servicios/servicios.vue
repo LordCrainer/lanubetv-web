@@ -57,7 +57,7 @@ export default {
             alt: "",
             src: require('./../../assets/Servicios/producionAudivisual2.jpg')
           }],
-          descripcion: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemmos una gran experencia adquiridad durante más de 5 años, para brindar una excelente calidad."
+          descripcion: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad."
 
         },
         {
