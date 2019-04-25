@@ -90,9 +90,9 @@ export default {
       drawer_flag: false,
       mod_scroll: {
         inicio: {
-          color: "rgb(31, 55, 173)", //rgb(31, 55, 173)
+          color: "transparent", //rgb(31, 55, 173)
           height_toolbar: "64px",
-          color_text: "white--text"
+          color_text: "black--text"
         },
         secundario: {
           color: "rgba(61,121, 228, 1)", //rgba(61,121, 228, 1)

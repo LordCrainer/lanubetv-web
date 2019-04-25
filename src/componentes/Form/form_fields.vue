@@ -44,16 +44,22 @@
         v-model="copyValue"
         :items="field.values"
         :label="field.label"
-        :required="field.required"
         :readonly="field.readonly"
-        :color="field.color"
-        :dark="field.dark"
+        :required="field.required"
         :disabled="field.disabled"
-        single-line
-        bottom
+        :rules="Rules[field.rules]"
+        v-bind="field.opciones"
         @input="onInput"
       >
       </v-select>
+    </div>
+    <div v-else-if="field.type == 'radiogroup'">
+      <formField
+        :field="field"
+        :value="model[field.model]"
+        @input="updateForm(model, field.model, $event);"
+      >
+      </formField>
     </div>
     <div v-else-if="field.type == 'autocomplete'">
       <v-autocomplete
@@ -74,11 +80,14 @@
 
     <div v-else-if="field.type == 'checkbox'">
       <v-checkbox
+
         v-model="copyValue"
         :label="field.label"
         :required="field.required"
         :disabled="field.disabled"
+        :rules="Rules.required"
         @input="onInput"
+        :dark="field.dark"
       ></v-checkbox>
     </div>
 
@@ -158,6 +167,7 @@ export default {
       localValue: "",
       copyValue: this.value,
       Rules: {
+        requiredMultiple : [v => (v && v.length>0) || this.field.label + " es requerido"],
         required: [v => !!v || this.field.label + " es requerido"],
         nameRules: [
           v => !!v || this.field.label + " es requerido",

@@ -6,7 +6,7 @@
       <v-layout pt-4 justify-end align-center class="white--text">
         <v-flex xs12 sm8 md6>
           <v-card hover color="rgba(255,255,255, 1)">
-            <v-card-text class="black--text font-weight-bold mt-3 pa-5 text-xs-justify text-sm-justify" style="font-size: 3.5vh">
+            <v-card-text class="black--text font-weight-bold mt-3 pa-5 text-xs-center text-sm-justify" style="font-size: 1.7em">
               {{$route.meta.descripcion}}
             </v-card-text>
           </v-card>
@@ -29,11 +29,12 @@ export default {
 </script>
 <style scoped>
 .Hero {
-  height: 100%;
+  height: 100vmin;
   width: 100%;
-  min-height: 100vmin;
+  min-height: 600px;
   background-size: cover;
   background-position: bottom center;
+  background-color: white;
 }
 .imgen{
   height: 100%;

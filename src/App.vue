@@ -1,4 +1,7 @@
 <style>
+[v-cloak]>* {
+    display: none;
+  }
 .white--background {
   background-color: white;
 }
@@ -82,7 +85,7 @@ export default {
       rutaActual: "",
       menu_principal: [{
         ruta: "/",
-        nombre: "Incio"
+        nombre: "Inicio"
       }, {
         ruta: "/nosotros",
         nombre: "Nosotros"

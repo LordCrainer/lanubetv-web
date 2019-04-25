@@ -169,10 +169,10 @@ export default {
           src: require('./../../assets/Inicio/contactanos.png')
         },
         datos: [{
-          descripcion: "593-4-2832083 ext. 102",
+          descripcion: "593 4 2832083 ext. 102",
           src: require('./../../assets/Inicio/phone-08.png')
         }, {
-          descripcion: "+593-99157-8671",
+          descripcion: "+593 99157 8671",
           src: require('./../../assets/Inicio/whatsapp_icon-08.png'),
           dato: "https://api.whatsapp.com/send?phone=+593991578671"
         }, {

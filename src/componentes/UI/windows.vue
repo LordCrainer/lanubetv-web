@@ -32,7 +32,7 @@
 
   <v-window v-model="onboarding" style="position: relative;">
     <v-window-item v-for="(item, indice) in items" :key="`windows-${item}-${indice}`" style="position: relative;">
-      <v-card v-bind="cardOption">
+      <v-card v-bind="cardOption" >
         <v-layout align-center justify-center fill-height >
           <v-img height="100%" width="100%" :style="`background-image: url(${item.src}); `" class="img_windows_items">
             <v-layout row wrap justify-center align-center fill-height>
@@ -101,7 +101,7 @@ export default {
         return {
           color: 'transparent',
           height: "300",
-          width: "350",
+          width: "400",
           flat: true,
           dark: false
         }
