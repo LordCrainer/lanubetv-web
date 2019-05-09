@@ -61,7 +61,7 @@ body {
     <Toolbar :menus="menu_principal" app></Toolbar>
     <main>
       <Hero :items="hero_layout"></Hero>
-      <router-view></router-view>
+      <router-view id="contenido"></router-view>
     </main>
 
     <FooterW app :items="footerPath"></FooterW>
@@ -145,9 +145,9 @@ export default {
         },
         {
           icon: "smartphone",
-          title: "+593 99 157 8671",
+          title: "+593 99 127 5473",
           icon2: "save",
-          dato: "https://api.whatsapp.com/send?phone=+593991578671"
+          dato: "https://api.whatsapp.com/send?phone=+593991275473"
         },
         {
           icon: "location_on",

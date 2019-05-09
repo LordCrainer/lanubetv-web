@@ -10,7 +10,22 @@
               {{$route.meta.descripcion}}
             </v-card-text>
           </v-card>
+          <v-fab-transition>
+                <v-btn @click="$vuetify.goTo('#contenido', {duration: 1000,offset: 30} )"
+                  v-show="true"
+                  color="indigo"
+                  dark
+                  fixed
+                  bottom
+                  right
+                  fab
+
+                >
+                  <v-icon>arrow_drop_down</v-icon>
+                </v-btn>
+              </v-fab-transition>
         </v-flex>
+
       </v-layout>
     </v-container>
 
