@@ -34,7 +34,7 @@
     <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]" >
       <v-list-tile slot="listName" slot-scope="{ data }" class="title" >
           <v-card-text class="font-weight-black headline " >
-          {{ data.nombre }}
+          {{ data.titulo }}
           </v-card-text>
       </v-list-tile>
     </List>
@@ -55,8 +55,8 @@
     </v-toolbar-title>
 <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn id="botonBar" flat v-for="menu in menus" :key="menu.nombre" :to="menu.ruta" :color="color_text.split('--')[0]">
-        {{ menu.nombre }}
+      <v-btn id="botonBar" flat v-for="menu in menus" :key="menu.titulo" :to="menu.ruta" :href="menu.ruta_externa"  :color="color_text.split('--')[0]">
+        {{ menu.titulo }}
       </v-btn>
     </v-toolbar-items>
     <v-btn flat icon :color="color_text.split('--')[0]" class="hidden-md-and-up" @click.stop="drawer_flag = !drawer_flag;">
@@ -69,6 +69,7 @@
 <script>
 import Navbar from "./../componentes/UI/navbar.vue";
 import List from "./../componentes/UI/list.vue";
+import Tabs from "./../componentes/UI/tabs.vue";
 //import pdfvue from "./inicio/pdf.vue";
 //import PDF from "jspdf";
 export default {

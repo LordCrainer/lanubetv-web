@@ -1,7 +1,8 @@
 <style>
 [v-cloak]>* {
-    display: none;
-  }
+  display: none;
+}
+
 .white--background {
   background-color: white;
 }
@@ -58,13 +59,13 @@ body {
 <v-app class="ma-0 pa-0">
   <div>
 
-    <Toolbar :menus="menu_principal" app></Toolbar>
+    <Toolbar :menus="menu_principal.rutas" app></Toolbar>
     <main>
       <Hero :items="hero_layout"></Hero>
       <router-view id="contenido"></router-view>
     </main>
 
-    <FooterW app :items="footerPath"></FooterW>
+    <FooterW app :items="menu_principal"></FooterW>
   </div>
 </v-app>
 </template>
@@ -83,83 +84,94 @@ export default {
   data() {
     return {
       rutaActual: "",
-      menu_principal: [{
-        ruta: "/",
-        nombre: "Inicio"
-      }, {
-        ruta: "/nosotros",
-        nombre: "Nosotros"
-      }, {
-        ruta: "/servicios",
-        nombre: "Servicios"
-      }, {
-        ruta: "/contacto",
-        nombre: "Contacto"
-      }, {
-        ruta: "/canalestv",
-        nombre: "Canales TV"
-      }],
-      footerPath: {rutas: [{
-        titulo: "Principal",
+      menu_principal: {
         rutas: [{
-          nombre: "Inicio",
-          ruta: "/"
-        },{
-          nombre: "Nosotros",
-          ruta: "/nosotros"
-        }, {
-          nombre: "Servicios",
-          ruta: "/servicios"
-        }, {
-          nombre: "Contacto",
-          ruta: "/contacto"
-        }, {
-          nombre: "Canales TV",
-          ruta: "/canalestv"
-        }]
-      }, {
-        titulo: "Nosotros",
-        rutas: [{
-          nombre: "Mision",
-          ruta: "/nosotros"
-        }, {
-          nombre: "Vision",
-          ruta: "/nosotros"
-        }, {
-          nombre: "Servicio",
-          ruta: "/nosotros"
-        }]
-      }, {
-        titulo: "CanalesTV",
-        rutas: [{
-          nombre: "Nacionales",
-          ruta: "/canalestv"
-        }, {
-          nombre: "Internacionales",
-          ruta: "/canalestv"
-        }]
-      }], datos: [
-        {
-          icon: "phone",
-          title: "593-4-2832083 ext. 102 "
-        },
-        {
-          icon: "smartphone",
-          title: "+593 99 127 5473",
-          icon2: "save",
-          dato: "https://api.whatsapp.com/send?phone=+593991275473"
-        },
-        {
-          icon: "location_on",
-          title: "Noguchi 633 y Huancavilca Edif. Ecobay ",
-          dato: "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
-        },
-        {
-          icon: "mail_outline",
-          title: "trafico@lanubetv.net",
-          dato: "mailto:trafico@lanubetv.net?subject=Información"
-        }
-      ]},
+            titulo: "Inicio",
+            ruta: '/'
+          },
+          {
+            titulo: "Nosotros",
+            ruta: '/nosotros',
+            subrutas: [{
+                nombre: "Mision",
+                ruta: "/nosotros"
+              },
+              {
+                nombre: "Vision",
+                ruta: "/nosotros"
+              }
+            ]
+          },
+          {
+            titulo: 'Servicios',
+            ruta: '/servicios',
+            subrutas: [{
+                nombre: 'Diseño 3D y 2D',
+                ruta: '/servicios/diseno-3d-2d'
+              }, {
+                nombre: 'Producción Audivisual',
+                ruta: '/serivicios/produccion-audivisual'
+              },
+              {
+                nombre: 'Distribución de Comerciales',
+                ruta: '/servicios/distribucion-comerciales'
+              }
+            ]
+          },
+          {
+            titulo: "Contacto",
+            ruta: '/contacto',
+            subrutas: [{
+              nombre: "Ubicación",
+              ruta: "/contacto"
+            }, {
+              nombre: "Contactar",
+              ruta: "/contacto"
+            }]
+          },
+          {
+            titulo: "CanalesTV",
+            ruta: '/canalestv',
+            subrutas: [{
+              nombre: "Nacionales",
+              ruta: "/canalestv"
+            }, {
+              nombre: "Internacionales",
+              ruta: "/canalestv"
+            }]
+          },
+          {
+            titulo: 'Plataforma',
+            ruta: '/plataforma',
+            subrutas: [{
+
+              nombre: 'Envío Digitales',
+              ruta_externa: 'https://app.lanubetv.net'
+            }]
+          }
+        ],
+        datos: [{
+            icon: "phone",
+            title: "593-4-2832083 ext. 102 "
+          },
+          {
+            icon: "smartphone",
+            title: "+593 99 127 5473",
+            icon2: "save",
+            dato: "https://api.whatsapp.com/send?phone=+593991275473"
+          },
+          {
+            icon: "location_on",
+            title: "Noguchi 633 y Huancavilca Edif. Ecobay ",
+            dato: "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
+          },
+          {
+            icon: "mail_outline",
+            title: "trafico@lanubetv.net",
+            dato: "mailto:trafico@lanubetv.net?subject=Información"
+          }
+        ]
+      },
       hero_layout: {
         ruta: '/',
         src: require('./assets/Hero/Fondo_Hero.png'),

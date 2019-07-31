@@ -15,6 +15,7 @@
       :key="index"
       @click="nombreRuta(menu.ruta);"
       :to="menu.ruta"
+      :href="menu.extRuta"
       ripple
     >
       <slot name="listName" :data="menu" :index="index"></slot>

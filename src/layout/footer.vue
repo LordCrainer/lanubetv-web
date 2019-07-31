@@ -18,14 +18,14 @@
       <v-flex xs12>
         <v-card color="transparent">
           <v-container grid-list-xl>
-            <v-layout row wrap justify-center>
-              <v-flex xs12 sm3 v-for="item in items.rutas" :key="item.titulo">
+            <v-layout row wrap justify-space-around>
+              <v-flex xs12 sm4 md2 v-for="item in items.rutas" :key="item.titulo" v-if="item.titulo!='Inicio'">
                 <v-layout row wrap justify-center>
-                  <v-list subheader style="background-color: transparent">
-                    <v-subheader class="font-weight-black headline white--text">{{item.titulo}}</v-subheader>
-                    <v-list-tile v-for="ruta in item.rutas" :key="ruta.nombre" avatar @click="" :to="ruta.ruta">
+                  <v-list dense  style="background-color: transparent" class="text-xs-center">
+                    <div class="font-weight-black title white--text text-xs-center py-3">{{item.titulo}}</div>
+                    <v-list-tile v-for="subruta in item.subrutas" :key="subruta.nombre" avatar @click="" :to="subruta.ruta" :href="subruta.ruta_externa">
                       <v-list-tile-content>
-                        <v-list-tile-title class="text-xs-center text-sm-left" style="color: rgb(250,250,250,0.6);"> {{ruta.nombre}}</v-list-tile-title>
+                          <v-list-tile-title class="text-xs-center text-sm-left body-2" style="color: rgb(250,250,250,0.6);"> {{subruta.nombre}}</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                   </v-list>

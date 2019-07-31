@@ -11,7 +11,7 @@ import Servicio from "./paginas/servicios/servicios.vue";
 Vue.use(Router);
 
 export default new Router({
-  mode: "hash",
+  mode: "history",
   scrollBehavior(to, from, savedPosition) {
     return {
       x: 0,
