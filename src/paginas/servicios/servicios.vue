@@ -41,7 +41,7 @@ export default {
           alt: "",
           src: require('./../../assets/Servicios/DC_descargar.png')
         }],
-        descripcion: "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. ",
+        resumen: "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. ",
 
       },
           {
@@ -57,7 +57,7 @@ export default {
             alt: "",
             src: require('./../../assets/Servicios/producionAudivisual2.jpg')
           }],
-          descripcion: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad."
+          resumen: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad."
 
         },
         {
@@ -77,7 +77,7 @@ export default {
             alt: "",
             src: require('./../../assets/Servicios/Modelado3D2.jpg')
           }],
-          descripcion: "Realizamos todo tipo de trabajos gráficos, vectoriales, modelados y renderizados en 2D y 3D. Disponemos de los programas, equipos y experencia necesaria para entregarles un excelente trabajo.",
+          resumen: "Realizamos todo tipo de trabajos gráficos, vectoriales, modelados y renderizados en 2D y 3D. Disponemos de los programas, equipos y experencia necesaria para entregarles un excelente trabajo.",
 
         },
         {
@@ -101,7 +101,7 @@ export default {
             alt: "",
             src: require('./../../assets/Servicios/desydisweb4.jpg')
           }],
-          descripcion: "Desarrollamos y diseñamos tanto páginas como aplicaciones web, con el fin de darles la solución más conveniente que se ajuste a sus necesidades. ",
+          resumen: "Desarrollamos y diseñamos tanto páginas como aplicaciones web, con el fin de darles la solución más conveniente que se ajuste a sus necesidades. ",
 
         }]
       }

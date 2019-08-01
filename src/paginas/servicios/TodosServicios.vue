@@ -18,7 +18,7 @@
                   {{item.titulo}}
                 </v-card-text>
                 <v-card-text class="text-xs-justify subheading" :class="`${item.font_color}--text`">
-                  {{item.descripcion}}
+                  {{item.resumen}}
                 </v-card-text>
               </v-flex>
             </v-layout>
@@ -30,12 +30,9 @@
               <windows :items="item.img"></windows>
             </v-layout>
           </v-card>
-
         </v-flex>
-
       </v-layout>
     </v-container>
-
   </v-card>
 </section>
 </template>

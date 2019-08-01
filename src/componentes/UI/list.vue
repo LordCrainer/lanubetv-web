@@ -8,19 +8,23 @@
 </style>
 
 <template>
-  <v-list  >
-    <v-list-tile
-      :class="clases"
-      v-for="(menu, index) in items"
-      :key="index"
-      @click="nombreRuta(menu.ruta);"
-      :to="menu.ruta"
-      :href="menu.extRuta"
-      ripple
-    >
-      <slot name="listName" :data="menu" :index="index"></slot>
+<v-list>
+  <div v-for="(menu, index) in items" :key="index">
+    <slot name="listName" :class="clases" @click="nombreRuta(menu.ruta);" :to="menu.ruta" :href="menu.extRuta" ripple :data="menu" :index="index"></slot>
+    <slot name="listGroup" :data="menu" :index="index"></slot>
+
+    <!-- <v-list slot="listGroup" slot-scope="{ data }" v-if="data.flagGroup">
+      <v-list-group >
+        <v-list-tile slot="activator">
+      <v-list-tile-title>{{data.titulo}}</v-list-tile-title>
     </v-list-tile>
-  </v-list>
+        <v-list-tile v-for="subruta in data.subrutas" :key="subruta.nombre" @click="">
+          <v-list-tile-title>{{subruta.nombre}}</v-list-tile-title>
+        </v-list-tile>
+      </v-list-group>
+    </v-list> -->
+  </div>
+</v-list>
 </template>
 
 <script>

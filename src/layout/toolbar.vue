@@ -24,20 +24,30 @@
   width: 125px;
   background-color: white;
 }
-
 </style>
 
 <template>
 <nav v-scroll="onScroll">
 
-  <v-navigation-drawer id="list" app temporary hide-overlay disable-resize-watcher v-model="drawer_flag" right>
-    <List :items="menus" @epath="nombreRuta($event);" :clases="[border_class]" >
-      <v-list-tile slot="listName" slot-scope="{ data }" class="title" >
-          <v-card-text class="font-weight-black headline " >
-          {{ data.titulo }}
-          </v-card-text>
+  <v-navigation-drawer stateless id="list" app temporary  v-model="drawer_flag" right>
+    <List :items="menus" @epath="nombreRuta($event);">
+      <v-list-tile @click.stop="drawer_flag = !drawer_flag;" slot="listName" slot-scope="{ data }" v-if="!data.flagGroup" :to="data.ruta">
+        <v-list-tile-title>{{ data.titulo }}</v-list-tile-title>
       </v-list-tile>
+      <v-list-group slot="listGroup" slot-scope="{ data }" v-if="data.flagGroup">
+        <v-list-tile slot="activator" :to="data.ruta">
+          <v-list-tile-content>
+            <v-list-tile-title>{{data.titulo}}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile v-for="subruta in data.subrutas" :key="subruta.nombre" @click.stop="drawer_flag = !drawer_flag;" :to="subruta.ruta" :href="subruta.ruta_externa">
+          <v-list-tile-content>
+            <v-list-tile-title>{{subruta.nombre}}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list-group>
     </List>
+
     <v-btn fixed bottom right fab dark color="blue" @click.stop="drawer_flag = !drawer_flag;">
       <v-icon>exit_to_app</v-icon>
     </v-btn>
@@ -53,11 +63,9 @@
     <v-toolbar-title id="toolbar-title" :class="color_text" class="title hidden-xs-only">
       <h1>{{ titulo }}</h1>
     </v-toolbar-title>
-<v-spacer></v-spacer>
+    <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn id="botonBar" flat v-for="menu in menus" :key="menu.titulo" :to="menu.ruta" :href="menu.ruta_externa"  :color="color_text.split('--')[0]">
-        {{ menu.titulo }}
-      </v-btn>
+      <menu-button :items="menus" :color="color_text"></menu-button>
     </v-toolbar-items>
     <v-btn flat icon :color="color_text.split('--')[0]" class="hidden-md-and-up" @click.stop="drawer_flag = !drawer_flag;">
       <v-icon large>more_vert</v-icon>
@@ -69,19 +77,20 @@
 <script>
 import Navbar from "./../componentes/UI/navbar.vue";
 import List from "./../componentes/UI/list.vue";
-import Tabs from "./../componentes/UI/tabs.vue";
+import menuButton from "./../componentes/UI/menu.vue";
 //import pdfvue from "./inicio/pdf.vue";
 //import PDF from "jspdf";
 export default {
   props: ["menus"],
   components: {
     Navbar,
-    List
+    List,
+    menuButton
   },
   data() {
     return {
       titulo: "LA NUBE TV",
-      border_class: "border_hover",
+      border_class: "",
       src_logo: require('./../assets/logo.png'),
       offsetTop: 0,
 

@@ -91,6 +91,7 @@ export default {
           },
           {
             titulo: "Nosotros",
+            icon: '',
             ruta: '/nosotros',
             subrutas: [{
                 nombre: "Mision",
@@ -105,6 +106,7 @@ export default {
           {
             titulo: 'Servicios',
             ruta: '/servicios',
+            flagGroup: true,
             subrutas: [{
                 nombre: 'Diseño 3D y 2D',
                 ruta: '/servicios/diseno-3d-2d'
@@ -142,9 +144,8 @@ export default {
           },
           {
             titulo: 'Plataforma',
-            ruta: '/plataforma',
+            flagGroup: true,
             subrutas: [{
-
               nombre: 'Envío Digitales',
               ruta_externa: 'https://app.lanubetv.net'
             }]

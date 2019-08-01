@@ -8,6 +8,7 @@ import Nosotros from "./paginas/nosotros/nosotros.vue";
 import Contacto from "./paginas/contacto/contacto.vue";
 import CanalesTV from "./paginas/canales/canalestv.vue";
 import Servicio from "./paginas/servicios/servicios.vue";
+import UnicoServicio from "./paginas/servicios/unicoServicio.vue"
 Vue.use(Router);
 
 export default new Router({
@@ -47,6 +48,12 @@ export default new Router({
       components: {
         default: Servicio
       },
+      children: [
+        {
+        path:'/distribucion-comerciales',
+        component: UnicoServicio
+        }
+      ],
       meta: {
         titulo: "Servicios",
         descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar otros servicios.",

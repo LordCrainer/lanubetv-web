@@ -1,4 +1,8 @@
-
+<style>
+  .v-carousel__prev .v-btn .v-btn__content .v-icon, .v-carousel__next .v-btn .v-btn__content .v-icon{
+    color: black;
+  }
+</style>
 
 <template>
 <div>
