@@ -112,7 +112,7 @@ export default {
                 ruta: '/servicios/diseno-3d-2d'
               }, {
                 nombre: 'Producción Audivisual',
-                ruta: '/serivicios/produccion-audivisual'
+                ruta: '/servicios/produccion-audivisual'
               },
               {
                 nombre: 'Distribución de Comerciales',
@@ -147,7 +147,8 @@ export default {
             flagGroup: true,
             subrutas: [{
               nombre: 'Envío Digitales',
-              ruta_externa: 'https://app.lanubetv.net'
+              ruta_externa: 'https://app.lanubetv.net',
+              flagTarget: true
             }]
           }
         ],

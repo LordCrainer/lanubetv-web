@@ -18,7 +18,7 @@
       :key="subruta.nombre"
       :to="subruta.ruta"
       :href="subruta.ruta_externa"
-      target="_blank">
+      :target="subruta.flagTarget? '_blank': ''">
       <v-list-tile-content>
         <v-list-tile-title>
           {{ subruta.nombre }}

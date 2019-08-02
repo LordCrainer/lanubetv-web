@@ -7,7 +7,7 @@
             <v-img
               class="white--text"
               style="max-height: 450px;"
-              src="http://spootmedia.com/wp-content/uploads/2018/06/443809727.jpg"
+
             >
             </v-img>
             <v-card-text>

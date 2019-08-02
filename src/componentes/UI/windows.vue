@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 300px;
+  width: 400px;
 }
 
 .prev_icon {
@@ -28,13 +28,11 @@
 </style>
 
 <template >
-<v-card v-bind="windowsOption" style="position: relative;">
-
   <v-window v-model="onboarding" style="position: relative;">
     <v-window-item v-for="(item, indice) in items" :key="`windows-${item}-${indice}`" style="position: relative;">
       <v-card v-bind="cardOption" >
         <v-layout align-center justify-center fill-height >
-          <v-img height="100%" width="100%" :style="`background-image: url(${item.src}); `" class="img_windows_items">
+          <v-img height="95%" width="95%" :style="`background-image: url(${item.src}); `" class="img_windows_items">
             <v-layout row wrap justify-center align-center fill-height>
               <v-card-text class="text-xs-center black--text">
                 {{item.descripcion}}
@@ -63,7 +61,6 @@
     </div>
   </v-window>
 
-</v-card>
 </template>
 
 <script>
@@ -100,8 +97,8 @@ export default {
       default: function() {
         return {
           color: 'transparent',
-          height: "300",
-          width: "400",
+          height: "330",
+          width: "440",
           flat: true,
           dark: false
         }

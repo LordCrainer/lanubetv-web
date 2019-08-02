@@ -4,7 +4,12 @@
       <v-layout row wrap justify-center align-center fill-height>
         <v-flex xs12>
           <v-card-text flat class="display-2 font-weight-bold pt-5">
-
+probando
+          </v-card-text>
+        </v-flex>
+        <v-flex xs12>
+          <v-card-text flat class="display-2 font-weight-bold pt-5">
+probando
           </v-card-text>
         </v-flex>
       </v-layout>

@@ -45,21 +45,27 @@ export default new Router({
     {
       name: "SERVICIOS",
       path: "/servicios",
-      components: {
-        default: Servicio
-      },
-      children: [
-        {
-        path:'/distribucion-comerciales',
-        component: UnicoServicio
-        }
-      ],
       meta: {
         titulo: "Servicios",
         descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar otros servicios.",
         src: require('./assets/Hero/hero_servicios.png')
-
-      }
+      },
+      components: {
+        default: Servicio
+      },
+      children:[
+        {
+          path: '/produccion-audivisual',
+          components: {
+              default: UnicoServicio
+          },
+          meta: {
+            titulo: "Producción",
+            descripcion: "Audiovisual.",
+            src: require('./assets/Hero/hero_servicios.png')
+          }
+        }
+      ]
     },
     {
       name: "CONTACTO",
