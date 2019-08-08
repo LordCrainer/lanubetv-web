@@ -4,11 +4,8 @@
 
 <template>
 <div>
-  <mapaUbicacion :items="mapaUbicacionData">
-
-  </mapaUbicacion>
-  <contactoForm :items="contactoFormData">
-  </contactoForm>
+  <mapaUbicacion :items="mapaUbicacionData"></mapaUbicacion>
+  <contactoForm :items="contactoFormData"></contactoForm>
 </div>
 </template>
 <script>

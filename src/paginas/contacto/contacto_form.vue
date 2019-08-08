@@ -45,11 +45,15 @@
               </v-container>
             </v-flex>
             <v-flex xs12 sm6>
-              <v-card hover class="mx-auto" width="450" style="min-width:350px;" color="rgba(0, 0, 0, 0.30)">
+              <v-card hover class="mx-auto" height="500" width="100%" style="min-width:350px;" color="rgba(0, 0, 0, 0.30)">
                 <v-form ref="form" v-model="valid" lazy-validation>
                   <v-card-text>
                     <generadorForm :model="model" :schema="schema.fields" :options="options">
                     </generadorForm>
+                    <v-spacer></v-spacer>
+
+                  </v-card-text>
+                  <v-card-text>
                     <v-card-actions slot="action">
                       <v-btn :disabled="!valid" @click="submit" color="primary">
                         ENVIAR
