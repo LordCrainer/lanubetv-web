@@ -26,19 +26,19 @@ export default {
             reverse: false,
             img: [{
                 alt: "",
-                src: require('./../../assets/Servicios/DC_subir.png')
+                src: 'Servicios/DC_subir.png'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/DC_enviar.png')
+                src: 'Servicios/DC_enviar.png'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/DC_preview.png')
+                src: 'Servicios/DC_preview.png'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/DC_descargar.png')
+                src: 'Servicios/DC_descargar.png'
               }
             ],
             resumen: "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. ",
@@ -47,14 +47,14 @@ export default {
           {
             titulo: "PRODUCCIÓN AUDIOVISUAL",
             reverse: true,
-            ruta: '/servicios/produccion-audivisual',
+            ruta: '/produccion-audivisual',
             img: [{
                 alt: "",
-                src: require('./../../assets/Servicios/producionAudivisual.jpg')
+                src: 'Servicios/producionAudivisual.jpg'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/producionAudivisual2.jpg')
+                src: 'Servicios/producionAudivisual2.jpg'
               }
             ],
             resumen: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad.",
@@ -66,15 +66,15 @@ export default {
             reverse: false,
             img: [{
                 alt: "",
-                src: require('./../../assets/logo.png')
+                src: 'logo.png'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/Modelado3D.jpg')
+                src: 'Servicios/Modelado3D.jpg'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/Modelado3D2.jpg')
+                src: 'Servicios/Modelado3D2.jpg'
               }
             ],
             resumen: "Realizamos todo tipo de trabajos gráficos, vectoriales, modelados y renderizados en 2D y 3D. Disponemos de los programas, equipos y experencia necesaria para entregarles un excelente trabajo.",
@@ -85,19 +85,19 @@ export default {
             reverse: true,
             img: [{
                 alt: "",
-                src: require('./../../assets/Servicios/desydisweb.jpg')
+                src: 'Servicios/desydisweb.jpg'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/desydisweb2.jpg')
+                src: 'Servicios/desydisweb2.jpg'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/desydisweb3.jpg')
+                src: 'Servicios/desydisweb3.jpg'
               },
               {
                 alt: "",
-                src: require('./../../assets/Servicios/desydisweb4.jpg')
+                src: 'Servicios/desydisweb4.jpg'
               }
             ],
             resumen: "Desarrollamos y diseñamos tanto páginas como aplicaciones web, con el fin de darles la solución más conveniente que se ajuste a sus necesidades. ",
