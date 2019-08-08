@@ -13,7 +13,7 @@
         <v-layout fill-height align-center justify-center>
           <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
             <v-card flat color="transparent" class="pa-4">
-              <v-img :src="items.imagen.src" height="16vw" width="16vw"></v-img>
+              <v-img :src="imagenPath(items.imagen.src)" height="16vw" width="16vw"></v-img>
             </v-card>
           </div>
         </v-layout>

@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-
+import ImagenMixin from "./mixins/imagen.vue"
 
 import Error404 from "./layout/error404.vue";
 import Pagina_Inicio from "./paginas/principal/inicio.vue";
@@ -10,6 +10,7 @@ import CanalesTV from "./paginas/canales/canalestv.vue";
 import Servicio from "./paginas/servicios/servicios.vue";
 import UnicoServicio from "./paginas/servicios/unicoServicio.vue"
 Vue.use(Router);
+Vue.mixin(ImagenMixin);
 
 export default new Router({
   mode: "history",
@@ -53,19 +54,32 @@ export default new Router({
       components: {
         default: Servicio
       },
-      children:[
-        {
-          path: '/produccion-audivisual',
-          components: {
-              default: UnicoServicio
-          },
-          meta: {
-            titulo: "Producción",
-            descripcion: "Audiovisual.",
-            src: require('./assets/Hero/hero_servicios.png')
-          }
-        }
-      ]
+      // children:[
+      //   {
+      //     path: '/produccion-audivisual',
+      //     components: {
+      //         default: UnicoServicio
+      //     },
+      //     meta: {
+      //       titulo: "Producción",
+      //       descripcion: "Audiovisual.",
+      //       src: require('./assets/Hero/hero_servicios.png')
+      //     },
+      //     props: true
+      //   }
+      // ]
+    },
+    {
+      name: "UnicoServicio",
+      path: "/servicios/:unicoServicio",
+      component: UnicoServicio,
+      props: true,
+      meta: {
+        titulo: "",
+        descripcion: "",
+        src: require('./assets/Hero/hero_servicios.png')
+
+      }
     },
     {
       name: "CONTACTO",

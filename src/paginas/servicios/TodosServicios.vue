@@ -24,7 +24,7 @@
                   <router-link :to="{ path: item.ruta, params: {} }">
                     <v-btn color="primary">Más Información</v-btn>
                   </router-link>
-<v-btn color="success" :to="item.ruta">Más Información</v-btn>
+<v-btn color="success" :to="{ path: item.ruta, params: item.prueba}">Más Información</v-btn>
                 </v-card-text>
               </v-flex>
             </v-layout>

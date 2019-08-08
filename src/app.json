@@ -1,90 +1,105 @@
-menu_principal: {
-  rutas: [{
-      titulo: "Inicio",
-      ruta: '/'
-    },
-    {
-      titulo: "Nosotros",
-      icon: '',
-      ruta: '/nosotros',
-      subrutas: [{
-          nombre: "Mision",
-          ruta: "/nosotros"
-        },
-        {
-          nombre: "Vision",
-          ruta: "/nosotros"
-        }
-      ]
-    },
-    {
-      titulo: 'Servicios',
-      ruta: '/servicios',
-      flagGroup: true,
-      subrutas: [{
-          nombre: 'Diseño 3D y 2D',
-          ruta: '/servicios/diseno-3d-2d'
-        }, {
-          nombre: 'Producción Audivisual',
-          ruta: '/serivicios/produccion-audivisual'
-        },
-        {
-          nombre: 'Distribución de Comerciales',
-          ruta: '/servicios/distribucion-comerciales'
-        }
-      ]
-    },
-    {
-      titulo: "Contacto",
-      ruta: '/contacto',
-      subrutas: [{
-        nombre: "Ubicación",
-        ruta: "/contacto"
-      }, {
-        nombre: "Contactar",
-        ruta: "/contacto"
-      }]
-    },
-    {
-      titulo: "CanalesTV",
-      ruta: '/canalestv',
-      subrutas: [{
-        nombre: "Nacionales",
-        ruta: "/canalestv"
-      }, {
-        nombre: "Internacionales",
-        ruta: "/canalestv"
-      }]
-    },
-    {
-      titulo: 'Plataforma',
-      flagGroup: true,
-      subrutas: [{
-        nombre: 'Envío Digitales',
-        ruta_externa: 'https://app.lanubetv.net',
-        flagTarget: true
-      }]
-    }
-  ],
-  datos: [{
-      icon: "phone",
-      title: "593-4-2832083 ext. 102 "
-    },
-    {
-      icon: "smartphone",
-      title: "+593 99 127 5473",
-      icon2: "save",
-      dato: "https://api.whatsapp.com/send?phone=+593991275473"
-    },
-    {
-      icon: "location_on",
-      title: "Noguchi 633 y Huancavilca Edif. Ecobay ",
-      dato: "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
-    },
-    {
-      icon: "mail_outline",
-      title: "trafico@lanubetv.net",
-      dato: "mailto:trafico@lanubetv.net?subject=Información"
-    }
-  ]
+{
+  "menu_principal": {
+    "rutas": [
+      {
+        "titulo": "Inicio",
+        "ruta": "/"
+      },
+      {
+        "titulo": "Nosotros",
+        "icon": "",
+        "ruta": "/nosotros",
+        "subrutas": [
+          {
+            "nombre": "Mision",
+            "ruta": "/nosotros"
+          },
+          {
+            "nombre": "Vision",
+            "ruta": "/nosotros"
+          }
+        ]
+      },
+      {
+        "titulo": "Servicios",
+        "ruta": "/servicios",
+        "flagGroup": true,
+        "subrutas": [
+          {
+            "nombre": "Diseño 3D y 2D",
+            "ruta": "/servicios/diseno-3d-2d"
+          },
+          {
+            "nombre": "Producción Audivisual",
+            "ruta": "/servicios/produccion-audivisual"
+          },
+          {
+            "nombre": "Distribución de Comerciales",
+            "ruta": "/servicios/distribucion-comerciales"
+          }
+        ]
+      },
+      {
+        "titulo": "Contacto",
+        "ruta": "/contacto",
+        "subrutas": [
+          {
+            "nombre": "Ubicación",
+            "ruta": "/contacto"
+          },
+          {
+            "nombre": "Contactar",
+            "ruta": "/contacto"
+          }
+        ]
+      },
+      {
+        "titulo": "CanalesTV",
+        "ruta": "/canalestv",
+        "subrutas": [
+          {
+            "nombre": "Nacionales",
+            "ruta": "/canalestv"
+          },
+          {
+            "nombre": "Internacionales",
+            "ruta": "/canalestv"
+          }
+        ]
+      },
+      {
+        "titulo": "Plataforma",
+        "flagGroup": true,
+        "subrutas": [
+          {
+            "nombre": "Envío Digitales",
+            "ruta_externa": "https://app.lanubetv.net",
+            "flagTarget": true
+          }
+        ]
+      }
+    ],
+    "datos": [
+      {
+        "icon": "phone",
+        "title": "593-4-2832083 ext. 102 "
+      },
+      {
+        "icon": "smartphone",
+        "title": "+593 99 127 5473",
+        "icon2": "save",
+        "dato": "https://api.whatsapp.com/send?phone=+593991275473"
+      },
+      {
+        "icon": "location_on",
+        "title": "Noguchi 633 y Huancavilca Edif. Ecobay ",
+        "dato": "https://goo.gl/maps/Yo1vfdaSfsnz8m5SA"
+      },
+      {
+        "icon": "mail_outline",
+        "title": "trafico@lanubetv.net",
+        "dato": "mailto:trafico@lanubetv.net?subject=Información"
+      }
+    ]
+  }
 }

@@ -1,12 +1,12 @@
 <template>
 <section class="Contactar">
-  <v-img alt="ubicacion de LANUBETV" class="mapa_ubicacion" :style="`background-image: url(${items.src}); `">
+  <v-img alt="ubicacion de LANUBETV" class="mapa_ubicacion" :style="`background-image: url(${imagenPath(items.src)}); `">
     <v-layout wrap row fill-height>
       <v-flex sm6 class="py-3">
         <v-layout fill-height justify-center align-center>
           <div data-aos="zoom-in">
             <v-avatar size="150" class="elevation-5" color="rgba(255, 255, 255, 0.5)" @click="" ripple style="border:7px solid red;">
-              <img :src="items.icono.src" alt="alt" class="pa-2">
+              <img :src="imagenPath(items.icono.src)" alt="alt" class="pa-2">
             </v-avatar>
           </div>
         </v-layout>
@@ -19,7 +19,7 @@
                 <v-layout wrap row align-center justify-center>
                   <v-btn fab dark medium color="white" :href="dato.dato" target="_blank">
                     <v-avatar size="50" tile>
-                      <img :src="dato.src" alt="alt">
+                      <img :src="imagenPath(dato.src)" alt="alt">
                     </v-avatar>
                   </v-btn>
                   <v-flex xs12 sm9>

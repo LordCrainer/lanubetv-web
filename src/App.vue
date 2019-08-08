@@ -74,6 +74,7 @@ body {
 import Toolbar from "./layout/toolbar.vue";
 import FooterW from "./layout/footer.vue";
 import Hero from "./layout/hero.vue";
+var obj = require("./app.json");
 export default {
   name: "App",
   components: {

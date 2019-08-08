@@ -47,7 +47,7 @@ export default {
           {
             titulo: "PRODUCCIÓN AUDIOVISUAL",
             reverse: true,
-            ruta: 'servicios/produccion-audivisual',
+            ruta: '/servicios/produccion-audivisual',
             img: [{
                 alt: "",
                 src: require('./../../assets/Servicios/producionAudivisual.jpg')
@@ -57,7 +57,8 @@ export default {
                 src: require('./../../assets/Servicios/producionAudivisual2.jpg')
               }
             ],
-            resumen: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad."
+            resumen: "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad.",
+            prueba: "Probando el ingreso de datos por params"
 
           },
           {
