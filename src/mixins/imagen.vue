@@ -4,7 +4,7 @@ export default {
   methods: {
     imagenPath(path) {
       if (path) {
-        return require(`@/assets/${path}`)
+        return require(`../assets/${path}`)
       }
       return ''
     }
