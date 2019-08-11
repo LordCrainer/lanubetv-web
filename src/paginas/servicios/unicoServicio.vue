@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import {servicios} from './servicios.json'
 export default {
   props: ['unicoServicio'],
   data() {

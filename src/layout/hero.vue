@@ -7,7 +7,7 @@
         <v-flex xs12 sm8 md6>
           <v-card hover color="rgba(255,255,255, 1)">
             <v-card-text class="black--text font-weight-bold mt-3 pa-5 text-xs-center text-sm-justify" style="font-size: 1.7em">
-              {{$route.meta.descripcion}}
+              {{$route.meta.descripcion}} DES: {{descripcion}}
             </v-card-text>
           </v-card>
           <v-fab-transition>
@@ -33,12 +33,33 @@
 </section>
 </template>
 <script>
-
 export default {
   props: ["items"],
   data(){
     return{
+      descripcion: ""
     }
+  },
+  beforeCreate(){
+    this.descripcion = this.$route.meta.descripcion
+    console.log("Before Created: ",this.$route.meta.descripcion);
+
+  },
+  created(){
+    this.descripcion = this.$route.meta.descripcion
+    console.log("Created: ", this.$route.meta.descripcion);
+  },
+  beforeMount(){
+    this.descripcion = this.$route.meta.descripcion
+    console.log("Before Mount: ",this.$route.meta.descripcion);
+  },
+  updated(){
+    this.descripcion = this.$route.meta.descripcion
+    // this.changeDescriptionByPath()
+    console.log("updated: ", this.$route.meta.descripcion);
+  },
+  methods:{
+
   }
 };
 </script>
