@@ -4,6 +4,11 @@
       {
         "titulo": "DISTRIBUCION DE COMERCIALES",
         "reverse": false,
+        "ruta": "/servicios/distribucion-comerciales",
+        "meta":{
+          "titulo": "Distribución Comerciales",
+          "descripcion": "Distribución Comerciales"
+        },
         "img": [
           {
             "alt": "",
@@ -27,7 +32,11 @@
       {
         "titulo": "PRODUCCIÓN AUDIOVISUAL",
         "reverse": true,
-        "ruta": "/produccion-audivisual",
+        "ruta": "/servicios/produccion-audivisual",
+        "meta":{
+          "titulo": "Producción Audivisual",
+          "descripcion": "Producción Audivisual"
+        },
         "img": [
           {
             "alt": "",
@@ -44,6 +53,11 @@
       {
         "titulo": "DISEÑO 3D y 2D",
         "reverse": false,
+        "ruta": "/servicios/diseno-3d-2d",
+        "meta":{
+          "titulo": "Dieseño 3D y 2D",
+          "descripcion": "Dieseño 3D y 2D"
+        },
         "img": [
           {
             "alt": "",

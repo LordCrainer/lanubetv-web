@@ -15,15 +15,19 @@
                     </v-card-text>
                 </v-flex>
                 <v-flex xs12>
-                    <v-container grid-list-xs,sm,md,lg,xl>
-                        <v-card-text flat class="display-2 font-weight-bold pt-5">
-                            INFORMACIÓN: {{$route.params}}
-                            <v-btn color="primary" @click="logger">text</v-btn>
-                        </v-card-text>
-                        <v-card-text>
-                            DATO: {{welcome}}
-                        </v-card-text>
-                    </v-container>
+                    <v-layout row wrap align-center justify-center>
+                      <v-flex xs12 >
+                        <v-card>
+                          <v-card-text flat class="display-2 font-weight-bold pt-5">
+                              INFORMACIÓN: {{$route.params}}
+                              <v-btn color="primary" @click="logger">text</v-btn>
+                          </v-card-text>
+                          <v-card-text>
+
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                  </v-layout>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -37,25 +41,26 @@ export default {
   props: ['unicoServicio'],
   data() {
     return {
-      welcome: 'Bienvenidos a'
+      data_servicio: servicios,
     }
   },
   created() {
     this.changeHero();
   },
+  updated(){
+    this.changeHero()
+  },
   methods: {
     changeHero() {
-      this.$route.meta.descripcion = "Producción Audivisual"
-    },
-    logger() {
-      console.log(this.$route);
+      let longitud_data = this.data_servicio.length;
+      for (var i = 0; i < longitud_data; i++) {
+        if(this.data_servicio[i].ruta === this.$route.path){
+            this.$route.meta.descripcion = this.data_servicio[i].meta.descripcion
+            console.log(this.data_servicio[i].meta.descripcion);
+            return 0
+        }
+      }
     }
-  },
-  mounted() {
-    if (this.unicoServicio) {
-      this.welcome = "Produccion audiovisual para jovenes"
-    }
-
   }
 }
 </script>

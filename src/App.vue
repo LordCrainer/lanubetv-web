@@ -61,7 +61,7 @@ body {
 
     <Toolbar :menus="menu_principal.rutas" app></Toolbar>
     <main>
-      <Hero :items="hero_layout"></Hero>
+      <Hero :items="hero_layout" ></Hero>
       <router-view id="contenido"></router-view>
     </main>
 

@@ -18,7 +18,6 @@
           "titulo": "NOSOTROS",
           "descripcion": "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollando, pensando y creando soluciones inteligentes a nuestros clientes.",
           "src": "Hero/hero_nosotros.png"
-
         },
         "subrutas": [
           {
@@ -43,7 +42,7 @@
         "subrutas": [
           {
             "nombre": "Diseño 3D y 2D",
-            "ruta": "/diseno-3d-2d",
+            "ruta": "/servicios/diseno-3d-2d",
             "meta":{
               "titulo": "Dieseño 3D y 2D",
               "descripcion": "Dieseño 3D y 2D"
@@ -51,7 +50,7 @@
           },
           {
             "nombre": "Producción Audivisual",
-            "ruta": "/produccion-audivisual",
+            "ruta": "/servicios/produccion-audivisual",
             "meta":{
               "titulo": "Producción Audivisual",
               "descripcion": "Producción Audivisual"
@@ -59,10 +58,10 @@
           },
           {
             "nombre": "Distribución de Comerciales",
-            "ruta": "/distribucion-comerciales",
+            "ruta": "/servicios/distribucion-comerciales",
             "meta":{
-              "titulo": "",
-              "descripcion": ""
+              "titulo": "Distribución Comerciales",
+              "descripcion": "Distribución Comerciales"
             }
           }
         ]
