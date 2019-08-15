@@ -29,8 +29,8 @@
 <template>
 <nav v-scroll="onScroll">
 
-  <v-navigation-drawer stateless id="list" app temporary  v-model="drawer_flag" right>
-    <List :items="menus" @epath="nombreRuta($event);">
+  <v-navigation-drawer id="list"  app temporary  v-model="drawer_flag" right>
+    <List :items="menus">
       <v-list-tile @click.stop="drawer_flag = !drawer_flag;" slot="listName" slot-scope="{ data }" v-if="!data.flagGroup" :to="data.ruta">
         <v-list-tile-title>{{ data.titulo }}</v-list-tile-title>
       </v-list-tile>
@@ -42,7 +42,7 @@
         </v-list-tile>
         <v-list-tile v-for="subruta in data.subrutas" :key="subruta.nombre" @click.stop="drawer_flag = !drawer_flag;" :to="subruta.ruta" :href="subruta.ruta_externa">
           <v-list-tile-content>
-            <v-list-tile-title>{{subruta.nombre}}</v-list-tile-title>
+            <v-list-tile-title @click.stop="drawer_flag = !drawer_flag;">{{subruta.nombre}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list-group>
@@ -129,9 +129,6 @@ export default {
         this.height_toolbar = this.mod_scroll.secundario.height_toolbar;
         this.color_text = this.mod_scroll.secundario.color_text;
       }
-    },
-    nombreRuta(ruta) {
-      this.$emit("epath", ruta);
     }
   }
 };
