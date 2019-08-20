@@ -21,9 +21,6 @@
                   {{item.resumen}}
                 </v-card-text>
                 <v-card-text class="text-xs-center">
-                  <router-link :to="{ path: item.ruta, params: {} }">
-                    <v-btn color="primary">Más Información</v-btn>
-                  </router-link>
 <v-btn color="success" :to="{ path: item.ruta, params: item.prueba}">Más Información</v-btn>
                 </v-card-text>
               </v-flex>

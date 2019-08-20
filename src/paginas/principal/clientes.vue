@@ -7,7 +7,7 @@
 </style>
 
 <template>
-<section style="background-color: white;">
+<section id="Clientes" style="background-color: white;">
   <v-card>
     <v-layout row wrap justify-center align-center fill-height>
       <v-flex xs12>
@@ -17,11 +17,12 @@
       </v-flex>
       <v-flex xs12>
         <v-layout row justify-center align-center fill-height>
-          <v-carousel style="box-shadow: 0px 0px;" inverval="30000">
-            <v-carousel-item v-for="canales in items.canales" :key="canales.titulo" :src="imagenPath(canales.src)" reverse-transition="fade" transition="fade">
-              <v-container grid-list-xl style="max-width: 800px;" fill-height class="pa-5">
-                <v-layout row wrap align-center justify-center class="pb-5 mx-auto">
-                  <v-flex v-for="(canal,index) in canales.clientes" :key="canal.titulo" xs4 sm4 md3 lg3>
+          <template>
+            <v-carousel style="box-shadow: 0px 0px;" inverval="30000">
+              <v-carousel-item v-for="canales in items.canales" :key="canales.titulo" :src="imagenPath(canales.src)" reverse-transition="fade" transition="fade">
+                <v-container grid-list-xl style="max-width: 800px;" fill-height class="pa-5">
+                  <v-layout row wrap align-center justify-center class="pb-5 mx-auto">
+                    <v-flex v-for="(canal,index) in canales.clientes" :key="canal.titulo" xs4 sm4 md3 lg3>
                       <v-card height="100%" width="100%" hover style="min-width: 70px; min-height: 70px;  text-align: center; max-width: 100px; max-height: 100px; border-radius: 50%; " class="ma-auto pa-auto black--text" color="white">
                         <v-img contain :src="imagenPath(canal.src)" alt="canales" aspect-ratio="1" class="pa-1">
                           <template v-slot:placeholder>
@@ -31,11 +32,12 @@
                           </template>
                         </v-img>
                       </v-card>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-carousel-item>
-          </v-carousel>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-carousel-item>
+            </v-carousel>
+          </template>
         </v-layout>
       </v-flex>
     </v-layout>
@@ -44,12 +46,30 @@
 </template>
 
 <script>
-import carousel from "./../../componentes/UI/carousel";
+//import carousel from "./../../componentes/UI/carousel";
 
 export default {
   props: ["items"],
   components: {
-    carousel
-  }
+    //carousel
+  },
+  data () {
+     return {
+       pruebas: [
+         {
+           src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+         },
+         {
+           src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+         },
+         {
+           src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+         },
+         {
+           src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+         }
+       ]
+     }
+   }
 };
 </script>

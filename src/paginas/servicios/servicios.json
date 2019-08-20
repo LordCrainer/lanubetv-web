@@ -11,23 +11,51 @@
         },
         "img": [
           {
-            "alt": "",
+            "alt": "Subir",
             "src": "Servicios/DC_subir.png"
           },
           {
-            "alt": "",
+            "alt": "Enviar",
             "src": "Servicios/DC_enviar.png"
           },
           {
-            "alt": "",
+            "alt": "Preview",
             "src": "Servicios/DC_preview.png"
           },
           {
-            "alt": "",
+            "alt": "Descargar",
             "src": "Servicios/DC_descargar.png"
           }
         ],
         "resumen": "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. "
+      },
+      {
+        "titulo": "SMART HOME CONTROL",
+        "ruta": "/servicios/smart-home-control",
+        "reverse": false,
+        "meta":{
+          "titulo": "SMART HOME CONTROL",
+          "descripcion": "SMART HOME CONTROL"
+        },
+        "img": [
+          {
+            "alt": "",
+            "src": "Servicios/elan_software.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_reconocimiento_facial.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_control_remoto.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_smart_home.jpg"
+          }
+        ],
+        "resumen": "Sistema inteligente para el control de tu hogar, con capacidad de automatización personalizada, paneles táctiles inteligentes, reconocimiento facial y comandos por voz. "
       },
       {
         "titulo": "PRODUCCIÓN AUDIOVISUAL",

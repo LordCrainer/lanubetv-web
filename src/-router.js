@@ -58,7 +58,6 @@ export default new Router({
       name: "UnicoServicio",
       path: "/servicios/:unicoServicio",
       component: UnicoServicio,
-      props: true,
       meta: {
         titulo: "",
         descripcion: "",
