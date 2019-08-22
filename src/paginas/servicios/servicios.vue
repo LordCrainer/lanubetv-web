@@ -1,7 +1,10 @@
 <style scoped>
-
-
-
+.v-carousel__prev .v-btn .v-btn__content .v-icon,
+.v-carousel__next .v-btn .v-btn__content .v-icon {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
 </style>
 
 <template>
