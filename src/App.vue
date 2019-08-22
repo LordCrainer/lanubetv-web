@@ -57,16 +57,12 @@ body {
 
 <template>
 <v-app class="ma-0 pa-0">
-  <div>
-
     <Toolbar :menus="menu_principal.rutas" app></Toolbar>
     <main>
       <Hero :items="hero_layout" ></Hero>
       <router-view id="contenido"></router-view>
     </main>
-
     <FooterW app :items="menu_principal"></FooterW>
-  </div>
 </v-app>
 </template>
 

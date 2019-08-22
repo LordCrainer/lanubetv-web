@@ -21,7 +21,7 @@
                   {{item.resumen}}
                 </v-card-text>
                 <v-card-text class="text-xs-center">
-<v-btn color="success" :to="{ path: item.ruta, params: item.prueba}">Más Información</v-btn>
+                  <v-btn color="success" :to="{ path: item.ruta, params: item.prueba}">Más Información</v-btn>
                 </v-card-text>
               </v-flex>
             </v-layout>
@@ -30,7 +30,7 @@
         <v-flex xs12 sm12 md6>
           <v-card class="pa-4" flat color="transparent">
             <v-layout row wrap justify-center fill-height>
-              <windows :items="item.img"></windows>
+              <carousel :items="item.img" :hideDelimiters="true"></carousel>
             </v-layout>
           </v-card>
         </v-flex>
