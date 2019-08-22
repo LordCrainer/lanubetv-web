@@ -1,0 +1,130 @@
+{
+    "titulo": "Servicios",
+    "servicios": [
+      {
+        "titulo": "DISTRIBUCION DE COMERCIALES",
+        "reverse": false,
+        "ruta": "/servicios/distribucion-comerciales",
+        "meta":{
+          "titulo": "Distribución Comerciales",
+          "descripcion": "Distribución Comerciales"
+        },
+        "img": [
+          {
+            "alt": "Subir",
+            "src": "Servicios/DC_subir.png"
+          },
+          {
+            "alt": "Enviar",
+            "src": "Servicios/DC_enviar.png"
+          },
+          {
+            "alt": "Preview",
+            "src": "Servicios/DC_preview.png"
+          },
+          {
+            "alt": "Descargar",
+            "src": "Servicios/DC_descargar.png"
+          }
+        ],
+        "resumen": "Mediante nuestra plataforma web somos capaces de distribuir los comerciales desde las agencias hasta los respectivos canales, de una manera ágil, rápida y segura. "
+      },
+      {
+        "titulo": "SMART HOME CONTROL",
+        "ruta": "/servicios/smart-home-control",
+        "reverse": false,
+        "meta":{
+          "titulo": "SMART HOME CONTROL",
+          "descripcion": "SMART HOME CONTROL"
+        },
+        "img": [
+          {
+            "alt": "",
+            "src": "Servicios/elan_software.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_reconocimiento_facial.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_control_remoto.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/elan_smart_home.jpg"
+          }
+        ],
+        "resumen": "Sistema inteligente para el control de tu hogar, con capacidad de automatización personalizada, paneles táctiles inteligentes, reconocimiento facial y comandos por voz. "
+      },
+      {
+        "titulo": "PRODUCCIÓN AUDIOVISUAL",
+        "reverse": true,
+        "ruta": "/servicios/produccion-audivisual",
+        "meta":{
+          "titulo": "Producción Audivisual",
+          "descripcion": "Producción Audivisual"
+        },
+        "img": [
+          {
+            "alt": "",
+            "src": "Servicios/producionAudivisual.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/producionAudivisual2.jpg"
+          }
+        ],
+        "resumen": "Creamos contenido audiovisual con la mejor tecnología, y el espacio de trabajo necesario. Tenemos más de 8 años de experiencia en este campo, por lo cual brindar una excelente calidad es nuestra prioridad.",
+        "prueba": "Probando el ingreso de datos por params"
+      },
+      {
+        "titulo": "DISEÑO 3D y 2D",
+        "reverse": false,
+        "ruta": "/servicios/diseno-3d-2d",
+        "meta":{
+          "titulo": "Dieseño 3D y 2D",
+          "descripcion": "Dieseño 3D y 2D"
+        },
+        "img": [
+          {
+            "alt": "",
+            "src": "logo.png"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/Modelado3D.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/Modelado3D2.jpg"
+          }
+        ],
+        "resumen": "Realizamos todo tipo de trabajos gráficos, vectoriales, modelados y renderizados en 2D y 3D. Disponemos de los programas, equipos y experencia necesaria para entregarles un excelente trabajo."
+      },
+      {
+        "titulo": "DESARROLLO WEB",
+        "reverse": true,
+        "img": [
+          {
+            "alt": "",
+            "src": "Servicios/desydisweb.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/desydisweb2.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/desydisweb3.jpg"
+          },
+          {
+            "alt": "",
+            "src": "Servicios/desydisweb4.jpg"
+          }
+        ],
+        "resumen": "Desarrollamos y diseñamos tanto páginas como aplicaciones web, con el fin de darles la solución más conveniente que se ajuste a sus necesidades. "
+      }
+    ]
+
+}

@@ -12,7 +12,7 @@
 
 <template>
 <section>
-  <v-img contain :style="`background-image: url(${items.fondo});`" class="MiViSer">
+  <v-img contain :style="{ backgroundImage: `url(${imagenPath(items.fondo)})` }" class="MiViSer">
     <v-container grid-list-xs fill-height>
       <v-layout row wrap justify-center align-start>
         <v-flex xs12>
@@ -27,7 +27,7 @@
                 <v-card color="white" flat style=" width: 100%; max-width: 375px;" class="text-xs-center mx-auto ">
                   <v-card-text class="text-xs-center">
                     <v-avatar size="60%" tile>
-                      <img :src="item.src" alt="alt">
+                      <img :src="imagenPath(item.src)" alt="alt">
                     </v-avatar>
                     <v-card-text primary-title class="text-xs-center display-1 font-weight-black">
                       {{item.titulo}}

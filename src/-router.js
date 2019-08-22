@@ -11,7 +11,6 @@ import Servicio from "./paginas/servicios/servicios.vue";
 import UnicoServicio from "./paginas/servicios/unicoServicio.vue"
 Vue.use(Router);
 Vue.mixin(ImagenMixin);
-
 export default new Router({
   mode: "history",
   scrollBehavior(to, from, savedPosition) {
@@ -53,27 +52,12 @@ export default new Router({
       },
       components: {
         default: Servicio
-      },
-      // children:[
-      //   {
-      //     path: '/produccion-audivisual',
-      //     components: {
-      //         default: UnicoServicio
-      //     },
-      //     meta: {
-      //       titulo: "Producción",
-      //       descripcion: "Audiovisual.",
-      //       src: require('./assets/Hero/hero_servicios.png')
-      //     },
-      //     props: true
-      //   }
-      // ]
+      }
     },
     {
       name: "UnicoServicio",
       path: "/servicios/:unicoServicio",
       component: UnicoServicio,
-      props: true,
       meta: {
         titulo: "",
         descripcion: "",
@@ -93,7 +77,8 @@ export default new Router({
         src: require('./assets/Hero/hero_contactos.png')
 
       }
-    },{
+    },
+    {
       name: "CANALESTV",
       path: "/canalestv",
       components: {
@@ -114,7 +99,6 @@ export default new Router({
         descripcion: "Página no encontrada",
         src: require('./assets/Hero/hero_inicio.png')
       }
-
     }
   ]
 });

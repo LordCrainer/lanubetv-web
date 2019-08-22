@@ -7,7 +7,7 @@
         <v-flex xs12 sm8 md6>
           <v-card hover color="rgba(255,255,255, 1)">
             <v-card-text class="black--text font-weight-bold mt-3 pa-5 text-xs-center text-sm-justify" style="font-size: 1.7em">
-              {{$route.meta.descripcion}}
+              {{descripcion}}
             </v-card-text>
           </v-card>
           <v-fab-transition>
@@ -19,26 +19,32 @@
                   bottom
                   right
                   fab
-
                 >
                   <v-icon>arrow_drop_down</v-icon>
                 </v-btn>
               </v-fab-transition>
         </v-flex>
-
       </v-layout>
     </v-container>
-
   </v-img>
 </section>
 </template>
 <script>
-
 export default {
   props: ["items"],
   data(){
     return{
+      descripcion: "",
     }
+  },
+  created(){
+    this.descripcion = this.$route.meta.descripcion
+  },
+  updated(){
+    this.descripcion = this.$route.meta.descripcion
+  },
+  mounted(){
+    this.descripcion = this.$route.meta.descripcion
   }
 };
 </script>

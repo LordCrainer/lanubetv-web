@@ -60,6 +60,7 @@
   </v-img>
 </section>
 </template>
+
 <script>
 export default {
   props: ["items"],

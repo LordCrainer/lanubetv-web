@@ -1,21 +1,26 @@
 <template>
-  <v-carousel height="100%" :hide-delimiters="hideDelimiters">
-    <v-carousel-item v-for="(item, i) in items" :key="i+item.src" :src="item.src"  style="height:100%;">
-      <slot name="contenido" :subItem="item"> </slot>
-    </v-carousel-item>
-  </v-carousel>
+<v-carousel style="box-shadow: 0px 0px;" v-bind="options.carousel">
+  <v-carousel-item v-for="(item, i) in items" :key="i+item.src" :src="imagenPath(item.src)" v-bind="options.carouselItem">
+    <slot name="contenido" :subItem="item" v-slot:activator="{ on }"> </slot>
+  </v-carousel-item>
+</v-carousel>
 </template>
 <script>
 export default {
-  props: ["items", "hideDelimiters"],
+  props: {
+    items: Array,
+    options: {
+      type: Object,
+      default: function() {
+        return {
+          carousel:{},
+          carouselItem: {}
+        }
+      }
+    }
+  },
   data() {
     return {};
   }
 };
 </script>
-<style scoped>
-.v-carousel__item{
-  height:100%;
-}
-
-</style>

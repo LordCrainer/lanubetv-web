@@ -3,12 +3,22 @@
     "rutas": [
       {
         "titulo": "Inicio",
-        "ruta": "/"
+        "ruta": "/",
+        "meta": {
+          "titulo": "LANUBETV",
+          "descripcion": "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales.",
+          "src": "Hero/hero_inicio.png"
+        }
       },
       {
         "titulo": "Nosotros",
         "icon": "",
         "ruta": "/nosotros",
+        "meta": {
+          "titulo": "NOSOTROS",
+          "descripcion": "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollando, pensando y creando soluciones inteligentes a nuestros clientes.",
+          "src": "Hero/hero_nosotros.png"
+        },
         "subrutas": [
           {
             "nombre": "Mision",
@@ -24,24 +34,47 @@
         "titulo": "Servicios",
         "ruta": "/servicios",
         "flagGroup": true,
+        "meta": {
+          "titulo": "Servicios",
+          "descripcion": "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar otros servicios.",
+          "src": "Hero/hero_servicios.png"
+        },
         "subrutas": [
           {
             "nombre": "Diseño 3D y 2D",
-            "ruta": "/servicios/diseno-3d-2d"
+            "ruta": "/servicios/diseno-3d-2d",
+            "meta":{
+              "titulo": "Dieseño 3D y 2D",
+              "descripcion": "Dieseño 3D y 2D"
+            }
           },
           {
             "nombre": "Producción Audivisual",
-            "ruta": "/servicios/produccion-audivisual"
+            "ruta": "/servicios/produccion-audivisual",
+            "meta":{
+              "titulo": "Producción Audivisual",
+              "descripcion": "Producción Audivisual"
+            }
           },
           {
             "nombre": "Distribución de Comerciales",
-            "ruta": "/servicios/distribucion-comerciales"
+            "ruta": "/servicios/distribucion-comerciales",
+            "meta":{
+              "titulo": "Distribución Comerciales",
+              "descripcion": "Distribución Comerciales"
+            }
           }
         ]
       },
       {
         "titulo": "Contacto",
         "ruta": "/contacto",
+        "meta": {
+          "titulo": "Contactanos",
+          "descripcion": "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos.",
+          "src": "Hero/hero_contactos.png"
+
+        },
         "subrutas": [
           {
             "nombre": "Ubicación",
@@ -56,6 +89,11 @@
       {
         "titulo": "CanalesTV",
         "ruta": "/canalestv",
+        "meta": {
+          "titulo": "Canales Tv",
+          "descripcion": "Trabajamos con canales de televisión tanto Nacionales como Internacionales.",
+          "src": "Hero/hero_canales.png"
+        },
         "subrutas": [
           {
             "nombre": "Nacionales",
