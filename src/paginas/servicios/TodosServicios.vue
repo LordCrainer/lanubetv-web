@@ -17,7 +17,7 @@
                 <v-card-text class="text-xs-center font-weight-black headline" :class="index%2==0? 'white--text': 'black--text'">
                   {{item.titulo}}
                 </v-card-text>
-                <v-card-text class="text-xs-justify subheading" :class="index%2==0? 'white--text': 'black--text'">
+                <v-card-text class="text-xs-justify headline" :class="index%2==0? 'white--text': 'black--text'">
                   {{item.resumen}}
                 </v-card-text>
                 <v-card-text class="text-xs-center">
@@ -30,7 +30,7 @@
         <v-flex xs12 sm12 md6>
           <v-card class="pa-4" flat color="transparent">
             <v-layout row wrap justify-center fill-height>
-              <carousel :items="item.img" :hideDelimiters="true"></carousel>
+              <carousel :items="item.img" :options="{carousel:{cycle: false, 'hide-delimiters': true}}"></carousel>
             </v-layout>
           </v-card>
         </v-flex>

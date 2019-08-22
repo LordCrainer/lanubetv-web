@@ -16,7 +16,7 @@
         </v-card-text>
       </v-flex>
       <v-flex xs12>
-        <carousel :items="items.canales" :options="{'transition': 'fade'}">
+        <carousel :items="items.canales" >
           <v-container slot="contenido" slot-scope="{ subItem }" grid-list-xl style="max-width: 800px;" fill-height class="pa-5">
             <v-layout row wrap align-center justify-center class="pb-5 mx-auto">
               <v-flex v-for="(canal,index) in subItem.clientes" :key="canal.titulo" xs4 sm4 md3 lg3>
