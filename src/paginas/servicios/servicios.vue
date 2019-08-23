@@ -1,8 +1,8 @@
-<style scoped>
-.v-carousel__prev .v-btn .v-btn__content .v-icon,
-.v-carousel__next .v-btn .v-btn__content .v-icon {
+<style lang="css" scoped>
+.v-carousel__prev .v-btn .v-btn__content i,
+.v-carousel__next .v-btn .v-btn__content i {
   color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
   border-radius: 50%;
 }
 </style>

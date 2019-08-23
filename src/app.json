@@ -49,7 +49,7 @@
             }
           },
           {
-            "nombre": "Producción Audivisual",
+            "nombre": "PRODUCCIÓN AUDIOVISUAL",
             "ruta": "/servicios/produccion-audivisual",
             "meta":{
               "titulo": "Producción Audivisual",
@@ -57,7 +57,15 @@
             }
           },
           {
-            "nombre": "Distribución de Comerciales",
+            "nombre": "DISTRIBUCION DE COMERCIALES",
+            "ruta": "/servicios/distribucion-comerciales",
+            "meta":{
+              "titulo": "Distribución Comerciales",
+              "descripcion": "Distribución Comerciales"
+            }
+          },
+          {
+            "nombre": "SMART HOME CONTROL",
             "ruta": "/servicios/distribucion-comerciales",
             "meta":{
               "titulo": "Distribución Comerciales",
@@ -138,6 +146,12 @@
         "title": "trafico@lanubetv.net",
         "dato": "mailto:trafico@lanubetv.net?subject=Información"
       }
-    ]
+    ],
+    "hero_layout": {
+      "ruta": "/",
+      "src": "Hero/Fondo_Hero.png",
+      "text": "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
+
+    }
   }
 }

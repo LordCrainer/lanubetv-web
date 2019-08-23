@@ -70,7 +70,7 @@ body {
 import Toolbar from "./layout/toolbar.vue";
 import FooterW from "./layout/footer.vue";
 import Hero from "./layout/hero.vue";
-var obj = require("./app.json");
+var data = require("./app.json");
 export default {
   name: "App",
   components: {
@@ -172,8 +172,8 @@ export default {
         ]
       },
       hero_layout: {
-        ruta: '/',
-        src: require('./assets/Hero/Fondo_Hero.png'),
+        ruta: "/",
+        src: "Hero/Fondo_Hero.png",
         text: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales"
 
       }

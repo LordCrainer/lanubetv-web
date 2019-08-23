@@ -1,7 +1,7 @@
 <template>
 <section>
-  <v-img  class="Hero" :style="`background-image: url(${items.src}); `" style="position: relative;">
-    <v-img class="imgen hidden-xs-only" :style="`background-image: url(${$route.meta.src}); `" >    </v-img>
+  <v-img  class="Hero" :style="{ backgroundImage: `url(${imagenPath(items.src)})`}" style="position: relative;">
+    <v-img class="imgen hidden-xs-only" :style="{ backgroundImage: `url(${imagenPath($route.meta.src)})`}">    </v-img>
     <v-container fill-height grid-list-xl style="position: absolute; top: 0; right: 0;">
       <v-layout pt-4 justify-end align-center class="white--text">
         <v-flex xs12 sm8 md6>

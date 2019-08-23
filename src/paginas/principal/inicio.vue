@@ -1,9 +1,7 @@
-<style>
+<style lang="css">
 .v-carousel__prev .v-btn .v-btn__content .v-icon,
 .v-carousel__next .v-btn .v-btn__content .v-icon {
-  color: black;
-  background-color: rgba(245, 62, 62, 0.5) !important;
-  border-radius: 50% !important;
+  color:black;
 }
 </style>
 

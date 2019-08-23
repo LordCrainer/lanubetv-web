@@ -30,7 +30,18 @@
         <v-flex xs12 sm12 md6>
           <v-card class="pa-4" flat color="transparent">
             <v-layout row wrap justify-center fill-height>
-              <carousel :items="item.img" :options="{carousel:{cycle: false, 'hide-delimiters': true}}"></carousel>
+              <carousel :items="item.img" :options="{carousel:{cycle: false, 'hide-delimiters': true}}">
+                <!-- <v-img slot="contenido" slot-scope={subItem} :src="subItem.src" contain>
+
+              </v-img> -->
+              <v-container grid-list-xs,sm,md,lg,xl slot="contenido" slot-scope="{subItem}" fill-height>
+                <v-layout row wrap  justify-center align-center>
+                  <v-card-text>
+                    <v-img  :src="imagenPath(subItem.src)"></v-img>
+                  </v-card-text>
+                </v-layout>
+              </v-container>
+              </carousel>
             </v-layout>
           </v-card>
         </v-flex>
@@ -56,7 +67,7 @@ export default {
         'hide-controls': false,
         height: 400
       },
-      fondo: ['rgb(124, 124, 124)', 'white']
+      fondo: ['rgb(124, 124, 124)', 'rgb(233, 233, 233)']
     }
   }
 }

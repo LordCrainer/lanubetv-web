@@ -26,7 +26,7 @@ export default new Router({
       meta: {
         titulo: "LANUBETV",
         descripcion: "La forma más amigable, segura e inteligente de hacer tus envíos Digitales desde las productoras hacia los medios de publicidad nacionales e internacionales.",
-        src: require('./assets/Hero/hero_inicio.png')
+        src: 'Hero/hero_inicio.png'
       }
     },
     {
@@ -38,7 +38,7 @@ export default new Router({
       meta: {
         titulo: "NOSOTROS",
         descripcion: "Somos una empresa ecuatoriana, dedicada a la prestación de servicios digitales a través de nuestra plataforma web, desarrollando, pensando y creando soluciones inteligentes a nuestros clientes.",
-        src: require('./assets/Hero/hero_nosotros.png')
+        src: 'Hero/hero_nosotros.png'
 
       }
     },
@@ -48,7 +48,7 @@ export default new Router({
       meta: {
         titulo: "Servicios",
         descripcion: "Nuestro principal trabajo es la distribución de comerciales, pero también somos capaces de realizar otros servicios.",
-        src: require('./assets/Hero/hero_servicios.png')
+        src: 'Hero/hero_servicios.png'
       },
       components: {
         default: Servicio
@@ -61,7 +61,7 @@ export default new Router({
       meta: {
         titulo: "",
         descripcion: "",
-        src: require('./assets/Hero/hero_servicios.png')
+        src: 'Hero/hero_servicios.png'
 
       }
     },
@@ -74,7 +74,7 @@ export default new Router({
       meta: {
         titulo: "Contactanos",
         descripcion: "Si deseas mayor información, no dudes en comunicarte con nosotros, que inmediatamente te atenderemos.",
-        src: require('./assets/Hero/hero_contactos.png')
+        src: 'Hero/hero_contactos.png'
 
       }
     },
@@ -87,7 +87,7 @@ export default new Router({
       meta: {
         titulo: "Canales Tv",
         descripcion: "Trabajamos con canales de televisión tanto Nacionales como Internacionales.",
-        src: require('./assets/Hero/hero_canales.png')
+        src: 'Hero/hero_canales.png'
       }
     },
     {
@@ -97,7 +97,7 @@ export default new Router({
       meta: {
         titulo: "Error",
         descripcion: "Página no encontrada",
-        src: require('./assets/Hero/hero_inicio.png')
+        src: 'Hero/hero_inicio.png'
       }
     }
   ]
